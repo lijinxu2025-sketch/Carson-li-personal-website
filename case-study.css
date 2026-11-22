@@ -1,0 +1,1373 @@
+/* ============================================================
+   CASE STUDY TEMPLATE — shared layout for Pendle / Boros / AlphaGeo.
+   Reuses tokens, nav, placeholders & footer from style.css.
+   Sections: A Overview · B System · C Problem · D Translation ·
+             E Visual/Brand · F Outcome · G What This Proves.
+   ============================================================ */
+
+body { background: #0a0a0a; }
+
+/* nav is always visible on case-study pages */
+.cs .site-nav { opacity: 1; transform: none; pointer-events: auto; }
+
+/* ---- title block: project key-art as a full-bleed banner, title bottom-left ---- */
+.cs-hero {
+  position: relative;
+  min-height: min(78vh, 760px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #050506; /* shows briefly while the image decodes */
+}
+.cs-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* anchor to the top so wide/short hero crops never clip the top of the artwork */
+  object-position: center top;
+  z-index: 0;
+  background: #050506;
+}
+.cs-hero-bg--brand-manual { object-position: center bottom; }
+/* darkens the lower portion so the title/tags stay legible over any artwork */
+.cs-hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.62) 26%, rgba(0, 0, 0, 0.14) 52%, transparent 68%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, transparent 22%);
+}
+.cs-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  padding: 0 var(--gutter) clamp(48px, 8vh, 88px);
+}
+.cs-hero .cs-title {
+  font-size: clamp(2.2rem, 6.4vw, 5rem);
+  line-height: 0.98;
+  text-align: left;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
+}
+.cs-hero-label {
+  margin-top: clamp(14px, 2.2vh, 22px);
+  max-width: 640px;
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', sans-serif;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: rgba(157, 175, 205, 0.68);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75), 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+.cs-back {
+  position: absolute;
+  top: clamp(96px, 14vh, 150px);
+  left: var(--gutter);
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(241, 239, 233, 0.85);
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85), 0 2px 14px rgba(0, 0, 0, 0.5);
+  transition: color 0.25s ease;
+}
+.cs-back:hover { color: var(--ink); }
+
+/* ---- intro / details, below the hero ---- */
+.cs-intro { padding: clamp(64px, 11vh, 140px) 0 clamp(30px, 5vh, 60px); }
+.cs-label {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 26px;
+}
+.cs-title {
+  font-size: clamp(1.8rem, 6.6vw, 4.8rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.92;
+  color: var(--ink);
+}
+.cs-byline { font-size: 0.28em; font-weight: 400; color: var(--ink-3); letter-spacing: -0.01em; }
+.cs-tagline {
+  font-size: clamp(1.2rem, 2.4vw, 2rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  max-width: 880px;
+}
+.cs-hero-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: start;
+}
+.cs-hero-meta {
+  display: grid;
+  gap: 22px;
+}
+.cs-hero-meta dt {
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: rgba(157, 175, 205, 0.68);
+  margin-bottom: 7px;
+}
+.cs-hero-meta dd {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+/* hero headline metrics — short horizontal strip of "wow" figures, full shell width */
+.cs-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 44px);
+  margin-top: clamp(40px, 6vw, 64px);
+  padding: clamp(26px, 3vw, 42px) clamp(26px, 3vw, 46px);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cs-hero-stats > div { min-width: 0; }
+.cs-hero-stats dt {
+  font-size: clamp(1.35rem, 2.1vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  line-height: 1;
+}
+.cs-hero-stats dd {
+  margin-top: 10px;
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: rgba(157, 175, 205, 0.68);
+  line-height: 1.35;
+}
+.cs-hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 44px;
+}
+.cs-hero-links a {
+  flex: 0 1 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-2);
+  color: var(--ink);
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: border-color 0.225s ease;
+}
+.cs-hero-links a:hover {
+  border-color: var(--ink);
+}
+
+/* rolling link button mechanics (.rl-*) live in style.css (shared) */
+
+.cs-cover { aspect-ratio: 16 / 8; width: 100%; margin-top: clamp(48px, 7vw, 88px); }
+/* a cover holding a video takes the video's own shape rather than the fixed crop
+   (the slideshow variant keeps 16/8 — its slides are absolutely positioned) */
+.cs-cover--video { aspect-ratio: auto; line-height: 0; }
+.cs-cover--video video { height: auto; }
+/* the row wrapper (Pendle's thumbnail rail) already carries this margin — don't double it */
+.cs-cover-row .cs-cover { margin-top: 0; }
+/* hairline edge so dark screenshots don't bleed into the dark page */
+.cs-cover, .cs-media.media { border: 1px solid rgba(255, 255, 255, 0.15); }
+/* crossfade slideshow for the case-study cover */
+.cs-slideshow { position: relative; }
+.cs-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+.cs-slide.is-active { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .cs-slide { transition: none; }
+}
+/* cover + vertical thumbnail rail for quick selection */
+.cs-cover-row {
+  --thumb-rail-w: clamp(72px, 8vw, 110px);
+  position: relative;
+  margin-top: clamp(48px, 7vw, 88px);
+  /* the rail is absolutely positioned so only the cover sets the row height */
+  padding-left: calc(var(--thumb-rail-w) + 12px);
+}
+.cs-cover-thumbs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--thumb-rail-w);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+.cs-cover-thumb {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  /* same proportion as the source artwork — no stretching */
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, border-color 0.25s ease;
+}
+.cs-cover-thumb:hover { opacity: 0.75; }
+.cs-cover-thumb.is-active { opacity: 1; border-color: rgba(255, 255, 255, 0.55); }
+@media (max-width: 720px) {
+  /* thumbnails move below the cover with a clear gap */
+  .cs-cover-row {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .cs-cover-thumbs {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    order: 2;
+    margin-top: 0;
+    overflow-y: visible;
+    overflow-x: auto;
+  }
+  .cs-cover-thumb { width: clamp(72px, 20vw, 110px); flex: 0 0 auto; }
+}
+
+/* ---- section scaffold ---- */
+.cs-block {
+  padding: clamp(72px, 10vh, 130px) 0;
+  border-top: 1px solid var(--line);
+}
+.cs-block:first-of-type { border-top: none; }
+.cs-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.62fr) minmax(0, 1.5fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+.cs-marker { position: sticky; top: 110px; }
+.cs-marker .eyebrow { margin-bottom: 14px; }
+.cs-heading {
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--ink);
+}
+.cs-prose > p {
+  font-size: clamp(0.98rem, 1.15vw, 1.1rem);
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+/* .muted intentionally matches regular prose — one tier of paragraph text */
+.cs-prose > p:last-child { margin-bottom: 0; }
+/* media blocks carry only a top margin, so a paragraph after one needs its own */
+.cs-showcase + p,
+.cs-illu-deck + p,
+.cs-figure + p { margin-top: clamp(32px, 5vw, 56px); }
+/* ...and a lead-in paragraph sets the same gap before its media block, whichever it is */
+p + .cs-figure,
+p + .cs-illu-deck { margin-top: clamp(32px, 5vw, 56px); }
+
+/* overview meta table */
+.cs-overview-meta {
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.cs-overview-meta div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cs-overview-meta dt {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.cs-overview-meta dd { color: var(--ink); font-size: 0.98rem; line-height: 1.55; }
+
+/* repeating media + lists */
+.cs-media { aspect-ratio: 16 / 9; width: 100%; margin: 36px 0; }
+.cs-media.tall { aspect-ratio: 4 / 3; }
+/* archive project galleries (presentation boards, illustrations) — no fixed
+   box, no object-fit:cover crop; the image just takes its own natural shape */
+.cs-media.media {
+  aspect-ratio: auto;
+  height: auto;
+}
+.cs-media.media img {
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+}
+/* hover-reveal figure: image sits clean; on hover it zooms slightly while a
+   gradient scrim fades in and the caption + link slide up */
+.cs-figure {
+  position: relative;
+  width: 100%;
+  margin: 36px 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* show each screenshot in full at its natural ratio — no crop */
+.cs-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+/* decorative brand visuals: crop to a consistent wide frame like the screenshots */
+.cs-figure--cover { aspect-ratio: 16 / 9; }
+.cs-figure--cover img { height: 100%; object-fit: cover; }
+/* gradient frosted blur behind the caption — strong at the bottom, fades up */
+.cs-fig-blur {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-mask-image: linear-gradient(to top, #000 0%, #000 28%, transparent 68%);
+  mask-image: linear-gradient(to top, #000 0%, #000 28%, transparent 68%);
+}
+.cs-fig-cap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(20px, 3vw, 40px);
+  background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.35) 48%, transparent 82%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.cs-fig-cap p {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  line-height: 1.55;
+  max-width: 52ch;
+  transform: translateY(16px);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cs-fig-cap p strong { font-weight: 600; }
+.cs-fig-link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  color: #fff;
+  font-family: inherit; /* the link is sometimes a <button>, which won't inherit otherwise */
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transform: translateY(16px);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.06s, background 0.3s ease, border-color 0.3s ease;
+}
+.cs-fig-link span { transition: transform 0.3s ease; }
+.cs-fig-link:hover { background: rgba(255, 255, 255, 0.22); border-color: rgba(255, 255, 255, 0.65); }
+.cs-fig-link:hover span { transform: translate(3px, -3px); }
+@media (hover: hover) {
+  .cs-figure:hover .cs-fig-blur { opacity: 1; }
+  .cs-figure:hover .cs-fig-cap { opacity: 1; pointer-events: auto; }
+  .cs-figure:hover .cs-fig-cap p,
+  .cs-figure:hover .cs-fig-link { transform: translateY(0); }
+}
+@media (hover: none) {
+  .cs-fig-blur, .cs-fig-cap { opacity: 1; }
+  .cs-fig-cap { pointer-events: auto; }
+  .cs-fig-cap p, .cs-fig-link { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-figure img, .cs-fig-blur, .cs-fig-cap, .cs-fig-cap p, .cs-fig-link { transition: none; }
+}
+.cs-list { list-style: none; margin-top: 28px; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.cs-list li {
+  background: #0a0a0a;
+  padding: 18px 22px;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+  display: flex;
+  gap: 16px;
+}
+.cs-list li::before { content: counter(li, decimal-leading-zero); counter-increment: li; font-family: var(--mono); font-size: 0.8rem; color: var(--accent); }
+.cs-list { counter-reset: li; }
+
+/* ── Expanding cards: numbered cards in a row; the hovered (or focused)
+     card grows and reveals its text, siblings collapse to just the number.
+     With no card hovered, the first stays open so text is never hidden. ── */
+.cs-expand-cards {
+  list-style: none;
+  counter-reset: xc;
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+}
+.cs-expand-cards li {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: clamp(150px, 16vw, 190px);
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035) 55%, rgba(255, 255, 255, 0.02));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  transition: flex-grow 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cs-expand-cards li::before {
+  content: counter(xc, decimal-leading-zero);
+  counter-increment: xc;
+  font-size: clamp(1.5rem, 2.3vw, 2rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.34);
+  transition: color 0.4s ease;
+}
+.cs-expand-cards li p {
+  margin: 26px 0 0;
+  /* fixed measure so the text doesn't reflow while the card is growing */
+  width: clamp(200px, 21vw, 300px);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.45;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cs-expand-cards li:hover,
+.cs-expand-cards li:focus-visible,
+.cs-expand-cards:not(:hover):not(:focus-within) li:first-child {
+  flex-grow: 3.4;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05) 55%, rgba(255, 255, 255, 0.03));
+}
+.cs-expand-cards li:hover::before,
+.cs-expand-cards li:focus-visible::before,
+.cs-expand-cards:not(:hover):not(:focus-within) li:first-child::before { color: rgba(255, 255, 255, 0.6); }
+.cs-expand-cards li:hover p,
+.cs-expand-cards li:focus-visible p,
+.cs-expand-cards:not(:hover):not(:focus-within) li:first-child p {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.35s ease 0.12s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.12s;
+}
+.cs-expand-cards li:focus-visible { outline: 1px solid rgba(255, 255, 255, 0.4); outline-offset: 2px; }
+/* touch devices & narrow screens: stack as always-open rows */
+@media (hover: none), (max-width: 720px) {
+  .cs-expand-cards { flex-direction: column; }
+  .cs-expand-cards li {
+    flex: none;
+    min-height: 0;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 16px;
+    padding: 18px 20px;
+  }
+  .cs-expand-cards li::before { font-size: 0.95rem; }
+  .cs-expand-cards li p { opacity: 1; transform: none; width: auto; margin: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-expand-cards li, .cs-expand-cards li::before, .cs-expand-cards li p { transition: none; }
+}
+
+/* outcome metrics grid */
+.cs-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 36px;
+}
+.cs-metric {
+  padding: 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.cs-metric dt {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 14px;
+}
+.cs-metric dd .ph-inline { font-size: 1rem; }
+
+/* "what this proves" closing statement */
+.cs-proves {
+  border-top: 1px solid var(--line-2);
+  padding: clamp(72px, 11vh, 150px) 0;
+}
+.cs-proves p {
+  font-size: clamp(1.5rem, 3.6vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  max-width: 1000px;
+}
+.cs-proves .eyebrow { margin-bottom: 32px; }
+.cs-live-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  max-width: 440px;
+  margin-top: 48px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-2);
+  color: var(--ink);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: border-color 0.225s ease;
+}
+.cs-live-link:hover {
+  border-color: var(--ink);
+}
+
+/* next project */
+.cs-next {
+  border-top: 1px solid var(--line);
+  padding: clamp(48px, 7vw, 80px) 0;
+}
+
+/* Single continuous case-study artwork, used when the supplied project is
+   already composed as one long editorial image. */
+.cs-long-case {
+  padding: clamp(88px, 8vw, 120px) var(--gutter) 0;
+  background: #000;
+}
+.cs-long-case img {
+  display: block;
+  width: min(100%, 1280px);
+  height: auto;
+  margin: 0 auto;
+}
+.cs-long-case-back {
+  display: block;
+  width: min(100%, 1280px);
+  margin: 0 auto clamp(18px, 2.5vw, 32px);
+  color: var(--ink-2);
+  font-size: 0.86rem;
+  text-decoration: none;
+}
+.cs-long-case-back:hover { color: var(--ink); }
+
+/* Long-form artwork placed inside the right-hand editorial column. */
+.cs-prose--long-image { max-width: none; }
+.cs-column-long-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+/* "all projects" on the left, the next-project link on the right */
+.cs-next .shell {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+.cs-next-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(0.95rem, 1.1vw, 1.02rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--ink-2);
+  transition: color 0.25s ease;
+}
+.cs-next-all:hover { color: var(--ink); }
+.cs-next-all span { transition: transform 0.25s ease; }
+.cs-next-all:hover span { transform: translateX(-3px); }
+.cs-next-link {
+  /* label stacked above the name, both right-aligned */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.cs-next .nx-key {
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'PingFang SC', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: rgba(157, 175, 205, 0.68);
+}
+.cs-next .nx-name {
+  font-size: clamp(1.5rem, 2.8vw, 2.3rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  transition: color 0.25s ease;
+}
+.cs-next-link:hover .nx-name { color: var(--accent); }
+
+/* Swarms Marketplace — neutral image placeholders. These keep the complete
+   case-study rhythm in place until final artwork and product screens arrive. */
+.cs-swarms { --swarms-red: #ff2147; }
+.cs-placeholder-hero { background: #050506; }
+.cs-placeholder-hero-art {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.28);
+  font-family: var(--mono);
+  font-size: clamp(0.64rem, 1vw, 0.82rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background:
+    radial-gradient(circle at 73% 38%, rgba(255, 33, 71, 0.22), transparent 24%),
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(145deg, #0e0f12, #050506 70%);
+  background-size: auto, 72px 72px, 72px 72px, auto;
+}
+.cs-placeholder-hero-art::before,
+.cs-placeholder-hero-art::after {
+  content: "";
+  position: absolute;
+  width: clamp(160px, 24vw, 360px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transform: rotate(30deg);
+}
+.cs-placeholder-hero-art::after {
+  width: clamp(90px, 14vw, 210px);
+  border-color: rgba(255, 33, 71, 0.24);
+}
+.cs-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: clamp(34px, 5vw, 58px) 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 5px;
+  color: rgba(241, 239, 233, 0.5);
+  font-family: var(--mono);
+  font-size: clamp(0.62rem, 0.9vw, 0.78rem);
+  letter-spacing: 0.16em;
+  text-align: center;
+  text-transform: uppercase;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012));
+  background-size: 48px 48px, 48px 48px, auto;
+}
+.cs-placeholder::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 33, 71, 0.18);
+  border-radius: 50%;
+  box-shadow: 0 0 80px rgba(255, 33, 71, 0.08);
+}
+.cs-placeholder span { position: relative; z-index: 1; }
+.cs-placeholder--cover { aspect-ratio: 16 / 7.5; margin-top: clamp(48px, 7vw, 88px); }
+.cs-placeholder--wide { aspect-ratio: 16 / 9; }
+.cs-placeholder--brand { aspect-ratio: 16 / 10; }
+.cs-placeholder--small,
+.cs-placeholder--portrait { margin: 0; }
+.cs-placeholder--small { aspect-ratio: 4 / 3; }
+.cs-placeholder--portrait { aspect-ratio: 3 / 4; }
+.cs-placeholder-grid {
+  display: grid;
+  gap: clamp(14px, 2vw, 24px);
+  margin: clamp(24px, 3vw, 40px) 0 0;
+}
+.cs-placeholder-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cs-placeholder-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cs-swarms .cs-decision { margin-top: clamp(30px, 4vw, 48px); }
+
+.cs-biturbo .cs-placeholder-hero-art {
+  background:
+    radial-gradient(circle at 73% 38%, rgba(255, 181, 71, 0.2), transparent 24%),
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(145deg, #10100d, #050506 70%);
+  background-size: auto, 72px 72px, 72px 72px, auto;
+}
+.cs-biturbo .cs-placeholder-hero-art::after,
+.cs-biturbo .cs-placeholder::before { border-color: rgba(255, 181, 71, 0.22); }
+.cs-biturbo .cs-placeholder::before { box-shadow: 0 0 80px rgba(255, 181, 71, 0.08); }
+
+@media (max-width: 560px) {
+  .cs-next .shell { flex-direction: column; align-items: flex-start; gap: 28px; }
+  .cs-next-link { align-items: flex-start; }
+  .cs-placeholder-grid--two,
+  .cs-placeholder-grid--three { grid-template-columns: 1fr; }
+  .cs-placeholder--portrait { aspect-ratio: 16 / 10; }
+}
+
+@media (max-width: 880px) {
+  .cs-layout { grid-template-columns: 1fr; gap: 24px; }
+  .cs-marker { position: static; }
+  .cs-metrics { grid-template-columns: 1fr; }
+  .cs-overview-meta div { grid-template-columns: 120px 1fr; gap: 16px; }
+  .cs-hero-row { grid-template-columns: 1fr; gap: 36px; }
+  /* stacked layout: the website links and the role/timeline/scope meta read
+     as two separate sections, split by a hairline */
+  .cs-hero-aside {
+    margin-top: 6px;
+    padding-top: 34px;
+    border-top: 1px solid var(--line);
+  }
+  .cs-hero-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ── Illustrations ──────────────────────────────── */
+.cs-figure--gallery { cursor: pointer; }
+.cs-fig-link--btn { cursor: pointer; }
+
+/* ── Illustration card deck: overlapping strip, click to open the lightbox ──── */
+.cs-illu-deck { margin: 36px 0; }
+.cs-illu-cards {
+  --deck-h: clamp(260px, 30vw, 440px);
+  display: flex;
+  align-items: flex-end;
+  height: var(--deck-h);
+}
+.cs-illu-card {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* shrink stays 0 in both states — only grow and basis change, and both animate */
+  flex: 1 0 0px;
+  min-width: 0;
+  /* headroom above: hovering extends the card upward, bottom edge stays put */
+  height: calc(100% - 28px);
+  border: none;
+  border-radius: clamp(10px, 1.2vw, 16px);
+  overflow: hidden;
+  cursor: pointer;
+  background: #080d19;
+  /* shadow falls rightward onto the card beneath, so the overlap reads */
+  box-shadow: 22px 0 44px rgba(0, 0, 0, 0.62);
+  /* grow must animate with basis: if it snapped, the card would jump narrow
+     before widening (the hover glitch), and boundaries shifting under the
+     cursor mid-snap made hover flap between neighbours */
+  transition:
+    height 0.45s cubic-bezier(0.22, 0.75, 0.18, 1),
+    flex-basis 0.45s cubic-bezier(0.22, 0.75, 0.18, 1),
+    flex-grow 0.45s cubic-bezier(0.22, 0.75, 0.18, 1);
+}
+/* overlap: each card tucks under the one to its left */
+.cs-illu-card + .cs-illu-card { margin-left: calc(-1 * clamp(16px, 2.2vw, 32px)); }
+.cs-illu-card:nth-child(1) { z-index: 29; }
+.cs-illu-card:nth-child(2) { z-index: 28; }
+.cs-illu-card:nth-child(3) { z-index: 27; }
+.cs-illu-card:nth-child(4) { z-index: 26; }
+.cs-illu-card:nth-child(5) { z-index: 25; }
+.cs-illu-card:nth-child(6) { z-index: 24; }
+.cs-illu-card:nth-child(7) { z-index: 23; }
+.cs-illu-card:nth-child(8) { z-index: 22; }
+.cs-illu-card:nth-child(9) { z-index: 21; }
+.cs-illu-card:nth-child(10) { z-index: 20; }
+.cs-illu-card:nth-child(11) { z-index: 19; }
+.cs-illu-card:nth-child(12) { z-index: 18; }
+.cs-illu-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+.cs-illu-card:hover,
+.cs-illu-card:focus-visible { height: 100%; flex: 0 0 var(--deck-h); }
+/* no CARD hovered or focused: the first card sits expanded by default.
+   Gating on :has(card:hover) rather than container :hover keeps the deck
+   still while the pointer is in the headroom strip above the cards */
+.cs-illu-cards:not(:has(.cs-illu-card:hover)):not(:focus-within) .cs-illu-card:first-child { height: 100%; flex: 0 0 var(--deck-h); }
+/* mini variant: with only a couple of cards the expanding strip can't read
+   (a "collapsed" card would be wider than an expanded one) — so every card
+   is a fixed square and hover keeps just the upward lift */
+.cs-illu-cards--mini .cs-illu-card,
+.cs-illu-cards--mini .cs-illu-card:hover,
+.cs-illu-cards--mini .cs-illu-card:focus-visible,
+.cs-illu-cards--mini:not(:has(.cs-illu-card:hover)):not(:focus-within) .cs-illu-card:first-child {
+  flex: 0 0 min(var(--deck-h), 50%);
+}
+
+/* ── Illustration grid: flat 4-up gallery, click to open the lightbox ──── */
+.cs-illu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: clamp(32px, 5vw, 56px);
+}
+.cs-illu-tile {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* matches the 1920x1080 brand-guide pages so tiles show the full page */
+  cursor: pointer;
+  background: #080d19;
+  transition: transform 0.3s cubic-bezier(0.22, 0.75, 0.18, 1), border-color 0.3s ease;
+}
+.cs-illu-tile:hover,
+.cs-illu-tile:focus-visible { transform: translateY(-4px); border-color: rgba(255, 255, 255, 0.4); }
+.cs-illu-tile:focus-visible { outline: 1px solid rgba(255, 255, 255, 0.5); outline-offset: 2px; }
+.cs-illu-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+@media (max-width: 720px) {
+  .cs-illu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+}
+.cs-illu-card:focus-visible { outline: 1px solid rgba(255, 255, 255, 0.5); outline-offset: -2px; }
+@media (max-width: 720px) {
+  .cs-illu-cards { --deck-h: clamp(220px, 60vw, 300px); }
+  .cs-illu-card + .cs-illu-card { margin-left: -10px; }
+}
+
+/* ── Illustration lightbox: vertical thumbnail rail + full-proportion stage ── */
+.illu-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* display:flex above would defeat the hidden attribute — restore it */
+.illu-lightbox[hidden] { display: none; }
+.illu-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 6, 8, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.illu-lightbox.is-open .illu-lightbox__backdrop { opacity: 1; }
+.illu-lightbox__panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1.6vw, 16px);
+  width: min(1320px, 94vw);
+  height: calc(100vh - clamp(96px, 13vh, 140px));
+  opacity: 0;
+  transform: translateY(14px) scale(0.99);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+.illu-lightbox.is-open .illu-lightbox__panel { transform: none; opacity: 1; }
+.illu-lightbox__body {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  gap: clamp(12px, 1.6vw, 20px);
+}
+.illu-lightbox__rail {
+  flex: 0 0 auto;
+  width: clamp(72px, 8vw, 110px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+.illu-lightbox__thumb {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, border-color 0.25s ease;
+}
+.illu-lightbox__thumb:hover { opacity: 0.75; }
+.illu-lightbox__thumb.is-active { opacity: 1; border-color: rgba(255, 255, 255, 0.55); }
+.illu-lightbox__stage {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c0c0e;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.illu-lightbox__img {
+  display: block;
+  /* preserves each artwork's own proportion — never stretched or cropped */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.illu-lightbox__bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.illu-lightbox__title { margin: 0; font-size: 0.95rem; font-weight: 500; color: var(--ink); }
+.illu-lightbox__title span { margin-left: 10px; font-size: 0.8rem; color: var(--ink-3); }
+.illu-lightbox__actions { display: flex; align-items: center; gap: 16px; }
+.illu-lightbox__close {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.illu-lightbox__close:hover { background: rgba(255, 255, 255, 0.16); }
+@media (max-width: 720px) {
+  .illu-lightbox__panel { height: calc(100vh - clamp(72px, 11vh, 100px)); }
+  .illu-lightbox__body { flex-direction: column-reverse; }
+  .illu-lightbox__rail { width: auto; flex-direction: row; overflow-y: visible; overflow-x: auto; }
+  .illu-lightbox__thumb { width: clamp(56px, 16vw, 80px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .illu-lightbox__backdrop, .illu-lightbox__panel, .cs-illu-card { transition: none; }
+}
+
+/* ── Abstraction showcase: rotating product screens on light grey ──────── */
+.cs-abstract-showcase {
+  margin: clamp(32px, 5vw, 56px) 0 0;
+  padding: clamp(32px, 6vw, 72px);
+  border-radius: 12px;
+  background: #e9eaed;
+}
+.cs-abstract-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e9eaed;
+}
+.cs-abstract-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* WebKit won't clip a video to the parent's radius via overflow:hidden — round it directly */
+  border-radius: inherit;
+}
+@media (max-width: 640px) {
+  .cs-abstract-showcase { padding: 20px; }
+}
+
+/* ── Website showcase: video floating over a radial tech backdrop ──────── */
+.cs-showcase {
+  position: relative;
+  margin: clamp(32px, 5vw, 56px) 0 0;
+  padding: clamp(32px, 6vw, 72px);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse 90% 100% at 0% 105%, rgba(45, 212, 155, 0.9), transparent 78%),
+    radial-gradient(ellipse 65% 95% at 38% 110%, rgba(79, 95, 230, 0.85), transparent 76%),
+    radial-gradient(ellipse 90% 100% at 100% 105%, rgba(45, 212, 155, 0.88), transparent 78%),
+    #05070d;
+}
+/* Boros variant — same aurora, brand blue (#6079FF) in place of Pendle's teal */
+.cs-showcase--boros {
+  background:
+    radial-gradient(ellipse 90% 100% at 0% 105%, rgba(96, 121, 255, 0.9), transparent 78%),
+    radial-gradient(ellipse 65% 95% at 38% 110%, rgba(79, 95, 230, 0.85), transparent 76%),
+    radial-gradient(ellipse 90% 100% at 100% 105%, rgba(96, 121, 255, 0.88), transparent 78%),
+    #05070d;
+}
+/* tighter frame for square/portrait media so it doesn't tower over the section
+   (doubled class beats the base .cs-showcase-frame width declared later) */
+.cs-showcase-frame.cs-showcase-frame--tight { width: min(100%, 560px); }
+/* AlphaGeo variant — same aurora, brand teal with the hero's ocean blue center */
+.cs-showcase--alphageo {
+  background:
+    radial-gradient(ellipse 90% 100% at 0% 105%, rgba(18, 166, 166, 0.9), transparent 78%),
+    radial-gradient(ellipse 65% 95% at 38% 110%, rgba(47, 158, 214, 0.85), transparent 76%),
+    radial-gradient(ellipse 90% 100% at 100% 105%, rgba(18, 166, 166, 0.88), transparent 78%),
+    #05070d;
+}
+.cs-showcase::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.4px 1.4px at 8% 78%, #fff, transparent),
+    radial-gradient(1.6px 1.6px at 15% 88%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 24% 68%, #fff, transparent),
+    radial-gradient(1.8px 1.8px at 34% 82%, #fff, transparent),
+    radial-gradient(1.3px 1.3px at 46% 92%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 58% 74%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 68% 87%, #fff, transparent),
+    radial-gradient(1.6px 1.6px at 80% 68%, #fff, transparent),
+    radial-gradient(1.3px 1.3px at 90% 80%, #fff, transparent),
+    radial-gradient(1.4px 1.4px at 96% 60%, #fff, transparent);
+  opacity: 0.65;
+}
+.cs-showcase-frame {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1180px);
+  /* no fixed aspect-ratio — the frame takes each video's own shape so nothing is cropped */
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: 0 40px 90px -24px rgba(0, 0, 0, 0.75), 0 10px 28px rgba(0, 0, 0, 0.45);
+  background: #000;
+}
+.cs-showcase-frame video,
+.cs-showcase-frame img {
+  width: 100%;
+  /* natural height — the whole frame of the recording stays visible */
+  height: auto;
+  display: block;
+  /* WebKit won't clip a video to the parent's radius via overflow:hidden — round it directly */
+  border-radius: inherit;
+}
+/* the overlay is a child of the section, so it covers the backdrop as well as the frame */
+.cs-showcase > .cs-fig-blur,
+.cs-showcase > .cs-fig-cap { z-index: 2; border-radius: inherit; }
+@media (hover: hover) {
+  .cs-showcase:hover .cs-fig-blur { opacity: 1; }
+  .cs-showcase:hover .cs-fig-cap { opacity: 1; pointer-events: auto; }
+  .cs-showcase:hover .cs-fig-cap p,
+  .cs-showcase:hover .cs-fig-link { transform: translateY(0); }
+}
+@media (hover: none) {
+  .cs-showcase .cs-fig-blur,
+  .cs-showcase .cs-fig-cap { opacity: 1; }
+  .cs-showcase .cs-fig-cap { pointer-events: auto; }
+  .cs-showcase .cs-fig-cap p,
+  .cs-showcase .cs-fig-link { transform: none; }
+}
+@media (max-width: 640px) {
+  .cs-showcase { padding: 20px; }
+}
+
+/* ── UI screen fan: a fanned deck of app screenshots, hover to bring forward ── */
+.cs-fan {
+  --fan-card-width: clamp(260px, 42vw, 620px);
+  position: relative;
+  width: 100%;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  height: clamp(320px, 44vw, 660px);
+  margin-top: clamp(40px, 6vw, 64px);
+  overflow: visible;
+  border-radius: 16px;
+  perspective: 1500px;
+  isolation: isolate;
+  cursor: pointer;
+  background: transparent;
+}
+/* narrower variant for placement inside the .cs-prose column (Section D) —
+   scaled down so viewport-relative offsets stay clear of the sticky sidebar */
+.cs-fan--inline {
+  --fan-card-width: clamp(190px, 30vw, 460px);
+  max-width: 100%;
+  height: clamp(240px, 32vw, 480px);
+}
+.cs-fan--inline .cs-fan-screen[data-pos="-3"] { --x: clamp(-310px, -31vw, -178px); }
+.cs-fan--inline .cs-fan-screen[data-pos="-2"] { --x: clamp(-244px, -23vw, -133px); }
+.cs-fan--inline .cs-fan-screen[data-pos="-1"] { --x: clamp(-152px, -14vw, -81px); }
+.cs-fan--inline .cs-fan-screen[data-pos="1"]  { --x: clamp(81px, 14vw, 152px); }
+.cs-fan--inline .cs-fan-screen[data-pos="2"]  { --x: clamp(133px, 23vw, 244px); }
+.cs-fan-screen {
+  --x: 0px; --y: 0px; --rotate: 0deg; --scale: 1; --opacity: 1; --z: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--fan-card-width);
+  /* matches the tallest source screenshot (1200x770) so cards can grow taller
+     without ever cropping left/right or top on any of the 6 images */
+  aspect-ratio: 1200 / 770;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: clamp(10px, 1.2vw, 18px);
+  opacity: var(--opacity);
+  z-index: var(--z);
+  background: #080d19;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.62);
+  transform: translate(-50%, -50%) translate(var(--x), var(--y)) rotate(var(--rotate)) scale(var(--scale));
+  transition: transform 0.4s cubic-bezier(0.22, 0.75, 0.18, 1), opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+.cs-fan-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+  user-select: none;
+}
+.cs-fan-screen[data-pos="-3"] { --x: clamp(-420px, -42vw, -240px); --y: 30px; --rotate: -20deg; --scale: 0.62; --opacity: 0; --z: 0; pointer-events: none; }
+.cs-fan-screen[data-pos="-2"] { --x: clamp(-330px, -31vw, -180px); --y: 24px; --rotate: -16deg; --scale: 0.68; --opacity: 0.35; --z: 1; }
+.cs-fan-screen[data-pos="-1"] { --x: clamp(-205px, -19vw, -110px); --y: 8px;  --rotate: -8deg;  --scale: 0.86; --opacity: 0.9;  --z: 2; }
+.cs-fan-screen[data-pos="0"]  { --x: 0px; --y: -11px; --rotate: 0deg; --scale: 1.3; --opacity: 1; --z: 5; }
+.cs-fan-screen[data-pos="1"]  { --x: clamp(110px, 19vw, 205px);  --y: 8px;  --rotate: 8deg;  --scale: 0.86; --opacity: 0.9;  --z: 2; }
+.cs-fan-screen[data-pos="2"]  { --x: clamp(180px, 31vw, 330px);  --y: 24px; --rotate: 16deg; --scale: 0.68; --opacity: 0.35; --z: 1; }
+.cs-fan-screen.is-wrapping { opacity: 0 !important; transition: none !important; }
+@media (max-width: 680px) {
+  .cs-fan { --fan-card-width: clamp(190px, 74vw, 320px); height: 260px; }
+  .cs-fan-screen[data-pos="-3"], .cs-fan-screen[data-pos="-2"], .cs-fan-screen[data-pos="2"] { opacity: 0; pointer-events: none; }
+  .cs-fan-screen[data-pos="-1"] { --x: -92px; --scale: 0.78; }
+  .cs-fan-screen[data-pos="1"] { --x: 92px; --scale: 0.78; }
+  .cs-fan-screen[data-pos="0"] { --scale: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-fan-screen { transition-duration: 0.01ms; }
+}
+
+/* ── UI screen diagonal: rotated lanes of screenshots drifting past ── */
+.cs-diagonal {
+  --gap: clamp(14px, 1.6vw, 26px);
+  --tile-width: clamp(280px, 36vw, 560px);
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: clamp(40px, 6vw, 64px);
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #090d18;
+}
+.cs-diagonal-mosaic {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  /* must stay ≥ ~109% of the box for rotation coverage, but ≤ one 4-tile
+     sequence's width — otherwise the drifting strip exposes bare lane */
+  width: 155%;
+  display: grid;
+  gap: var(--gap);
+  transform: translate(-50%, -50%) rotate(-11deg);
+  transform-origin: center;
+}
+.cs-diagonal-lane { width: 100%; overflow: visible; }
+.cs-diagonal-strip {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: cs-diagonal-drift var(--duration, 122s) linear infinite;
+}
+.cs-diagonal-lane:nth-child(2) .cs-diagonal-strip { --duration: 139s; animation-direction: reverse; }
+.cs-diagonal-lane:nth-child(3) .cs-diagonal-strip { --duration: 129s; }
+.cs-diagonal-lane:nth-child(4) .cs-diagonal-strip { --duration: 147s; animation-direction: reverse; }
+.cs-diagonal-seq { display: flex; gap: var(--gap); padding-right: var(--gap); }
+.cs-diagonal-tile {
+  flex: 0 0 var(--tile-width);
+  width: var(--tile-width);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: clamp(8px, 1vw, 16px);
+  background-color: #080d0f;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.62), 0 10px 24px rgba(0, 0, 0, 0.42), 0 1px 0 rgba(255, 255, 255, 0.025) inset;
+}
+.cs-diagonal-tile--1 { background-image: url("assets/projects/pendle-ui-fan/screen--3.jpg"); }
+.cs-diagonal-tile--2 { background-image: url("assets/projects/pendle-ui-fan/screen--2.jpg"); }
+.cs-diagonal-tile--3 { background-image: url("assets/projects/pendle-ui-fan/screen--1.jpg"); }
+.cs-diagonal-tile--4 { background-image: url("assets/projects/pendle-ui-fan/screen-0.jpg"); }
+.cs-diagonal-tile--5 { background-image: url("assets/projects/pendle-ui-fan/screen-1.jpg"); }
+.cs-diagonal-tile--6 { background-image: url("assets/projects/pendle-ui-fan/screen-2.jpg"); }
+/* Boros variant — same mosaic, Boros app captures */
+.cs-diagonal--boros .cs-diagonal-tile--1 { background-image: url("assets/projects/boros-ui/screen-1.jpg"); }
+.cs-diagonal--boros .cs-diagonal-tile--2 { background-image: url("assets/projects/boros-ui/screen-2.jpg"); }
+.cs-diagonal--boros .cs-diagonal-tile--3 { background-image: url("assets/projects/boros-ui/screen-3.jpg"); }
+.cs-diagonal--boros .cs-diagonal-tile--4 { background-image: url("assets/projects/boros-ui/screen-4.jpg"); }
+.cs-diagonal--boros .cs-diagonal-tile--5 { background-image: url("assets/projects/boros-ui/screen-5.jpg"); }
+.cs-diagonal--boros .cs-diagonal-tile--6 { background-image: url("assets/projects/boros-ui/screen-6.jpg"); }
+.cs-diagonal-lane:nth-child(1),
+.cs-diagonal-lane:nth-child(4) { opacity: 0.74; }
+@keyframes cs-diagonal-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (max-width: 700px) {
+  .cs-diagonal { --tile-width: 58vw; --gap: 14px; }
+  .cs-diagonal-mosaic { width: 190%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-diagonal-strip { animation-play-state: paused; }
+}
+
+/* Pendle hero on phones: the moon sits at ~41% of the frame width, so the
+   default centered crop pushes it off to the left — bias the crop window
+   so the moon lands in the middle of the screen. */
+@media (max-width: 720px) {
+  .cs-hero-bg--pendle { object-position: 35% top; }
+}
+
+/* Boros hero on phones: the whale's head sits at ~25% of the frame width —
+   bias the crop window so it lands mid-screen. */
+@media (max-width: 720px) {
+  .cs-hero-bg--boros { object-position: 8% top; }
+}
+
+/* Small screens: the always-on caption overlay would cover the whole
+   preview — flow it beneath the media instead. */
+@media (max-width: 720px) {
+  .cs-fig-blur { display: none; }
+  .cs-showcase { flex-direction: column; align-items: stretch; margin-top: 56px; }
+  .cs-showcase-frame { width: 100%; }
+  .cs-fig-cap {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 16px 2px 0;
+    background: none;
+  }
+  .cs-fig-cap p, .cs-fig-link { transform: none; }
+  /* below the media the caption reads as supporting copy, not overlay text */
+  .cs-fig-cap p { color: var(--ink-2); }
+  /* JS moves the caption out after the card on phones — generous air before
+     the prose resumes */
+  .cs-fig-cap + p { margin-top: 56px; }
+}
+
+/* ── Decision blocks: the "why", set apart from the scope narrative ──────── */
+.cs-decision {
+  margin: clamp(36px, 5vw, 56px) 0;
+  padding: clamp(22px, 3vw, 34px) clamp(22px, 3vw, 36px);
+  border-left: 2px solid var(--accent);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  border-radius: 0 16px 16px 0;
+}
+.cs-decision-label {
+  margin: 0 0 12px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.cs-decision h3 {
+  margin: 0 0 18px;
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.cs-decision p:not(.cs-decision-label) {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+.cs-decision p:last-child { margin-bottom: 0; }
+
+/* Sticky decision links under the section title */
+.cs-subnav { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.08); max-width: 300px; }
+.cs-subnav-label { margin: 0 0 2px; font-family: var(--mono); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+.cs-subnav a { display: block; padding-left: 16px; border-left: 2px solid rgba(255,255,255,.12); font-size: clamp(.95rem, 1.1vw, 1.05rem); font-weight: 500; line-height: 1.4; letter-spacing: -.015em; color: var(--ink-2); text-decoration: none; transition: color .2s ease, border-color .2s ease; }
+.cs-subnav a span { display: block; margin-bottom: 4px; font-family: var(--mono); font-size: .68rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.cs-subnav a:hover, .cs-subnav a.is-active { color: var(--ink); border-color: var(--accent); }
+[id^="edu-"] { scroll-margin-top: 120px; }
+@media (max-width: 720px) { .cs-subnav { display: none; } }
+
+/* Section headings: Inter, lighter weight */
+.cs-heading {
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+}

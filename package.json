@@ -1,0 +1,9 @@
+{
+  "name": "april-zhu-site-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local static recreation of april-zhu.com",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

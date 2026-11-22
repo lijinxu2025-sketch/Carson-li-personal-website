@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  --site-font: "Space Grotesk", Arial, sans-serif;
+  --font-sans: var(--site-font);
+  --font-mono: var(--site-font);
+  --mono: var(--site-font);
+}
+
+html,
+body,
+*,
+*::before,
+*::after,
+button,
+input,
+select,
+textarea {
+  font-family: var(--site-font) !important;
+}
+

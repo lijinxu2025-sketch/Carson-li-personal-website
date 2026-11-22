@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JINXU LI</title>
+<meta name="description" content="JINXU LI is a product architect — trained in architecture, now building complex digital products from 0 to 1 across DeFi, financial derivatives, and climate intelligence." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="JINXU LI" />
+<meta property="og:description" content="JINXU LI is an architectural thinker turned full-stack product designer. She designs complex digital systems — DeFi, financial derivatives, climate intelligence, and data-heavy products — into clear, usable experiences." />
+<meta property="og:image" content="https://april-zhu.com/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="JINXU LI" />
+<meta name="twitter:image" content="https://april-zhu.com/og.png" />
+<link rel="stylesheet" href="style.css" />
+<!-- Vercel Web Analytics -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<link rel="stylesheet" href="/space-grotesk.css" data-site-font="space-grotesk"><link rel="stylesheet" href="/hero-resume.css" data-resume-hero="true"></head>
+<body>
+<!-- ============================================================
+       NAV — hidden over the cinematic hero, reveals after scroll.
+       Does not touch the hero's internals or scroll behavior.
+  ============================================================= -->
+  <header class="site-nav" data-nav>
+    <a class="nav-mark" href="#top"><img src="assets/jinxu-li-logo-transparent.svg" alt="JINXU LI" /></a>
+    <nav class="nav-links">
+      <a href="#work">Featured</a>
+      <a href="#approach">Approach</a>
+      <a href="#ai-tools">AI &amp; Tools</a>
+      <a href="#archive">Brand Work</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-about" href="/about" target="_blank" rel="noopener">About Me</a>
+    </nav>
+    <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- ============================================================
+       HERO — APPROVED. DO NOT MODIFY. 100% unchanged.
+  ============================================================= -->
+  <section class="hero-wrapper" aria-labelledby="profile-hero-title">
+    <div class="hero-sticky profile-hero">
+      <div class="profile-hero__layout">
+        <div class="profile-hero__copy">
+          <p class="profile-hero__folio"><span>JINXU LI / PRODUCT DESIGNER</span><span>PORTFOLIO 2025—2026</span></p>
+          <h1 id="profile-hero-title"><em>JINXU LI</em> is a product designer working across UI/UX, visual systems, and AI-driven workflows. Currently shaping <span class="profile-hero__focus">0→1 fintech products.</span></h1>
+        </div>
+
+        <aside class="profile-hero__bio" aria-label="Profile summary">
+          <p>With 4+ years of experience, I turn complex product logic into clear, polished, and buildable experiences. My work spans 5+ financial products, cross-chain systems, and more than 400 visual assets.</p>
+          <p>I currently design at Swarms AI in the USA, following product and visual design roles at Shanghai Smart Gwei Tech and Tongji University Design Institute.</p>
+        </aside>
+
+        <div class="profile-hero__note">
+          <p>M.Des in Architecture &amp; Design, Shanghai University, 2019—2022. GPA 86.5 / 100 · First-class Graduate Scholarship · CET-6.</p>
+        </div>
+
+        <span class="profile-hero__note-mark" aria-hidden="true">✳</span>
+
+        <figure class="profile-hero__portrait" data-tech-scan>
+          <img src="assets/jinxu-li-portrait.png" alt="Portrait of JINXU LI" width="1811" height="2316" decoding="async" fetchpriority="high">
+          <canvas class="profile-hero__scan" aria-hidden="true"></canvas>
+          <figcaption><span>LI JINXU</span><span>UI · VISUAL · AI · WEB3</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END HERO ===================== -->
+
+
+  <!-- ============================================================
+       02 — POSITIONING INTRO
+  ============================================================= -->
+  <section class="intro" id="intro">
+    <div class="shell">
+      <div class="intro-inner">
+        <div class="intro-main">
+          <h2 class="intro-greeting"><span class="intro-greeting-text">Hi! I&rsquo;m Carson Li.</span></h2>
+          <div class="intro-body">
+            <p>Product designer with 4+ years of experience. I turn complex ideas into clear, polished digital products — from early concepts to interfaces ready to build.</p>
+            <p>With a background in architecture and design, I create digital experiences across AI and fintech, combining structured thinking with a strong eye for visual detail.</p>
+            <p>My work spans end-to-end UI/UX, design systems, brand visuals, and AI-assisted prototyping — bringing product thinking and visual craft together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       03 — SELECTED SYSTEMS / FLAGSHIP PROJECTS
+  ============================================================= -->
+  <section class="section flagships" id="work">
+    <div class="shell">
+      <header class="section-head">
+        <h2 class="section-title">Selected Systems I&rsquo;ve Built</h2>
+        <p class="section-sub">Three 0-to-1 products where I led design from concept to shipped reality — translating complex underlying systems into clear product experiences.</p>
+      </header>
+
+      <div class="flag-layout">
+        <!-- sticky project menu -->
+        <aside class="flag-nav">
+          <ol class="flag-menu">
+            <li><a href="#flag-swarms" data-flag="flag-swarms">Swarms Marketplace</a></li>
+            <li><a href="#flag-biturbo" data-flag="flag-biturbo">Biturbo</a></li>
+            <li><a href="#flag-lushair" data-flag="flag-lushair">Lushair</a></li>
+          </ol>
+        </aside>
+
+        <!-- scrolling project stream -->
+        <div class="flag-stream">
+
+          <!-- Project 1 — Swarms Marketplace -->
+          <article class="flag reveal" id="flag-swarms">
+            <div class="flag-media flag-cover">
+              <img class="flag-cover-bg" src="assets/projects/swarms-marketplace-cover.png" alt="Swarms Marketplace displayed on a laptop" loading="lazy" decoding="async" />
+            </div>
+            <div class="flag-info">
+              <div class="flag-lead">
+                <h3 class="flag-name">Swarms Marketplace</h3>
+                <p class="flag-label">AI Agent Marketplace &middot; Product Platform</p>
+                <p class="flag-copy">I design the Swarms Marketplace experience end to end — helping people discover, evaluate, buy, sell, and launch AI agents, prompts, tools, MCP servers, and skills. I turn a fast-growing agent economy into clear search, listing, publishing, and monetization flows, bringing product clarity and a bold visual system to every step.</p>
+                <a class="cta" href="/swarms-marketplace">View case study <span class="arrow">&#8594;</span></a>
+              </div>
+              <div class="flag-side">
+                <p class="meta-val">Role</p>
+                <ul class="scope-tags">
+                  <li>Product Design</li>
+                  <li>UIUX</li>
+                  <li>Branding</li>
+                  <li>Product Logic</li>
+                </ul>
+                <ul class="stats side-gap">
+                  <li class="stat"><span class="stat-num">6,000+</span><span class="stat-cap">Agents and prompts listed</span></li>
+                  <li class="stat"><span class="stat-num">90%</span><span class="stat-cap">Seller payout</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 — Biturbo -->
+          <article class="flag reveal" id="flag-biturbo">
+            <div class="flag-media flag-cover">
+              <img class="flag-cover-bg" src="assets/projects/biturbo-cover.png" alt="Biturbo hybrid EVM blockchain displayed on a laptop" loading="lazy" decoding="async" />
+            </div>
+            <div class="flag-info">
+              <div class="flag-lead">
+                <h3 class="flag-name">Biturbo</h3>
+                <p class="flag-label">Hybrid EVM Blockchain &middot; Cross-chain DeFi</p>
+                <p class="flag-copy">I led Biturbo&rsquo;s 0-to-1 product and visual design — turning a hybrid EVM blockchain that combines Bitcoin&rsquo;s PoT security with Ethereum&rsquo;s PoL liquidity efficiency into a clear cross-chain DeFi experience for liquidity provision, stablecoin minting, and cross-chain services.</p>
+                <a class="cta" href="/biturbo">View case study <span class="arrow">&#8594;</span></a>
+              </div>
+              <div class="flag-side">
+                <p class="meta-val">Role</p>
+                <ul class="scope-tags">
+                  <li>Product Design</li>
+                  <li>UIUX</li>
+                  <li>Branding</li>
+                  <li>Product Logic</li>
+                  <li>Project Management</li>
+                </ul>
+                <ul class="stats side-gap">
+                  <li class="stat"><span class="stat-num">BTC + ETH</span><span class="stat-cap">Hybrid EVM foundation</span></li>
+                  <li class="stat"><span class="stat-num">0 <span class="stat-arrow">&rarr;</span> 1</span><span class="stat-cap">Cross-chain DeFi initiative</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 — Lushair -->
+          <article class="flag reveal" id="flag-lushair">
+            <div class="flag-media flag-cover">
+              <img class="flag-cover-bg" src="assets/projects/lushair-cover.png" alt="Lushair website redesign displayed on a laptop" loading="lazy" decoding="async" />
+            </div>
+            <div class="flag-info">
+              <div class="flag-lead">
+                <h3 class="flag-name">Lushair</h3>
+                <p class="flag-label">Smart Hardware &middot; Web / App Redesign</p>
+                <p class="flag-copy">Commissioned by a Zhejiang University team, I redesigned Lushair&rsquo;s website and mobile product experience — refreshing the visual system and optimizing key functions to make this smart hair-health hardware clearer, easier to use, and more trustworthy.</p>
+              </div>
+              <div class="flag-side">
+                <p class="meta-val">Role</p>
+                <ul class="scope-tags">
+                  <li>Product Design</li>
+                  <li>UI/UX</li>
+                  <li>Brand Visual</li>
+                </ul>
+                <p class="meta-key side-gap">Commissioned By</p>
+                <ul class="client-list">
+                  <li>Zhejiang University Team</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       04 — APPROACH
+  ============================================================= -->
+  <section class="approach-pin" id="approach" data-approach-pin>
+    <div class="approach-sticky">
+      <div class="approach-track">
+        <div class="approach-intro">
+          <h2 class="section-title">End-to-End<br>Design Leadership</h2>
+          <p class="approach-copy">I work across product direction, UX architecture, interface design, brand systems and delivery — keeping the product coherent from the first decision to the final launch.</p>
+        </div>
+        <article class="step">
+          <div class="step-iso" data-iso-fig="strategy" aria-hidden="true"></div>
+          <p class="step-no">01<span class="step-dot">.</span></p>
+          <div class="step-foot">
+            <h3 class="step-title">Product Strategy &amp; Direction</h3>
+            <p class="step-copy">I define what to build and why — turning ambiguous goals into clear direction.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-iso" data-iso-fig="architecture" aria-hidden="true"></div>
+          <p class="step-no">02<span class="step-dot">.</span></p>
+          <div class="step-foot">
+            <h3 class="step-title">Experience Architecture</h3>
+            <p class="step-copy">I turn complex systems into flows and patterns people can navigate with ease.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-iso" data-iso-fig="systems" aria-hidden="true"></div>
+          <p class="step-no">03<span class="step-dot">.</span></p>
+          <div class="step-foot">
+            <h3 class="step-title">Brand &amp; Interface Systems</h3>
+            <p class="step-copy">I shape how the product looks, feels, and speaks — identity to interface.</p>
+          </div>
+        </article>
+        <article class="step">
+          <div class="step-iso" data-iso-fig="delivery" aria-hidden="true"></div>
+          <p class="step-no">04<span class="step-dot">.</span></p>
+          <div class="step-foot">
+            <h3 class="step-title">Delivery &amp; Product Ownership</h3>
+            <p class="step-copy">I take work from first concept to shipped product, hand in hand with engineering.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       07 — AI & TOOLS (Claude skills + tools built for real teams)
+  ============================================================= -->
+  <section class="section ai-tools" id="ai-tools">
+    <div class="shell">
+      <header class="section-head reveal">
+        <h2 class="section-title">AI &amp; Tools</h2>
+        <p class="section-sub">Claude skills I design and share, and the tools I build to make design faster for clients, teams and everyday users.</p>
+      </header>
+
+      <div class="lib-group reveal">
+        <h3 class="lib-group-title">AI Skills</h3>
+      </div>
+      <div class="lib-grid reveal">
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/indie-iso-glow.mp4" poster="assets/projects/indie-iso-glow-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Skill</span></p>
+            <h3 class="indie-name">Iso Glow</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">Isometric line drawings that light up: name an object or a building and get one playable HTML figure where everything live glows.</p>
+            <p class="indie-foot lib-demo-links">
+              <a class="indie-link" href="https://isoglow.dev/" target="_blank" rel="noopener">Get the skill <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+              <span class="lib-demo-list">Demos:
+                <a href="https://iso-figures.vercel.app/" target="_blank" rel="noopener">Figures</a>
+                <a href="https://iso-cities.vercel.app/" target="_blank" rel="noopener">Cities</a>
+                <a href="https://iso-3d-wine.vercel.app/" target="_blank" rel="noopener">3D</a>
+                <a href="https://iso-sounds.vercel.app/" target="_blank" rel="noopener">Sounds</a>
+              </span>
+            </p>
+          </div>
+        </article>
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/indie-playable.mp4" poster="assets/projects/indie-playable-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Skill</span></p>
+            <h3 class="indie-name">Playable</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">One image of a robot, or any rigged 3D model, becomes a character you drive in the browser: walk, run, jump and light it up.</p>
+            <p class="indie-foot lib-demo-links">
+              <a class="indie-link" href="https://april-zhu.com/playable" target="_blank" rel="noopener">Get the skill <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+              <span class="lib-demo-list">Demo:
+                <a href="https://april-zhu.com/playable-demo" target="_blank" rel="noopener">Five robots</a>
+              </span>
+            </p>
+          </div>
+        </article>
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/indie-shipwright.mp4" poster="assets/projects/indie-shipwright-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Demo</span></p>
+            <h3 class="indie-name">Shipwright</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">A parametric 1800s warship drawn from numbers: slide the hull, gun decks, masts and sails, randomise a new design, orbit it and export it as .glb.</p>
+            <p class="indie-foot">
+              <a class="indie-link" href="https://april-zhu.com/shipwright" target="_blank" rel="noopener">Try it <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+            </p>
+          </div>
+        </article>
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/indie-robots.mp4" poster="assets/projects/indie-robots-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Demo</span></p>
+            <h3 class="indie-name">Robots</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">3D robots that watch your cursor, or mirror your body, hands and face through your camera. Strike a pose, restyle it live and share your build.</p>
+            <!-- link to april-zhu.com/robots disabled for now; restore when it is ready:
+            <p class="indie-foot">
+              <a class="indie-link" href="https://april-zhu.com/robots" target="_blank" rel="noopener">Try it <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+            </p>
+            -->
+          </div>
+        </article>
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/colorfigures-preview.mp4" poster="assets/projects/colorfigures-preview-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Skill</span></p>
+            <h3 class="indie-name">Colorfigures</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">Hand-inked, flat-coloured isometric objects you can play with.</p>
+            <p class="indie-foot indie-foot--two">
+              <a class="indie-link" href="https://april-zhu.com/colorfigures" target="_blank" rel="noopener">Get the skill <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+              <a class="indie-link" href="https://april-zhu.com/colorfigures-demo" target="_blank" rel="noopener">Try the demo <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+            </p>
+          </div>
+        </article>
+        <article class="indie-card indie-card--visual indie-card--video" tabindex="0">
+          <video class="indie-bg" src="assets/projects/indie-neon-diagrams.mp4" poster="assets/projects/indie-neon-diagrams-poster.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Skill</span></p>
+            <h3 class="indie-name">Neon Diagrams</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">Dark, interactive diagrams in one HTML file: teardowns, flows and charts with one accent colour.</p>
+            <!-- link to neon-diagrams.vercel.app disabled for now; restore when it is ready:
+            <p class="indie-foot">
+              <a class="indie-link" href="https://neon-diagrams.vercel.app/" target="_blank" rel="noopener">Get the skill <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
+            </p>
+            -->
+          </div>
+        </article>
+      </div>
+
+      <div class="lib-group reveal">
+        <h3 class="lib-group-title">Tools</h3>
+      </div>
+      <div class="lib-grid reveal">
+        <a class="indie-card indie-card--visual indie-card--link" href="https://renovet.co/" target="_blank" rel="noopener">
+          <div class="indie-bg" style="background-image:url('assets/projects/indie-renovet.jpg')" aria-hidden="true"></div>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Consumer Tool</span></p>
+            <h3 class="indie-name">RenoVet</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">Upload a renovation quote and an AI audits it against current market rates, flagging hidden markups and overcharges before you sign.</p>
+            <p class="indie-foot"><span class="indie-link">renovet.co <span aria-hidden="true">&#8599;&#xfe0e;</span></span></p>
+          </div>
+        </a>
+        <a class="indie-card indie-card--visual indie-card--link" href="https://pendle-canvas.vercel.app/" target="_blank" rel="noopener">
+          <div class="indie-bg" style="background-image:url('assets/projects/indie-pendle-canvas.jpg')" aria-hidden="true"></div>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Design Tooling</span></p>
+            <h3 class="indie-name">Pendle Canvas</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">A library of Pendle- and Boros-style vector assets: drag and drop your own illustrations, or let AI compose them on-brand.</p>
+            <p class="indie-foot"><span class="indie-link">pendle-canvas.vercel.app <span aria-hidden="true">&#8599;&#xfe0e;</span></span></p>
+          </div>
+        </a>
+        <a class="indie-card indie-card--visual indie-card--link" href="https://alphageo-studio.vercel.app/" target="_blank" rel="noopener">
+          <div class="indie-bg" style="background-image:url('assets/projects/indie-alphageo-studio.jpg')" aria-hidden="true"></div>
+          <div class="indie-mask" aria-hidden="true"></div>
+          <div class="indie-top">
+            <p class="indie-kicker"><span class="indie-tag">Design Tooling</span></p>
+            <h3 class="indie-name">AlphaGeo Studio</h3>
+          </div>
+          <div class="indie-details">
+            <p class="indie-desc">A branded social-image generator: pick a template, fill in the content, and export on-brand AlphaGeo posts and carousels as PNG.</p>
+            <p class="indie-foot"><span class="indie-link">alphageo-studio.vercel.app <span aria-hidden="true">&#8599;&#xfe0e;</span></span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       08 — BRAND & VISUAL DESIGN
+  ============================================================= -->
+  <section class="section archive" id="archive">
+    <div class="shell">
+      <header class="section-head reveal">
+        <h2 class="section-title">Brand &amp; Visual Design</h2>
+        <div class="section-sub archive-sub">
+          <p>Selected work across brand manuals, presentation decks, and visual IP systems.</p>
+          <p>I turn strategic ideas into clear visual languages — building systems that stay consistent, communicate with purpose, and scale across every touchpoint.</p>
+        </div>
+      </header>
+      <div class="archive-grid reveal">
+        <article class="arch-card">
+          <a class="arch-card-link" href="/brand-manual">
+            <div class="arch-media"><img src="assets/projects/brand-manual-cover.png" alt="Brand Manual — Swarms brand presentation cover" loading="lazy" decoding="async" /></div>
+            <h3 class="arch-name">Brand Manual</h3>
+            <p class="arch-type">Brand System &middot; Guidelines</p>
+            <p class="arch-desc">Identity systems translated into practical guidelines for consistent use across digital, print, and product touchpoints.</p>
+          </a>
+        </article>
+        <article class="arch-card">
+          <a class="arch-card-link" href="/deck-design">
+            <div class="arch-media"><img src="assets/projects/deck-design-cover.png" alt="Swarms presentation deck design cover" loading="lazy" /></div>
+            <h3 class="arch-name">Deck Design</h3>
+            <p class="arch-type">Presentation &middot; Storytelling</p>
+            <p class="arch-desc">Clear, persuasive presentation systems that turn complex product, strategy, and fundraising narratives into visual stories.</p>
+          </a>
+        </article>
+        <article class="arch-card">
+          <a class="arch-card-link" href="/ip-design">
+            <div class="arch-media"><img src="assets/projects/ip-design-cover-v2.png" alt="IP Design — Swarms visual IP cover" loading="lazy" decoding="async" /></div>
+            <h3 class="arch-name">IP Design</h3>
+            <p class="arch-type">Character System &middot; Visual IP</p>
+            <p class="arch-desc">Distinctive character and visual IP systems designed to give brands a recognizable, flexible, and human voice.</p>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       09 — CONTACT
+  ============================================================= -->
+  <section class="section contact" id="contact">
+    <div class="shell">
+      <div class="contact-layout reveal">
+      <div class="contact-text">
+        <h2 class="contact-title"><span class="sr-only">Let&rsquo;s work together.</span><svg class="contact-sig hand-sig" viewBox="0 0 3710 968" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><mask id="sig-mask-contact" maskUnits="userSpaceOnUse" x="0" y="0" width="3710" height="968"><g class="hand-sig-strokes">
+<path d="M110 460L118 462" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.100s"/>
+<path d="M118 462L132 466" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.101s"/>
+<path d="M132 466L151 470" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.102s"/>
+<path d="M151 470L169 472" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.103s"/>
+<path d="M169 472L188 474" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.105s"/>
+<path d="M188 474L208 475" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.106s"/>
+<path d="M208 475L228 476" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.107s"/>
+<path d="M228 476L248 476" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.109s"/>
+<path d="M248 476L268 475" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.110s"/>
+<path d="M268 475L288 474" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.111s"/>
+<path d="M288 474L307 471" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.112s"/>
+<path d="M307 471L326 468" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.114s"/>
+<path d="M326 468L345 464" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.115s"/>
+<path d="M345 464L364 460" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.116s"/>
+<path d="M364 460L385 453" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.118s"/>
+<path d="M385 453L404 445" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.119s"/>
+<path d="M404 445L421 433" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.121s"/>
+<path d="M421 433L436 421" pathLength="100" stroke-width="44" style="--d:0.001s;--t:0.122s"/>
+<path d="M436 421L451 408" pathLength="100" stroke-width="50" style="--d:0.001s;--t:0.123s"/>
+<path d="M451 408L468 397" pathLength="100" stroke-width="50" style="--d:0.001s;--t:0.125s"/>
+<path d="M468 397L486 386" pathLength="100" stroke-width="43" style="--d:0.001s;--t:0.126s"/>
+<path d="M486 386L502 375" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.127s"/>
+<path d="M502 375L515 360" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.129s"/>
+<path d="M515 360L528 345" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.130s"/>
+<path d="M528 345L540 329" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.131s"/>
+<path d="M540 329L550 312" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.133s"/>
+<path d="M550 312L560 296" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.134s"/>
+<path d="M560 296L569 278" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.135s"/>
+<path d="M569 278L577 261" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.137s"/>
+<path d="M577 261L584 242" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.138s"/>
+<path d="M584 242L590 225" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.139s"/>
+<path d="M590 225L595 206" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.140s"/>
+<path d="M595 206L596 187" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.142s"/>
+<path d="M596 187L598 166" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.143s"/>
+<path d="M598 166L603 148" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.144s"/>
+<path d="M603 148L604 139" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.146s"/>
+<path d="M604 139L603 145" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.147s"/>
+<path d="M603 145L592 162" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.148s"/>
+<path d="M592 162L583 179" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.149s"/>
+<path d="M583 179L572 196" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.150s"/>
+<path d="M572 196L563 212" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.152s"/>
+<path d="M563 212L552 232" pathLength="100" stroke-width="32" style="--d:0.002s;--t:0.153s"/>
+<path d="M552 232L543 250" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.154s"/>
+<path d="M543 250L533 267" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.156s"/>
+<path d="M533 267L522 285" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.157s"/>
+<path d="M522 285L512 302" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.158s"/>
+<path d="M512 302L501 319" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.160s"/>
+<path d="M501 319L490 335" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.161s"/>
+<path d="M490 335L479 351" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.163s"/>
+<path d="M479 351L471 365" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.164s"/>
+<path d="M471 365L459 386" pathLength="100" stroke-width="32" style="--d:0.002s;--t:0.165s"/>
+<path d="M459 386L445 407" pathLength="100" stroke-width="46" style="--d:0.002s;--t:0.167s"/>
+<path d="M445 407L428 428" pathLength="100" stroke-width="46" style="--d:0.002s;--t:0.168s"/>
+<path d="M428 428L413 440" pathLength="100" stroke-width="39" style="--d:0.001s;--t:0.170s"/>
+<path d="M413 440L394 450" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.171s"/>
+<path d="M394 450L376 457" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.173s"/>
+<path d="M376 457L358 461" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.174s"/>
+<path d="M358 461L344 465" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.175s"/>
+<path d="M344 465L339 487" pathLength="100" stroke-width="30" style="--d:0.002s;--t:0.176s"/>
+<path d="M339 487L335 513" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.178s"/>
+<path d="M335 513L331 543" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.180s"/>
+<path d="M331 543L319 557" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.182s"/>
+<path d="M319 557L305 573" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.183s"/>
+<path d="M305 573L291 589" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.184s"/>
+<path d="M291 589L277 604" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.186s"/>
+<path d="M277 604L264 619" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.187s"/>
+<path d="M264 619L251 634" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.188s"/>
+<path d="M251 634L238 648" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.190s"/>
+<path d="M238 648L224 662" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.191s"/>
+<path d="M224 662L211 676" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.192s"/>
+<path d="M211 676L197 690" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.194s"/>
+<path d="M197 690L183 704" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.195s"/>
+<path d="M183 704L169 718" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.196s"/>
+<path d="M169 718L166 738" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.198s"/>
+<path d="M166 738L173 755" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.199s"/>
+<path d="M173 755L193 768" pathLength="100" stroke-width="24" style="--d:0.002s;--t:0.200s"/>
+<path d="M193 768L214 769" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.202s"/>
+<path d="M214 769L235 770" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.203s"/>
+<path d="M235 770L255 770" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.205s"/>
+<path d="M255 770L276 769" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.206s"/>
+<path d="M276 769L296 767" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.207s"/>
+<path d="M296 767L316 766" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.209s"/>
+<path d="M316 766L335 764" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.210s"/>
+<path d="M335 764L355 763" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.211s"/>
+<path d="M355 763L375 761" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.213s"/>
+<path d="M375 761L395 759" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.214s"/>
+<path d="M395 759L414 758" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.215s"/>
+<path d="M414 758L434 756" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.217s"/>
+<path d="M434 756L454 754" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.218s"/>
+<path d="M454 754L475 753" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.219s"/>
+<path d="M475 753L494 751" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.221s"/>
+<path d="M494 751L514 750" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.222s"/>
+<path d="M514 750L533 749" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.223s"/>
+<path d="M533 749L553 748" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.225s"/>
+<path d="M553 748L573 747" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.226s"/>
+<path d="M573 747L593 746" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.227s"/>
+<path d="M593 746L613 746" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.229s"/>
+<path d="M613 746L633 746" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.230s"/>
+<path d="M633 746L653 747" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.231s"/>
+<path d="M653 747L672 748" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.233s"/>
+<path d="M672 748L692 749" pathLength="100" stroke-width="25" style="--d:0.001s;--t:0.234s"/>
+<path d="M692 749L712 752" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.235s"/>
+<path d="M712 752L732 756" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.237s"/>
+<path d="M732 756L752 762" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.238s"/>
+<path d="M752 762L770 771" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.239s"/>
+<path d="M770 771L784 784" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.241s"/>
+<path d="M784 784L790 790" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.242s"/>
+<path d="M590 586L601 585" pathLength="100" stroke-width="42" style="--d:0.001s;--t:0.263s"/>
+<path d="M601 585L619 580" pathLength="100" stroke-width="42" style="--d:0.001s;--t:0.264s"/>
+<path d="M619 580L637 576" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.265s"/>
+<path d="M637 576L643 558" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.267s"/>
+<path d="M643 558L648 539" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.268s"/>
+<path d="M648 539L647 523" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.269s"/>
+<path d="M647 523L644 525" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.270s"/>
+<path d="M644 525L632 535" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.271s"/>
+<path d="M632 535L618 547" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.272s"/>
+<path d="M618 547L607 559" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.274s"/>
+<path d="M607 559L596 574" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.275s"/>
+<path d="M596 574L587 587" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.276s"/>
+<path d="M587 587L579 602" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.277s"/>
+<path d="M579 602L577 610" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.278s"/>
+<path d="M577 610L576 617" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.279s"/>
+<path d="M576 617L555 632" pathLength="100" stroke-width="26" style="--d:0.002s;--t:0.280s"/>
+<path d="M555 632L536 652" pathLength="100" stroke-width="30" style="--d:0.002s;--t:0.282s"/>
+<path d="M536 652L538 658" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.284s"/>
+<path d="M538 658L564 654" pathLength="100" stroke-width="30" style="--d:0.002s;--t:0.285s"/>
+<path d="M564 654L589 646" pathLength="100" stroke-width="22" style="--d:0.002s;--t:0.286s"/>
+<path d="M589 646L595 650" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.288s"/>
+<path d="M595 650L604 653" pathLength="100" stroke-width="25" style="--d:0.001s;--t:0.289s"/>
+<path d="M604 653L617 654" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.290s"/>
+<path d="M617 654L633 652" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.291s"/>
+<path d="M633 652L651 648" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.292s"/>
+<path d="M651 648L670 640" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.293s"/>
+<path d="M670 640L687 632" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.295s"/>
+<path d="M687 632L702 625" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.296s"/>
+<path d="M702 625L720 610" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.297s"/>
+<path d="M720 610L736 594" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.299s"/>
+<path d="M736 594L753 572" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.300s"/>
+<path d="M753 572L763 554" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.302s"/>
+<path d="M763 554L771 531" pathLength="100" stroke-width="29" style="--d:0.002s;--t:0.303s"/>
+<path d="M771 531L775 512" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.305s"/>
+<path d="M775 512L779 486" pathLength="100" stroke-width="14" style="--d:0.002s;--t:0.306s"/>
+<path d="M779 486L786 471" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.308s"/>
+<path d="M786 471L797 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.309s"/>
+<path d="M797 458L814 451" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.310s"/>
+<path d="M814 451L831 438" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.312s"/>
+<path d="M831 438L848 420" pathLength="100" stroke-width="32" style="--d:0.002s;--t:0.313s"/>
+<path d="M848 420L858 404" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.315s"/>
+<path d="M858 404L869 387" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.316s"/>
+<path d="M869 387L881 370" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.317s"/>
+<path d="M881 370L893 353" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.319s"/>
+<path d="M893 353L905 336" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.320s"/>
+<path d="M905 336L917 316" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.322s"/>
+<path d="M917 316L924 302" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.323s"/>
+<path d="M924 302L927 294" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.324s"/>
+<path d="M927 294L926 299" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.325s"/>
+<path d="M926 299L923 310" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.326s"/>
+<path d="M923 310L922 328" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.327s"/>
+<path d="M922 328L921 338" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.328s"/>
+<path d="M1006 461L995 460" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.349s"/>
+<path d="M995 460L974 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.350s"/>
+<path d="M974 458L954 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.352s"/>
+<path d="M954 458L934 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.353s"/>
+<path d="M934 458L914 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.354s"/>
+<path d="M914 458L894 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.356s"/>
+<path d="M894 458L874 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.357s"/>
+<path d="M874 458L854 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.358s"/>
+<path d="M854 458L834 462" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.360s"/>
+<path d="M834 462L814 462" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.361s"/>
+<path d="M814 462L793 462" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.363s"/>
+<path d="M793 462L774 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.364s"/>
+<path d="M774 458L753 463" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.365s"/>
+<path d="M753 463L734 467" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.367s"/>
+<path d="M734 467L714 468" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.368s"/>
+<path d="M714 468L695 462" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.369s"/>
+<path d="M695 462L674 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.371s"/>
+<path d="M674 459L654 458" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.372s"/>
+<path d="M654 458L647 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.373s"/>
+<path d="M647 458L653 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.374s"/>
+<path d="M653 458L673 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.375s"/>
+<path d="M673 459L692 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.377s"/>
+<path d="M692 459L711 465" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.378s"/>
+<path d="M711 465L730 472" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.379s"/>
+<path d="M730 472L750 483" pathLength="100" stroke-width="13" style="--d:0.001s;--t:0.381s"/>
+<path d="M750 483L765 493" pathLength="100" stroke-width="12" style="--d:0.001s;--t:0.382s"/>
+<path d="M765 493L773 510" pathLength="100" stroke-width="16" style="--d:0.001s;--t:0.383s"/>
+<path d="M773 510L773 530" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.385s"/>
+<path d="M773 530L766 550" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.386s"/>
+<path d="M766 550L756 568" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.387s"/>
+<path d="M756 568L746 585" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.389s"/>
+<path d="M746 585L736 602" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.390s"/>
+<path d="M736 602L728 620" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.391s"/>
+<path d="M728 620L723 637" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.393s"/>
+<path d="M723 637L723 652" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.394s"/>
+<path d="M723 652L723 658" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.395s"/>
+<path d="M723 658L726 658" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.396s"/>
+<path d="M725 661L727 662" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.397s"/>
+<path d="M727 662L735 663" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.398s"/>
+<path d="M735 663L747 662" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.399s"/>
+<path d="M747 662L763 657" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.400s"/>
+<path d="M763 657L779 650" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.401s"/>
+<path d="M779 650L796 640" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.402s"/>
+<path d="M796 640L811 630" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.404s"/>
+<path d="M811 630L827 618" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.405s"/>
+<path d="M827 618L842 607" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.406s"/>
+<path d="M842 607L858 594" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.407s"/>
+<path d="M858 594L870 584" pathLength="100" stroke-width="25" style="--d:0.001s;--t:0.409s"/>
+<path d="M870 584L878 577" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.410s"/>
+<path d="M878 577L881 574" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.411s"/>
+<path d="M986 589L993 582" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.432s"/>
+<path d="M993 582L1007 570" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.433s"/>
+<path d="M1007 570L1021 556" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.434s"/>
+<path d="M1021 556L1035 542" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.435s"/>
+<path d="M1035 542L1046 530" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.437s"/>
+<path d="M1046 530L1050 525" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.438s"/>
+<path d="M1050 525L1046 530" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.439s"/>
+<path d="M1046 530L1036 542" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.440s"/>
+<path d="M1036 542L1022 556" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.441s"/>
+<path d="M1022 556L1008 569" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.442s"/>
+<path d="M1008 569L994 582" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.444s"/>
+<path d="M994 582L998 602" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.445s"/>
+<path d="M998 602L1004 626" pathLength="100" stroke-width="26" style="--d:0.002s;--t:0.446s"/>
+<path d="M1004 626L1012 648" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.448s"/>
+<path d="M1012 648L1002 660" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.449s"/>
+<path d="M1002 660L990 663" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.451s"/>
+<path d="M990 663L975 659" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.452s"/>
+<path d="M975 659L966 646" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.453s"/>
+<path d="M966 646L962 637" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.454s"/>
+<path d="M1312 576L1316 570" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.475s"/>
+<path d="M1316 570L1326 558" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.476s"/>
+<path d="M1326 558L1330 553" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.477s"/>
+<path d="M1330 553L1326 559" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.478s"/>
+<path d="M1326 559L1315 575" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.479s"/>
+<path d="M1315 575L1305 592" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.480s"/>
+<path d="M1305 592L1297 610" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.481s"/>
+<path d="M1297 610L1291 631" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.483s"/>
+<path d="M1291 631L1291 647" pathLength="100" stroke-width="21" style="--d:0.001s;--t:0.484s"/>
+<path d="M1291 647L1297 657" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.485s"/>
+<path d="M1297 657L1309 655" pathLength="100" stroke-width="25" style="--d:0.001s;--t:0.486s"/>
+<path d="M1309 655L1324 648" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.487s"/>
+<path d="M1324 648L1339 636" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.488s"/>
+<path d="M1339 636L1354 621" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.490s"/>
+<path d="M1354 621L1366 605" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.491s"/>
+<path d="M1366 605L1377 588" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.492s"/>
+<path d="M1377 588L1381 581" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.494s"/>
+<path d="M1381 581L1379 585" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.495s"/>
+<path d="M1379 585L1373 604" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.496s"/>
+<path d="M1373 604L1371 625" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.497s"/>
+<path d="M1371 625L1377 643" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.498s"/>
+<path d="M1377 643L1395 646" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.500s"/>
+<path d="M1395 646L1416 638" pathLength="100" stroke-width="34" style="--d:0.002s;--t:0.501s"/>
+<path d="M1416 638L1436 623" pathLength="100" stroke-width="34" style="--d:0.002s;--t:0.502s"/>
+<path d="M1436 623L1448 608" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.504s"/>
+<path d="M1448 608L1460 591" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.505s"/>
+<path d="M1460 591L1471 574" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.507s"/>
+<path d="M1471 574L1482 557" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.508s"/>
+<path d="M1482 557L1491 542" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.510s"/>
+<path d="M1491 542L1495 532" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.511s"/>
+<path d="M1495 532L1496 527" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.512s"/>
+<path d="M1496 527L1499 527" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.513s"/>
+<path d="M1508 606L1517 604" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.534s"/>
+<path d="M1517 604L1533 598" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.535s"/>
+<path d="M1533 598L1549 587" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.536s"/>
+<path d="M1549 587L1555 581" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.537s"/>
+<path d="M1555 581L1553 584" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.538s"/>
+<path d="M1553 584L1545 600" pathLength="100" stroke-width="42" style="--d:0.001s;--t:0.539s"/>
+<path d="M1545 600L1539 619" pathLength="100" stroke-width="42" style="--d:0.001s;--t:0.540s"/>
+<path d="M1539 619L1538 639" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.542s"/>
+<path d="M1538 639L1540 654" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.543s"/>
+<path d="M1540 654L1546 663" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.544s"/>
+<path d="M1546 663L1558 666" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.545s"/>
+<path d="M1558 666L1575 660" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.546s"/>
+<path d="M1575 660L1592 649" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.547s"/>
+<path d="M1592 649L1606 633" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.549s"/>
+<path d="M1606 633L1615 618" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.550s"/>
+<path d="M1615 618L1627 603" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.551s"/>
+<path d="M1627 603L1641 595" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.552s"/>
+<path d="M1641 595L1655 592" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.554s"/>
+<path d="M1655 592L1649 577" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.555s"/>
+<path d="M1649 577L1638 557" pathLength="100" stroke-width="24" style="--d:0.002s;--t:0.556s"/>
+<path d="M1638 557L1623 536" pathLength="100" stroke-width="24" style="--d:0.002s;--t:0.557s"/>
+<path d="M1623 536L1620 528" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.559s"/>
+<path d="M1620 528L1616 523" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.560s"/>
+<path d="M1616 523L1607 529" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.561s"/>
+<path d="M1607 529L1611 542" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.562s"/>
+<path d="M1611 542L1617 557" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.563s"/>
+<path d="M1617 557L1638 573" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.564s"/>
+<path d="M1638 573L1654 583" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.566s"/>
+<path d="M1654 583L1681 588" pathLength="100" stroke-width="26" style="--d:0.002s;--t:0.567s"/>
+<path d="M1681 588L1702 579" pathLength="100" stroke-width="40" style="--d:0.001s;--t:0.569s"/>
+<path d="M1702 579L1718 565" pathLength="100" stroke-width="40" style="--d:0.001s;--t:0.570s"/>
+<path d="M1718 565L1727 548" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.572s"/>
+<path d="M1727 548L1734 534" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.573s"/>
+<path d="M1734 534L1738 528" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.574s"/>
+<path d="M1738 528L1734 533" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.575s"/>
+<path d="M1734 533L1727 549" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.576s"/>
+<path d="M1727 549L1718 566" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.577s"/>
+<path d="M1718 566L1709 580" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.579s"/>
+<path d="M1709 580L1697 595" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.580s"/>
+<path d="M1697 595L1685 612" pathLength="100" stroke-width="40" style="--d:0.001s;--t:0.581s"/>
+<path d="M1685 612L1674 631" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.582s"/>
+<path d="M1674 631L1666 650" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.584s"/>
+<path d="M1666 650L1661 663" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.585s"/>
+<path d="M1661 663L1660 671" pathLength="100" stroke-width="15" style="--d:0.001s;--t:0.586s"/>
+<path d="M1660 671L1660 665" pathLength="100" stroke-width="15" style="--d:0.001s;--t:0.587s"/>
+<path d="M1660 665L1664 653" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.588s"/>
+<path d="M1664 653L1671 635" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.589s"/>
+<path d="M1671 635L1680 619" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.591s"/>
+<path d="M1680 619L1692 602" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.592s"/>
+<path d="M1692 602L1709 586" pathLength="100" stroke-width="41" style="--d:0.002s;--t:0.593s"/>
+<path d="M1709 586L1729 574" pathLength="100" stroke-width="41" style="--d:0.002s;--t:0.595s"/>
+<path d="M1729 574L1748 567" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.596s"/>
+<path d="M1748 567L1763 563" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.598s"/>
+<path d="M1763 563L1775 564" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.599s"/>
+<path d="M1775 564L1785 570" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.600s"/>
+<path d="M1785 570L1790 575" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.601s"/>
+<path d="M2008 349L2002 357" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.622s"/>
+<path d="M2002 357L1992 374" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.623s"/>
+<path d="M1992 374L1981 390" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.624s"/>
+<path d="M1981 390L1970 407" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.625s"/>
+<path d="M1970 407L1960 424" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.627s"/>
+<path d="M1960 424L1949 440" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.628s"/>
+<path d="M1949 440L1938 457" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.629s"/>
+<path d="M1938 457L1939 482" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.631s"/>
+<path d="M1939 482L1937 506" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.632s"/>
+<path d="M1937 506L1934 529" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.634s"/>
+<path d="M1934 529L1917 539" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.636s"/>
+<path d="M1917 539L1901 551" pathLength="100" stroke-width="39" style="--d:0.001s;--t:0.637s"/>
+<path d="M1901 551L1885 563" pathLength="100" stroke-width="54" style="--d:0.001s;--t:0.638s"/>
+<path d="M1885 563L1871 577" pathLength="100" stroke-width="54" style="--d:0.001s;--t:0.640s"/>
+<path d="M1871 577L1857 593" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.641s"/>
+<path d="M1857 593L1845 607" pathLength="100" stroke-width="44" style="--d:0.001s;--t:0.642s"/>
+<path d="M1845 607L1834 624" pathLength="100" stroke-width="39" style="--d:0.001s;--t:0.644s"/>
+<path d="M1834 624L1822 640" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.645s"/>
+<path d="M1822 640L1811 656" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.646s"/>
+<path d="M1811 656L1803 672" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.648s"/>
+<path d="M1803 672L1800 677" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.649s"/>
+<path d="M1800 677L1804 671" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.650s"/>
+<path d="M1804 671L1812 656" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.651s"/>
+<path d="M1812 656L1823 639" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.652s"/>
+<path d="M1823 639L1835 623" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.653s"/>
+<path d="M1835 623L1844 609" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.655s"/>
+<path d="M1844 609L1858 593" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.656s"/>
+<path d="M1858 593L1871 580" pathLength="100" stroke-width="44" style="--d:0.001s;--t:0.657s"/>
+<path d="M1871 580L1889 563" pathLength="100" stroke-width="53" style="--d:0.002s;--t:0.658s"/>
+<path d="M1889 563L1905 551" pathLength="100" stroke-width="53" style="--d:0.001s;--t:0.660s"/>
+<path d="M1905 551L1923 537" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.661s"/>
+<path d="M1923 537L1938 527" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.663s"/>
+<path d="M1938 527L1955 515" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.664s"/>
+<path d="M1955 515L1972 505" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.666s"/>
+<path d="M1972 505L1989 498" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.667s"/>
+<path d="M1989 498L2001 495" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.668s"/>
+<path d="M2001 495L2006 495" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.669s"/>
+<path d="M2006 495L2002 495" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.670s"/>
+<path d="M2002 495L1991 498" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.671s"/>
+<path d="M1991 498L1974 504" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.672s"/>
+<path d="M1974 504L1956 515" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.673s"/>
+<path d="M1956 515L1939 526" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.675s"/>
+<path d="M1939 526L1924 537" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.676s"/>
+<path d="M1924 537L1907 555" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.677s"/>
+<path d="M1907 555L1896 569" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.679s"/>
+<path d="M1896 569L1879 584" pathLength="100" stroke-width="38" style="--d:0.002s;--t:0.680s"/>
+<path d="M1879 584L1864 593" pathLength="100" stroke-width="46" style="--d:0.001s;--t:0.682s"/>
+<path d="M1864 593L1846 608" pathLength="100" stroke-width="46" style="--d:0.002s;--t:0.683s"/>
+<path d="M1846 608L1839 618" pathLength="100" stroke-width="40" style="--d:0.001s;--t:0.684s"/>
+<path d="M1839 618L1856 626" pathLength="100" stroke-width="39" style="--d:0.001s;--t:0.685s"/>
+<path d="M1856 626L1879 633" pathLength="100" stroke-width="39" style="--d:0.002s;--t:0.687s"/>
+<path d="M1879 633L1906 645" pathLength="100" stroke-width="20" style="--d:0.002s;--t:0.688s"/>
+<path d="M1906 645L1921 652" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.690s"/>
+<path d="M1921 652L1942 653" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.691s"/>
+<path d="M1942 653L1965 647" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.693s"/>
+<path d="M1965 647L1984 637" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.694s"/>
+<path d="M1984 637L2002 625" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.696s"/>
+<path d="M2002 625L2018 613" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.697s"/>
+<path d="M2018 613L2034 601" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.699s"/>
+<path d="M2034 601L2049 589" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.700s"/>
+<path d="M2049 589L2056 584" pathLength="100" stroke-width="23" style="--d:0.001s;--t:0.701s"/>
+<path d="M2517 459L2507 459" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.722s"/>
+<path d="M2507 459L2486 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.723s"/>
+<path d="M2486 458L2466 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.725s"/>
+<path d="M2466 458L2446 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.726s"/>
+<path d="M2446 458L2426 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.727s"/>
+<path d="M2426 458L2406 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.729s"/>
+<path d="M2406 458L2386 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.730s"/>
+<path d="M2386 458L2366 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.731s"/>
+<path d="M2366 458L2346 458" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.733s"/>
+<path d="M2346 458L2326 458" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.734s"/>
+<path d="M2326 458L2307 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.735s"/>
+<path d="M2307 458L2287 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.737s"/>
+<path d="M2287 458L2267 457" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.738s"/>
+<path d="M2267 457L2248 458" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.739s"/>
+<path d="M2248 458L2228 459" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.741s"/>
+<path d="M2228 459L2209 459" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.742s"/>
+<path d="M2209 459L2187 458" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.743s"/>
+<path d="M2187 458L2167 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.745s"/>
+<path d="M2167 458L2160 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.746s"/>
+<path d="M2160 458L2166 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.747s"/>
+<path d="M2166 458L2185 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.748s"/>
+<path d="M2185 458L2204 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.749s"/>
+<path d="M2204 459L2224 464" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.751s"/>
+<path d="M2224 464L2244 471" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.752s"/>
+<path d="M2244 471L2265 481" pathLength="100" stroke-width="15" style="--d:0.002s;--t:0.753s"/>
+<path d="M2265 481L2283 491" pathLength="100" stroke-width="12" style="--d:0.001s;--t:0.755s"/>
+<path d="M2283 491L2296 501" pathLength="100" stroke-width="16" style="--d:0.001s;--t:0.756s"/>
+<path d="M2296 501L2309 500" pathLength="100" stroke-width="20" style="--d:0.001s;--t:0.757s"/>
+<path d="M2309 500L2321 487" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.758s"/>
+<path d="M2321 487L2335 471" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.760s"/>
+<path d="M2335 471L2346 454" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.761s"/>
+<path d="M2346 454L2358 439" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.762s"/>
+<path d="M2358 439L2370 421" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.764s"/>
+<path d="M2370 421L2381 404" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.765s"/>
+<path d="M2381 404L2392 387" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.767s"/>
+<path d="M2392 387L2403 371" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.768s"/>
+<path d="M2403 371L2415 355" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.769s"/>
+<path d="M2415 355L2425 339" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.771s"/>
+<path d="M2425 339L2437 323" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.772s"/>
+<path d="M2437 323L2441 317" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.773s"/>
+<path d="M2441 317L2438 322" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.774s"/>
+<path d="M2438 322L2427 337" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.775s"/>
+<path d="M2427 337L2415 354" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.776s"/>
+<path d="M2415 354L2404 370" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.778s"/>
+<path d="M2404 370L2392 387" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.779s"/>
+<path d="M2392 387L2381 404" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.780s"/>
+<path d="M2381 404L2370 421" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.782s"/>
+<path d="M2370 421L2361 438" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.783s"/>
+<path d="M2361 438L2349 454" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.784s"/>
+<path d="M2349 454L2338 471" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.786s"/>
+<path d="M2338 471L2325 487" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.787s"/>
+<path d="M2325 487L2315 504" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.789s"/>
+<path d="M2315 504L2305 521" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.790s"/>
+<path d="M2305 521L2294 538" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.791s"/>
+<path d="M2294 538L2284 556" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.793s"/>
+<path d="M2284 556L2274 573" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.794s"/>
+<path d="M2274 573L2265 590" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.795s"/>
+<path d="M2265 590L2257 607" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.797s"/>
+<path d="M2257 607L2250 624" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.798s"/>
+<path d="M2250 624L2246 640" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.799s"/>
+<path d="M2246 640L2245 652" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.800s"/>
+<path d="M2245 652L2245 659" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.801s"/>
+<path d="M2245 659L2248 661" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.802s"/>
+<path d="M2248 661L2257 662" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.803s"/>
+<path d="M2257 662L2273 659" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.804s"/>
+<path d="M2273 659L2292 653" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.805s"/>
+<path d="M2292 653L2311 643" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.807s"/>
+<path d="M2311 643L2328 632" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.808s"/>
+<path d="M2328 632L2345 620" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.809s"/>
+<path d="M2345 620L2362 609" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.811s"/>
+<path d="M2362 609L2377 601" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.812s"/>
+<path d="M2377 601L2393 590" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.813s"/>
+<path d="M2393 590L2399 586" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.815s"/>
+<path d="M2399 586L2399 590" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.816s"/>
+<path d="M2399 590L2391 607" pathLength="100" stroke-width="37" style="--d:0.001s;--t:0.817s"/>
+<path d="M2391 607L2387 625" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.818s"/>
+<path d="M2387 625L2386 641" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.819s"/>
+<path d="M2386 641L2389 654" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.820s"/>
+<path d="M2389 654L2397 664" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.821s"/>
+<path d="M2397 664L2409 667" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.822s"/>
+<path d="M2409 667L2422 665" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.823s"/>
+<path d="M2422 665L2435 657" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.824s"/>
+<path d="M2435 657L2446 645" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.825s"/>
+<path d="M2446 645L2457 631" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.826s"/>
+<path d="M2457 631L2470 613" pathLength="100" stroke-width="32" style="--d:0.002s;--t:0.828s"/>
+<path d="M2470 613L2482 599" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.829s"/>
+<path d="M2482 599L2486 582" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.830s"/>
+<path d="M2486 582L2482 567" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.831s"/>
+<path d="M2482 567L2475 548" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.832s"/>
+<path d="M2475 548L2471 534" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.834s"/>
+<path d="M2471 534L2464 524" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.835s"/>
+<path d="M2464 524L2454 521" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.836s"/>
+<path d="M2454 521L2447 529" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.837s"/>
+<path d="M2447 529L2448 545" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.838s"/>
+<path d="M2448 545L2459 560" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.839s"/>
+<path d="M2459 560L2469 568" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.840s"/>
+<path d="M2469 568L2491 576" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.841s"/>
+<path d="M2491 576L2516 581" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.843s"/>
+<path d="M2516 581L2545 583" pathLength="100" stroke-width="36" style="--d:0.002s;--t:0.844s"/>
+<path d="M2545 583L2566 573" pathLength="100" stroke-width="36" style="--d:0.002s;--t:0.846s"/>
+<path d="M2566 573L2580 564" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.848s"/>
+<path d="M2580 564L2595 559" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.849s"/>
+<path d="M2595 559L2599 557" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.850s"/>
+<path d="M2599 557L2595 559" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.851s"/>
+<path d="M2595 559L2581 563" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.852s"/>
+<path d="M2581 563L2568 571" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.853s"/>
+<path d="M2568 571L2549 581" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.854s"/>
+<path d="M2549 581L2532 588" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.856s"/>
+<path d="M2532 588L2523 601" pathLength="100" stroke-width="25" style="--d:0.001s;--t:0.857s"/>
+<path d="M2523 601L2525 615" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.858s"/>
+<path d="M2525 615L2530 631" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.859s"/>
+<path d="M2530 631L2541 639" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.860s"/>
+<path d="M2541 639L2559 637" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.861s"/>
+<path d="M2559 637L2583 630" pathLength="100" stroke-width="19" style="--d:0.002s;--t:0.862s"/>
+<path d="M2583 630L2596 602" pathLength="100" stroke-width="20" style="--d:0.002s;--t:0.864s"/>
+<path d="M2596 602L2608 579" pathLength="100" stroke-width="26" style="--d:0.002s;--t:0.866s"/>
+<path d="M2608 579L2615 561" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.868s"/>
+<path d="M2615 561L2635 555" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.869s"/>
+<path d="M2635 555L2651 548" pathLength="100" stroke-width="22" style="--d:0.001s;--t:0.870s"/>
+<path d="M2651 548L2664 542" pathLength="100" stroke-width="19" style="--d:0.001s;--t:0.871s"/>
+<path d="M2664 542L2662 551" pathLength="100" stroke-width="27" style="--d:0.001s;--t:0.872s"/>
+<path d="M2662 551L2655 564" pathLength="100" stroke-width="36" style="--d:0.001s;--t:0.873s"/>
+<path d="M2655 564L2644 582" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.874s"/>
+<path d="M2644 582L2633 597" pathLength="100" stroke-width="43" style="--d:0.001s;--t:0.876s"/>
+<path d="M2633 597L2625 616" pathLength="100" stroke-width="43" style="--d:0.001s;--t:0.877s"/>
+<path d="M2625 616L2617 635" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.879s"/>
+<path d="M2617 635L2609 655" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.880s"/>
+<path d="M2609 655L2600 672" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.881s"/>
+<path d="M2600 672L2590 691" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.883s"/>
+<path d="M2590 691L2579 706" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.884s"/>
+<path d="M2579 706L2568 723" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.885s"/>
+<path d="M2568 723L2558 738" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.887s"/>
+<path d="M2558 738L2549 757" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.888s"/>
+<path d="M2549 757L2539 774" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.889s"/>
+<path d="M2539 774L2528 791" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.891s"/>
+<path d="M2528 791L2516 807" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.892s"/>
+<path d="M2516 807L2505 822" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.893s"/>
+<path d="M2505 822L2493 835" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.895s"/>
+<path d="M2493 835L2481 846" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.896s"/>
+<path d="M2481 846L2467 851" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.897s"/>
+<path d="M2467 851L2451 851" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.898s"/>
+<path d="M2451 851L2432 836" pathLength="100" stroke-width="24" style="--d:0.002s;--t:0.899s"/>
+<path d="M2432 836L2421 812" pathLength="100" stroke-width="24" style="--d:0.002s;--t:0.901s"/>
+<path d="M2421 812L2421 784" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.902s"/>
+<path d="M2421 784L2435 765" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.904s"/>
+<path d="M2435 765L2452 752" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.906s"/>
+<path d="M2452 752L2470 743" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.907s"/>
+<path d="M2470 743L2490 735" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.909s"/>
+<path d="M2490 735L2509 728" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.910s"/>
+<path d="M2509 728L2529 723" pathLength="100" stroke-width="32" style="--d:0.001s;--t:0.911s"/>
+<path d="M2529 723L2547 720" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.913s"/>
+<path d="M2547 720L2567 715" pathLength="100" stroke-width="38" style="--d:0.001s;--t:0.914s"/>
+<path d="M2567 715L2586 712" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.915s"/>
+<path d="M2586 712L2606 708" pathLength="100" stroke-width="41" style="--d:0.001s;--t:0.917s"/>
+<path d="M2606 708L2626 708" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.918s"/>
+<path d="M2626 708L2646 706" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.919s"/>
+<path d="M2646 706L2666 705" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.921s"/>
+<path d="M2666 705L2686 704" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.922s"/>
+<path d="M2686 704L2706 704" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.923s"/>
+<path d="M2706 704L2726 704" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.925s"/>
+<path d="M2726 704L2746 704" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.926s"/>
+<path d="M2746 704L2766 705" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.927s"/>
+<path d="M2766 705L2785 706" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.929s"/>
+<path d="M2785 706L2805 706" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.930s"/>
+<path d="M2805 706L2825 707" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.931s"/>
+<path d="M2825 707L2845 709" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.933s"/>
+<path d="M2845 709L2865 711" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.934s"/>
+<path d="M2865 711L2875 712" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.935s"/>
+<path d="M2734 582L2742 579" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.956s"/>
+<path d="M2742 579L2758 574" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.957s"/>
+<path d="M2758 574L2774 565" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.959s"/>
+<path d="M2774 565L2787 553" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.960s"/>
+<path d="M2787 553L2797 539" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.961s"/>
+<path d="M2797 539L2802 526" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.962s"/>
+<path d="M2802 526L2801 517" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.963s"/>
+<path d="M2801 517L2795 512" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.964s"/>
+<path d="M2795 512L2786 512" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.965s"/>
+<path d="M2786 512L2773 518" pathLength="100" stroke-width="33" style="--d:0.001s;--t:0.966s"/>
+<path d="M2773 518L2758 528" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.967s"/>
+<path d="M2758 528L2742 540" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.968s"/>
+<path d="M2742 540L2729 555" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.970s"/>
+<path d="M2729 555L2716 571" pathLength="100" stroke-width="34" style="--d:0.001s;--t:0.971s"/>
+<path d="M2716 571L2706 588" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.972s"/>
+<path d="M2706 588L2697 602" pathLength="100" stroke-width="35" style="--d:0.001s;--t:0.974s"/>
+<path d="M2697 602L2695 617" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.975s"/>
+<path d="M2695 617L2697 631" pathLength="100" stroke-width="26" style="--d:0.001s;--t:0.976s"/>
+<path d="M2697 631L2705 643" pathLength="100" stroke-width="21" style="--d:0.001s;--t:0.977s"/>
+<path d="M2705 643L2717 650" pathLength="100" stroke-width="24" style="--d:0.001s;--t:0.978s"/>
+<path d="M2717 650L2734 653" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.979s"/>
+<path d="M2734 653L2752 652" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.980s"/>
+<path d="M2752 652L2771 646" pathLength="100" stroke-width="31" style="--d:0.001s;--t:0.981s"/>
+<path d="M2771 646L2790 639" pathLength="100" stroke-width="30" style="--d:0.001s;--t:0.983s"/>
+<path d="M2790 639L2807 630" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.984s"/>
+<path d="M2807 630L2826 620" pathLength="100" stroke-width="28" style="--d:0.002s;--t:0.985s"/>
+<path d="M2826 620L2844 606" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.987s"/>
+<path d="M2844 606L2860 589" pathLength="100" stroke-width="33" style="--d:0.002s;--t:0.988s"/>
+<path d="M2860 589L2870 572" pathLength="100" stroke-width="28" style="--d:0.001s;--t:0.990s"/>
+<path d="M2870 572L2879 556" pathLength="100" stroke-width="29" style="--d:0.001s;--t:0.991s"/>
+<path d="M2879 556L2887 532" pathLength="100" stroke-width="29" style="--d:0.002s;--t:0.992s"/>
+<path d="M2887 532L2883 508" pathLength="100" stroke-width="29" style="--d:0.002s;--t:0.994s"/>
+<path d="M2883 508L2869 487" pathLength="100" stroke-width="14" style="--d:0.002s;--t:0.996s"/>
+<path d="M2869 487L2850 476" pathLength="100" stroke-width="14" style="--d:0.001s;--t:0.997s"/>
+<path d="M2850 476L2825 485" pathLength="100" stroke-width="17" style="--d:0.002s;--t:0.999s"/>
+<path d="M2825 485L2804 497" pathLength="100" stroke-width="28" style="--d:0.002s;--t:1.001s"/>
+<path d="M2804 497L2784 512" pathLength="100" stroke-width="32" style="--d:0.002s;--t:1.002s"/>
+<path d="M2784 512L2766 495" pathLength="100" stroke-width="32" style="--d:0.002s;--t:1.004s"/>
+<path d="M2766 495L2758 477" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.006s"/>
+<path d="M2758 477L2761 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.007s"/>
+<path d="M2761 458L2780 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.008s"/>
+<path d="M2780 459L2800 459" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.009s"/>
+<path d="M2800 459L2817 463" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.011s"/>
+<path d="M2817 463L2837 463" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.012s"/>
+<path d="M2837 463L2857 462" pathLength="100" stroke-width="26" style="--d:0.001s;--t:1.013s"/>
+<path d="M2857 462L2877 457" pathLength="100" stroke-width="26" style="--d:0.001s;--t:1.015s"/>
+<path d="M2877 457L2896 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.016s"/>
+<path d="M2896 458L2914 459" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.017s"/>
+<path d="M2914 459L2934 459" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.018s"/>
+<path d="M2934 459L2954 459" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.020s"/>
+<path d="M2954 459L2976 458" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.021s"/>
+<path d="M2976 458L2996 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.023s"/>
+<path d="M2996 458L3016 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.024s"/>
+<path d="M3016 458L3036 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.025s"/>
+<path d="M3036 458L3059 454" pathLength="100" stroke-width="28" style="--d:0.002s;--t:1.027s"/>
+<path d="M3059 454L3077 446" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.028s"/>
+<path d="M3077 446L3088 440" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.029s"/>
+<path d="M3088 440L3077 444" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.030s"/>
+<path d="M3077 444L3059 452" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.031s"/>
+<path d="M3059 452L3035 458" pathLength="100" stroke-width="28" style="--d:0.002s;--t:1.033s"/>
+<path d="M3035 458L3015 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.034s"/>
+<path d="M3015 458L2996 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.036s"/>
+<path d="M2996 458L2976 458" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.037s"/>
+<path d="M2976 458L2956 458" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.038s"/>
+<path d="M2956 458L2949 452" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.040s"/>
+<path d="M2949 452L2950 441" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.041s"/>
+<path d="M2950 441L2962 425" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.042s"/>
+<path d="M2962 425L2972 409" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.043s"/>
+<path d="M2972 409L2983 393" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.044s"/>
+<path d="M2983 393L2994 376" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.046s"/>
+<path d="M2994 376L3005 360" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.047s"/>
+<path d="M3005 360L3016 344" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.048s"/>
+<path d="M3016 344L3028 328" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.050s"/>
+<path d="M3028 328L3032 323" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.051s"/>
+<path d="M3032 323L3028 328" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.052s"/>
+<path d="M3028 328L3016 345" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.053s"/>
+<path d="M3016 345L3005 361" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.054s"/>
+<path d="M3005 361L2994 377" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.056s"/>
+<path d="M2994 377L2982 394" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.057s"/>
+<path d="M2982 394L2971 411" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.058s"/>
+<path d="M2971 411L2961 427" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.060s"/>
+<path d="M2961 427L2949 443" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.061s"/>
+<path d="M2949 443L2938 459" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.062s"/>
+<path d="M2938 459L2926 477" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.064s"/>
+<path d="M2926 477L2915 494" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.065s"/>
+<path d="M2915 494L2905 512" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.066s"/>
+<path d="M2905 512L2894 529" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.068s"/>
+<path d="M2894 529L2885 546" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.069s"/>
+<path d="M2885 546L2875 563" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.070s"/>
+<path d="M2875 563L2866 580" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.072s"/>
+<path d="M2866 580L2855 597" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.073s"/>
+<path d="M2855 597L2847 614" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.074s"/>
+<path d="M2847 614L2841 632" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.076s"/>
+<path d="M2841 632L2842 648" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.077s"/>
+<path d="M2842 648L2851 659" pathLength="100" stroke-width="35" style="--d:0.001s;--t:1.078s"/>
+<path d="M2851 659L2868 659" pathLength="100" stroke-width="35" style="--d:0.001s;--t:1.079s"/>
+<path d="M2868 659L2888 652" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.080s"/>
+<path d="M2888 652L2908 642" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.082s"/>
+<path d="M2908 642L2925 631" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.083s"/>
+<path d="M2925 631L2939 621" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.084s"/>
+<path d="M2939 621L2953 614" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.086s"/>
+<path d="M2953 614L2974 598" pathLength="100" stroke-width="40" style="--d:0.002s;--t:1.087s"/>
+<path d="M2974 598L2995 581" pathLength="100" stroke-width="40" style="--d:0.002s;--t:1.088s"/>
+<path d="M2995 581L3011 561" pathLength="100" stroke-width="33" style="--d:0.002s;--t:1.090s"/>
+<path d="M3011 561L3020 546" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.092s"/>
+<path d="M3020 546L3030 531" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.093s"/>
+<path d="M3030 531L3040 513" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.094s"/>
+<path d="M3040 513L3051 495" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.096s"/>
+<path d="M3051 495L3059 478" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.097s"/>
+<path d="M3059 478L3071 461" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.098s"/>
+<path d="M3071 461L3081 445" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.100s"/>
+<path d="M3081 445L3094 428" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.101s"/>
+<path d="M3094 428L3104 411" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.102s"/>
+<path d="M3104 411L3114 393" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.104s"/>
+<path d="M3114 393L3125 377" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.105s"/>
+<path d="M3125 377L3128 371" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.106s"/>
+<path d="M3128 371L3125 377" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.107s"/>
+<path d="M3125 377L3114 393" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.108s"/>
+<path d="M3114 393L3104 411" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.110s"/>
+<path d="M3104 411L3094 428" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.111s"/>
+<path d="M3094 428L3081 444" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.112s"/>
+<path d="M3081 444L3070 460" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.114s"/>
+<path d="M3070 460L3059 477" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.115s"/>
+<path d="M3059 477L3051 495" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.117s"/>
+<path d="M3051 495L3040 513" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.118s"/>
+<path d="M3040 513L3030 531" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.119s"/>
+<path d="M3030 531L3020 547" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.121s"/>
+<path d="M3020 547L3011 563" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.122s"/>
+<path d="M3011 563L2995 583" pathLength="100" stroke-width="33" style="--d:0.002s;--t:1.123s"/>
+<path d="M2995 583L2979 598" pathLength="100" stroke-width="44" style="--d:0.002s;--t:1.125s"/>
+<path d="M2979 598L2960 611" pathLength="100" stroke-width="44" style="--d:0.002s;--t:1.126s"/>
+<path d="M2960 611L2947 618" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.128s"/>
+<path d="M2947 618L2932 627" pathLength="100" stroke-width="29" style="--d:0.001s;--t:1.129s"/>
+<path d="M2932 627L2918 636" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.130s"/>
+<path d="M2918 636L2926 649" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.131s"/>
+<path d="M2926 649L2939 653" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.132s"/>
+<path d="M2939 653L2960 651" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.133s"/>
+<path d="M2960 651L2967 636" pathLength="100" stroke-width="39" style="--d:0.001s;--t:1.135s"/>
+<path d="M2967 636L2978 619" pathLength="100" stroke-width="40" style="--d:0.001s;--t:1.136s"/>
+<path d="M2978 619L2993 605" pathLength="100" stroke-width="57" style="--d:0.001s;--t:1.137s"/>
+<path d="M2993 605L3011 593" pathLength="100" stroke-width="57" style="--d:0.001s;--t:1.138s"/>
+<path d="M3011 593L3029 583" pathLength="100" stroke-width="28" style="--d:0.001s;--t:1.140s"/>
+<path d="M3029 583L3050 580" pathLength="100" stroke-width="26" style="--d:0.001s;--t:1.141s"/>
+<path d="M3050 580L3065 588" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.143s"/>
+<path d="M3065 588L3076 604" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.144s"/>
+<path d="M3076 604L3079 621" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.145s"/>
+<path d="M3079 621L3081 632" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.146s"/>
+<path d="M3081 632L3085 638" pathLength="100" stroke-width="27" style="--d:0.001s;--t:1.147s"/>
+<path d="M3085 638L3092 638" pathLength="100" stroke-width="26" style="--d:0.001s;--t:1.148s"/>
+<path d="M3092 638L3102 635" pathLength="100" stroke-width="24" style="--d:0.001s;--t:1.149s"/>
+<path d="M3102 635L3126 635" pathLength="100" stroke-width="23" style="--d:0.002s;--t:1.150s"/>
+<path d="M3126 635L3147 636" pathLength="100" stroke-width="23" style="--d:0.001s;--t:1.152s"/>
+<path d="M3147 636L3166 642" pathLength="100" stroke-width="20" style="--d:0.001s;--t:1.153s"/>
+<path d="M3166 642L3176 647" pathLength="100" stroke-width="21" style="--d:0.001s;--t:1.155s"/>
+<path d="M3176 647L3191 627" pathLength="100" stroke-width="26" style="--d:0.002s;--t:1.156s"/>
+<path d="M3191 627L3208 603" pathLength="100" stroke-width="32" style="--d:0.002s;--t:1.157s"/>
+<path d="M3208 603L3223 574" pathLength="100" stroke-width="32" style="--d:0.002s;--t:1.159s"/>
+<path d="M3223 574L3236 566" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.161s"/>
+<path d="M3236 566L3250 555" pathLength="100" stroke-width="34" style="--d:0.001s;--t:1.162s"/>
+<path d="M3250 555L3260 543" pathLength="100" stroke-width="34" style="--d:0.001s;--t:1.164s"/>
+<path d="M3260 543L3265 529" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.165s"/>
+<path d="M3265 529L3259 520" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.166s"/>
+<path d="M3259 520L3244 519" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.167s"/>
+<path d="M3244 519L3225 525" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.168s"/>
+<path d="M3225 525L3209 537" pathLength="100" stroke-width="34" style="--d:0.001s;--t:1.169s"/>
+<path d="M3209 537L3196 551" pathLength="100" stroke-width="34" style="--d:0.001s;--t:1.170s"/>
+<path d="M3196 551L3186 566" pathLength="100" stroke-width="34" style="--d:0.001s;--t:1.172s"/>
+<path d="M3186 566L3174 583" pathLength="100" stroke-width="43" style="--d:0.001s;--t:1.173s"/>
+<path d="M3174 583L3166 599" pathLength="100" stroke-width="43" style="--d:0.001s;--t:1.174s"/>
+<path d="M3166 599L3159 617" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.175s"/>
+<path d="M3159 617L3162 631" pathLength="100" stroke-width="26" style="--d:0.001s;--t:1.177s"/>
+<path d="M3162 631L3171 644" pathLength="100" stroke-width="22" style="--d:0.001s;--t:1.178s"/>
+<path d="M3171 644L3187 651" pathLength="100" stroke-width="24" style="--d:0.001s;--t:1.179s"/>
+<path d="M3187 651L3208 652" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.180s"/>
+<path d="M3208 652L3228 648" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.181s"/>
+<path d="M3228 648L3247 642" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.183s"/>
+<path d="M3247 642L3265 635" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.184s"/>
+<path d="M3265 635L3284 626" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.185s"/>
+<path d="M3284 626L3302 616" pathLength="100" stroke-width="39" style="--d:0.001s;--t:1.187s"/>
+<path d="M3302 616L3319 602" pathLength="100" stroke-width="39" style="--d:0.001s;--t:1.188s"/>
+<path d="M3319 602L3332 587" pathLength="100" stroke-width="38" style="--d:0.001s;--t:1.190s"/>
+<path d="M3332 587L3343 571" pathLength="100" stroke-width="42" style="--d:0.001s;--t:1.191s"/>
+<path d="M3343 571L3353 553" pathLength="100" stroke-width="42" style="--d:0.001s;--t:1.192s"/>
+<path d="M3353 553L3361 536" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.194s"/>
+<path d="M3361 536L3364 530" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.195s"/>
+<path d="M3364 530L3361 536" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.196s"/>
+<path d="M3361 536L3353 552" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.197s"/>
+<path d="M3353 552L3343 569" pathLength="100" stroke-width="37" style="--d:0.001s;--t:1.198s"/>
+<path d="M3343 569L3332 586" pathLength="100" stroke-width="38" style="--d:0.001s;--t:1.199s"/>
+<path d="M3332 586L3319 602" pathLength="100" stroke-width="38" style="--d:0.001s;--t:1.201s"/>
+<path d="M3319 602L3307 615" pathLength="100" stroke-width="39" style="--d:0.001s;--t:1.202s"/>
+<path d="M3307 615L3296 633" pathLength="100" stroke-width="45" style="--d:0.001s;--t:1.203s"/>
+<path d="M3296 633L3289 647" pathLength="100" stroke-width="45" style="--d:0.001s;--t:1.205s"/>
+<path d="M3289 647L3286 661" pathLength="100" stroke-width="32" style="--d:0.001s;--t:1.206s"/>
+<path d="M3286 661L3286 667" pathLength="100" stroke-width="31" style="--d:0.001s;--t:1.207s"/>
+<path d="M3286 667L3287 670" pathLength="100" stroke-width="17" style="--d:0.001s;--t:1.208s"/>
+<path d="M3287 670L3290 670" pathLength="100" stroke-width="17" style="--d:0.001s;--t:1.209s"/>
+<path d="M3287 669L3287 663" pathLength="100" stroke-width="23" style="--d:0.001s;--t:1.210s"/>
+<path d="M3287 663L3289 652" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.211s"/>
+<path d="M3289 652L3296 636" pathLength="100" stroke-width="33" style="--d:0.001s;--t:1.212s"/>
+<path d="M3296 636L3306 619" pathLength="100" stroke-width="38" style="--d:0.001s;--t:1.213s"/>
+<path d="M3306 619L3319 602" pathLength="100" stroke-width="38" style="--d:0.001s;--t:1.214s"/>
+<path d="M3319 602L3336 587" pathLength="100" stroke-width="39" style="--d:0.002s;--t:1.216s"/>
+<path d="M3336 587L3354 575" pathLength="100" stroke-width="39" style="--d:0.001s;--t:1.217s"/>
+<path d="M3354 575L3374 567" pathLength="100" stroke-width="24" style="--d:0.001s;--t:1.219s"/>
+<path d="M3374 567L3393 567" pathLength="100" stroke-width="24" style="--d:0.001s;--t:1.220s"/>
+<path d="M3393 567L3411 572" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.221s"/>
+<path d="M3411 572L3428 581" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.223s"/>
+<path d="M3428 581L3445 586" pathLength="100" stroke-width="24" style="--d:0.001s;--t:1.224s"/>
+<path d="M3445 586L3464 584" pathLength="100" stroke-width="20" style="--d:0.001s;--t:1.225s"/>
+<path d="M3464 584L3481 582" pathLength="100" stroke-width="19" style="--d:0.001s;--t:1.226s"/>
+<path d="M3481 582L3491 580" pathLength="100" stroke-width="19" style="--d:0.001s;--t:1.228s"/>
+<path d="M3491 580L3494 580" pathLength="100" stroke-width="14" style="--d:0.001s;--t:1.229s"/>
+<path d="M3494 580L3514 568" pathLength="100" stroke-width="14" style="--d:0.002s;--t:1.230s"/>
+<path d="M3514 568L3524 562" pathLength="100" stroke-width="30" style="--d:0.001s;--t:1.231s"/>
+<path d="M3543 639L3546 639" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.252s"/>
+<path d="M3542 639L3545 639" pathLength="100" stroke-width="36" style="--d:0.001s;--t:1.253s"/>
+<path d="M600 124L602 124" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.148s"/>
+<path d="M599 128L601 128" pathLength="100" stroke-width="32" style="--d:0.01s;--t:0.148s"/>
+<path d="M2448 298L2450 298" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.774s"/>
+<path d="M3043 298L3045 298" pathLength="100" stroke-width="42" style="--d:0.01s;--t:1.052s"/>
+<path d="M2448 306L2450 306" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.774s"/>
+<path d="M3041 308L3043 308" pathLength="100" stroke-width="40" style="--d:0.01s;--t:1.052s"/>
+<path d="M3038 312L3040 312" pathLength="100" stroke-width="33" style="--d:0.01s;--t:1.053s"/>
+<path d="M2009 334L2011 334" pathLength="100" stroke-width="26" style="--d:0.01s;--t:0.623s"/>
+<path d="M2010 336L2012 336" pathLength="100" stroke-width="28" style="--d:0.01s;--t:0.623s"/>
+<path d="M3138 346L3140 346" pathLength="100" stroke-width="40" style="--d:0.01s;--t:1.108s"/>
+<path d="M925 350L927 350" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.329s"/>
+<path d="M925 360L927 360" pathLength="100" stroke-width="47" style="--d:0.01s;--t:0.329s"/>
+<path d="M3137 356L3139 356" pathLength="100" stroke-width="40" style="--d:0.01s;--t:1.107s"/>
+<path d="M3134 360L3136 360" pathLength="100" stroke-width="34" style="--d:0.01s;--t:1.107s"/>
+<path d="M921 374L923 374" pathLength="100" stroke-width="44" style="--d:0.01s;--t:0.329s"/>
+<path d="M833 450L835 450" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.315s"/>
+<path d="M604 454L606 454" pathLength="100" stroke-width="26" style="--d:0.01s;--t:0.375s"/>
+<path d="M2125 454L2127 454" pathLength="100" stroke-width="22" style="--d:0.01s;--t:0.748s"/>
+<path d="M2726 456L2728 456" pathLength="100" stroke-width="43" style="--d:0.01s;--t:1.009s"/>
+<path d="M2134 457L2136 457" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.747s"/>
+<path d="M614 457L616 457" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.374s"/>
+<path d="M726 457L728 457" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.367s"/>
+<path d="M740 457L742 457" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.367s"/>
+<path d="M630 458L632 458" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.374s"/>
+<path d="M2146 458L2148 458" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.747s"/>
+<path d="M2742 458L2744 458" pathLength="100" stroke-width="43" style="--d:0.01s;--t:1.009s"/>
+<path d="M2751 458L2753 458" pathLength="100" stroke-width="28" style="--d:0.01s;--t:1.008s"/>
+<path d="M3095 458L3097 458" pathLength="100" stroke-width="44" style="--d:0.01s;--t:1.102s"/>
+<path d="M3110 458L3112 458" pathLength="100" stroke-width="43" style="--d:0.01s;--t:1.031s"/>
+<path d="M2526 459L2528 459" pathLength="100" stroke-width="28" style="--d:0.01s;--t:0.723s"/>
+<path d="M3126 461L3128 461" pathLength="100" stroke-width="41" style="--d:0.01s;--t:1.030s"/>
+<path d="M2532 461L2534 461" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.723s"/>
+<path d="M1014 463L1016 463" pathLength="100" stroke-width="21" style="--d:0.01s;--t:0.350s"/>
+<path d="M1018 465L1020 465" pathLength="100" stroke-width="23" style="--d:0.01s;--t:0.350s"/>
+<path d="M2540 465L2542 465" pathLength="100" stroke-width="22" style="--d:0.01s;--t:0.723s"/>
+<path d="M3134 464L3136 464" pathLength="100" stroke-width="19" style="--d:0.01s;--t:1.031s"/>
+<path d="M3136 465L3138 465" pathLength="100" stroke-width="21" style="--d:0.01s;--t:1.030s"/>
+<path d="M2543 466L2545 466" pathLength="100" stroke-width="14" style="--d:0.01s;--t:0.723s"/>
+<path d="M385 474L387 474" pathLength="100" stroke-width="44" style="--d:0.01s;--t:0.175s"/>
+<path d="M2838 472L2840 472" pathLength="100" stroke-width="26" style="--d:0.01s;--t:0.999s"/>
+<path d="M809 476L811 476" pathLength="100" stroke-width="38" style="--d:0.01s;--t:0.363s"/>
+<path d="M1924 476L1926 476" pathLength="100" stroke-width="38" style="--d:0.01s;--t:0.631s"/>
+<path d="M383 480L385 480" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.175s"/>
+<path d="M803 487L805 487" pathLength="100" stroke-width="46" style="--d:0.01s;--t:0.363s"/>
+<path d="M1921 482L1923 482" pathLength="100" stroke-width="38" style="--d:0.01s;--t:0.632s"/>
+<path d="M376 488L378 488" pathLength="100" stroke-width="48" style="--d:0.01s;--t:0.175s"/>
+<path d="M1916 490L1918 490" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.631s"/>
+<path d="M2279 486L2281 486" pathLength="100" stroke-width="12" style="--d:0.01s;--t:0.757s"/>
+<path d="M2876 488L2878 488" pathLength="100" stroke-width="15" style="--d:0.01s;--t:0.999s"/>
+<path d="M2883 492L2885 492" pathLength="100" stroke-width="21" style="--d:0.01s;--t:0.999s"/>
+<path d="M770 495L772 495" pathLength="100" stroke-width="13" style="--d:0.01s;--t:0.385s"/>
+<path d="M798 495L800 495" pathLength="100" stroke-width="30" style="--d:0.01s;--t:0.364s"/>
+<path d="M368 498L370 498" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.183s"/>
+<path d="M792 505L794 505" pathLength="100" stroke-width="47" style="--d:0.01s;--t:0.363s"/>
+<path d="M1907 503L1909 503" pathLength="100" stroke-width="47" style="--d:0.01s;--t:0.631s"/>
+<path d="M2891 500L2893 500" pathLength="100" stroke-width="25" style="--d:0.01s;--t:0.999s"/>
+<path d="M362 506L364 506" pathLength="100" stroke-width="45" style="--d:0.01s;--t:0.183s"/>
+<path d="M778 505L780 505" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.308s"/>
+<path d="M2895 505L2897 505" pathLength="100" stroke-width="17" style="--d:0.01s;--t:0.997s"/>
+<path d="M2302 507L2304 507" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.758s"/>
+<path d="M668 511L670 511" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.270s"/>
+<path d="M674 510L676 510" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.271s"/>
+<path d="M1738 511L1740 511" pathLength="100" stroke-width="18" style="--d:0.01s;--t:0.575s"/>
+<path d="M1902 511L1904 511" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.637s"/>
+<path d="M3366 511L3368 511" pathLength="100" stroke-width="18" style="--d:0.01s;--t:1.196s"/>
+<path d="M354 516L356 516" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.183s"/>
+<path d="M660 514L662 514" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.271s"/>
+<path d="M684 518L686 518" pathLength="100" stroke-width="45" style="--d:0.01s;--t:0.271s"/>
+<path d="M784 516L786 516" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.387s"/>
+<path d="M1738 514L1740 514" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.575s"/>
+<path d="M1897 520L1899 520" pathLength="100" stroke-width="48" style="--d:0.01s;--t:0.638s"/>
+<path d="M3367 515L3369 515" pathLength="100" stroke-width="33" style="--d:0.01s;--t:1.196s"/>
+<path d="M1594 522L1596 522" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.562s"/>
+<path d="M1604 519L1606 519" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.562s"/>
+<path d="M347 524L349 524" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.182s"/>
+<path d="M782 521L784 521" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.386s"/>
+<path d="M683 536L685 536" pathLength="100" stroke-width="48" style="--d:0.01s;--t:0.270s"/>
+<path d="M1593 536L1595 536" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.562s"/>
+<path d="M1893 530L1895 530" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.638s"/>
+<path d="M1340 538L1342 538" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.479s"/>
+<path d="M1624 542L1626 542" pathLength="100" stroke-width="22" style="--d:0.01s;--t:0.559s"/>
+<path d="M675 548L677 548" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.270s"/>
+<path d="M1596 550L1598 550" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.562s"/>
+<path d="M1626 554L1628 554" pathLength="100" stroke-width="30" style="--d:0.01s;--t:0.566s"/>
+<path d="M2446 554L2448 554" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.839s"/>
+<path d="M668 556L670 556" pathLength="100" stroke-width="39" style="--d:0.01s;--t:0.268s"/>
+<path d="M2448 558L2450 558" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.840s"/>
+<path d="M1599 558L1601 558" pathLength="100" stroke-width="22" style="--d:0.01s;--t:0.566s"/>
+<path d="M1576 559L1578 559" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.539s"/>
+<path d="M2425 559L2427 559" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.816s"/>
+<path d="M660 564L662 564" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.267s"/>
+<path d="M1573 561L1575 561" pathLength="100" stroke-width="49" style="--d:0.01s;--t:0.539s"/>
+<path d="M1605 568L1607 568" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.566s"/>
+<path d="M2419 562L2421 562" pathLength="100" stroke-width="49" style="--d:0.01s;--t:0.816s"/>
+<path d="M2431 560L2433 560" pathLength="100" stroke-width="19" style="--d:0.01s;--t:0.817s"/>
+<path d="M2457 571L2459 571" pathLength="100" stroke-width="35" style="--d:0.01s;--t:0.843s"/>
+<path d="M3398 561L3400 561" pathLength="100" stroke-width="27" style="--d:0.01s;--t:1.221s"/>
+<path d="M1384 566L1386 566" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.495s"/>
+<path d="M3359 563L3361 563" pathLength="100" stroke-width="10" style="--d:0.01s;--t:1.220s"/>
+<path d="M1730 564L1732 564" pathLength="100" stroke-width="18" style="--d:0.01s;--t:0.598s"/>
+<path d="M3357 564L3359 564" pathLength="100" stroke-width="17" style="--d:0.01s;--t:1.220s"/>
+<path d="M2628 568L2630 568" pathLength="100" stroke-width="30" style="--d:0.01s;--t:0.870s"/>
+<path d="M1564 568L1566 568" pathLength="100" stroke-width="40" style="--d:0.01s;--t:0.539s"/>
+<path d="M3063 566L3065 566" pathLength="100" stroke-width="42" style="--d:0.01s;--t:1.143s"/>
+<path d="M2411 570L2413 570" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.817s"/>
+<path d="M3048 570L3050 570" pathLength="100" stroke-width="36" style="--d:0.01s;--t:1.143s"/>
+<path d="M652 569L654 569" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.267s"/>
+<path d="M1023 571L1025 571" pathLength="100" stroke-width="22" style="--d:0.01s;--t:0.444s"/>
+<path d="M3071 573L3073 573" pathLength="100" stroke-width="32" style="--d:0.01s;--t:1.145s"/>
+<path d="M1022 574L1024 574" pathLength="100" stroke-width="26" style="--d:0.01s;--t:0.435s"/>
+<path d="M1627 574L1629 574" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.566s"/>
+<path d="M1020 584L1022 584" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.449s"/>
+<path d="M1614 576L1616 576" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.566s"/>
+<path d="M1623 582L1625 582" pathLength="100" stroke-width="49" style="--d:0.01s;--t:0.566s"/>
+<path d="M2462 576L2464 576" pathLength="100" stroke-width="19" style="--d:0.01s;--t:0.843s"/>
+<path d="M2471 583L2473 583" pathLength="100" stroke-width="49" style="--d:0.01s;--t:0.843s"/>
+<path d="M3072 578L3074 578" pathLength="100" stroke-width="34" style="--d:0.01s;--t:1.146s"/>
+<path d="M2060 578L2062 578" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.702s"/>
+<path d="M3204 580L3206 580" pathLength="100" stroke-width="41" style="--d:0.01s;--t:1.161s"/>
+<path d="M3196 582L3198 582" pathLength="100" stroke-width="34" style="--d:0.01s;--t:1.174s"/>
+<path d="M1830 585L1832 585" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.602s"/>
+<path d="M1840 585L1842 585" pathLength="100" stroke-width="23" style="--d:0.01s;--t:0.644s"/>
+<path d="M1802 587L1804 587" pathLength="100" stroke-width="30" style="--d:0.01s;--t:0.602s"/>
+<path d="M1814 587L1816 587" pathLength="100" stroke-width="35" style="--d:0.01s;--t:0.602s"/>
+<path d="M1632 590L1634 590" pathLength="100" stroke-width="28" style="--d:0.01s;--t:0.555s"/>
+<path d="M1892 590L1894 590" pathLength="100" stroke-width="30" style="--d:0.01s;--t:0.682s"/>
+<path d="M2492 591L2494 591" pathLength="100" stroke-width="27" style="--d:0.01s;--t:0.831s"/>
+<path d="M1017 600L1019 600" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.451s"/>
+<path d="M1623 592L1625 592" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.552s"/>
+<path d="M1661 592L1663 592" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.556s"/>
+<path d="M1672 592L1674 592" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.569s"/>
+<path d="M1892 600L1894 600" pathLength="100" stroke-width="43" style="--d:0.01s;--t:0.682s"/>
+<path d="M2472 593L2474 593" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.830s"/>
+<path d="M2502 592L2504 592" pathLength="100" stroke-width="39" style="--d:0.01s;--t:0.831s"/>
+<path d="M2518 592L2520 592" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.858s"/>
+<path d="M980 594L982 594" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.433s"/>
+<path d="M2535 599L2537 599" pathLength="100" stroke-width="50" style="--d:0.01s;--t:0.859s"/>
+<path d="M1470 596L1472 596" pathLength="100" stroke-width="21" style="--d:0.01s;--t:0.535s"/>
+<path d="M1478 602L1480 602" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.535s"/>
+<path d="M1491 606L1493 606" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.535s"/>
+<path d="M1017 616L1019 616" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.451s"/>
+<path d="M1893 616L1895 616" pathLength="100" stroke-width="41" style="--d:0.01s;--t:0.691s"/>
+<path d="M3142 611L3144 611" pathLength="100" stroke-width="41" style="--d:0.01s;--t:1.152s"/>
+<path d="M2610 613L2612 613" pathLength="100" stroke-width="27" style="--d:0.01s;--t:0.864s"/>
+<path d="M2600 619L2602 619" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.866s"/>
+<path d="M3129 620L3131 620" pathLength="100" stroke-width="33" style="--d:0.01s;--t:1.152s"/>
+<path d="M1018 628L1020 628" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.449s"/>
+<path d="M1896 632L1898 632" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.691s"/>
+<path d="M2592 625L2594 625" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.864s"/>
+<path d="M3121 625L3123 625" pathLength="100" stroke-width="27" style="--d:0.01s;--t:1.152s"/>
+<path d="M1286 632L1288 632" pathLength="100" stroke-width="32" style="--d:0.01s;--t:0.485s"/>
+<path d="M579 632L581 632" pathLength="100" stroke-width="35" style="--d:0.01s;--t:0.280s"/>
+<path d="M961 628L963 628" pathLength="100" stroke-width="27" style="--d:0.01s;--t:0.455s"/>
+<path d="M2584 631L2586 631" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.864s"/>
+<path d="M3116 628L3118 628" pathLength="100" stroke-width="26" style="--d:0.01s;--t:1.152s"/>
+<path d="M582 640L584 640" pathLength="100" stroke-width="21" style="--d:0.01s;--t:0.289s"/>
+<path d="M1370 640L1372 640" pathLength="100" stroke-width="18" style="--d:0.01s;--t:0.500s"/>
+<path d="M1899 640L1901 640" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.691s"/>
+<path d="M2565 641L2567 641" pathLength="100" stroke-width="23" style="--d:0.01s;--t:0.864s"/>
+<path d="M1286 646L1288 646" pathLength="100" stroke-width="28" style="--d:0.01s;--t:0.486s"/>
+<path d="M2550 645L2552 645" pathLength="100" stroke-width="33" style="--d:0.01s;--t:0.861s"/>
+<path d="M1382 652L1384 652" pathLength="100" stroke-width="40" style="--d:0.01s;--t:0.501s"/>
+<path d="M1910 653L1912 653" pathLength="100" stroke-width="28" style="--d:0.01s;--t:0.691s"/>
+<path d="M1396 654L1398 654" pathLength="100" stroke-width="42" style="--d:0.01s;--t:0.500s"/>
+<path d="M964 660L966 660" pathLength="100" stroke-width="21" style="--d:0.01s;--t:0.454s"/>
+<path d="M2953 666L2955 666" pathLength="100" stroke-width="24" style="--d:0.01s;--t:1.135s"/>
+<path d="M2888 717L2890 717" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.936s"/>
+<path d="M153 734L155 734" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.199s"/>
+<path d="M149 744L151 744" pathLength="100" stroke-width="46" style="--d:0.01s;--t:0.199s"/>
+<path d="M153 757L155 757" pathLength="100" stroke-width="29" style="--d:0.01s;--t:0.202s"/>
+<path d="M165 763L167 763" pathLength="100" stroke-width="37" style="--d:0.01s;--t:0.203s"/>
+<path d="M176 766L178 766" pathLength="100" stroke-width="26" style="--d:0.01s;--t:0.203s"/>
+<path d="M185 768L187 768" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.203s"/>
+<path d="M2409 795L2411 795" pathLength="100" stroke-width="39" style="--d:0.01s;--t:0.906s"/>
+<path d="M794 797L796 797" pathLength="100" stroke-width="20" style="--d:0.01s;--t:0.243s"/>
+<path d="M2408 805L2410 805" pathLength="100" stroke-width="38" style="--d:0.01s;--t:0.904s"/>
+<path d="M2412 825L2414 825" pathLength="100" stroke-width="34" style="--d:0.01s;--t:0.901s"/>
+<path d="M2422 839L2424 839" pathLength="100" stroke-width="36" style="--d:0.01s;--t:0.901s"/>
+<path d="M2432 846L2434 846" pathLength="100" stroke-width="24" style="--d:0.01s;--t:0.901s"/>
+</g></mask></defs><path class="hand-sig-fill" d="M798.0 802.1C797.0 802.6 796.0 803.0 794.0 802.2C792.0 801.3 789.1 800.9 785.8 797.0C782.5 793.1 777.9 783.2 774.2 779.0C770.6 774.8 766.9 773.5 764.0 771.8C761.1 770.1 760.8 770.1 757.0 768.8C753.2 767.5 747.5 765.4 741.0 763.8C734.5 762.3 728.0 760.8 718.0 759.6C708.0 758.4 699.5 757.0 681.0 756.5C662.5 756.0 626.5 756.2 607.0 756.5C587.5 756.8 608.5 755.2 564.0 758.5C519.5 761.8 388.5 772.8 340.0 776.4C291.5 780.1 296.3 780.0 273.0 780.5C249.7 781.0 215.7 780.1 200.0 779.4C184.3 778.7 186.0 777.9 179.0 776.2C172.0 774.5 162.5 771.0 158.0 769.3C153.5 767.5 154.2 767.3 152.0 765.4C149.8 763.6 146.6 760.9 144.6 758.0C142.5 755.1 140.6 751.7 139.8 748.0C139.0 744.3 138.6 740.4 139.8 736.0C141.0 731.6 135.8 734.3 147.0 721.7C158.2 709.1 186.1 682.4 207.0 660.5C227.9 638.5 251.5 613.2 272.4 590.0C293.4 566.8 315.7 540.8 332.4 521.0C349.2 501.2 366.4 479.5 373.0 471.0C379.6 462.5 380.0 468.3 372.0 470.1C364.0 471.8 337.3 478.9 325.0 481.4C312.7 484.0 311.3 484.2 298.0 485.4C284.7 486.6 259.0 488.1 245.0 488.5C231.0 488.8 226.3 488.3 214.0 487.5C201.7 486.6 187.2 485.6 171.0 483.4C154.8 481.2 127.5 476.7 117.0 474.2C106.5 471.7 110.2 470.2 108.0 468.4C105.8 466.6 105.1 465.2 104.0 463.3C102.9 461.4 101.9 458.5 101.6 457.0C101.3 455.5 101.6 454.9 102.3 454.0C103.1 453.1 97.2 450.6 106.0 451.7C114.8 452.7 138.0 458.1 155.0 460.4C172.0 462.7 188.5 464.8 208.0 465.5C227.5 466.2 255.0 465.4 272.0 464.4C289.0 463.4 297.0 461.8 310.0 459.4C323.0 457.0 338.8 453.2 350.0 450.2C361.2 447.1 367.5 444.9 377.0 441.2C386.5 437.5 392.2 443.9 407.2 428.0C422.2 412.1 452.5 366.7 467.2 346.0C481.9 325.3 486.0 318.3 495.2 304.0C504.4 289.7 513.9 274.2 522.2 260.0C530.5 245.8 538.7 231.2 545.2 219.0C551.7 206.8 556.4 197.2 561.3 187.0C566.1 176.8 569.4 169.7 574.2 158.0C579.0 146.3 586.9 124.4 590.0 116.8C593.1 109.2 591.7 113.7 593.0 112.6C594.3 111.4 596.0 110.2 598.0 109.8C600.0 109.4 603.1 109.6 605.0 110.3C606.9 111.0 608.2 112.4 609.4 114.0C610.7 115.6 611.6 116.5 612.7 120.0C613.9 123.5 615.9 127.8 616.5 135.0C617.1 142.2 617.3 153.0 616.4 163.0C615.5 173.0 613.4 184.5 611.2 195.0C609.0 205.5 607.2 213.5 603.2 226.0C599.2 238.5 592.7 256.8 587.2 270.0C581.7 283.2 576.5 293.5 570.2 305.0C563.9 316.5 556.8 328.0 549.2 339.0C541.6 350.0 534.0 360.3 524.4 371.0C514.9 381.7 502.1 394.4 492.0 403.4C481.9 412.5 474.7 418.0 464.0 425.2C453.3 432.4 434.7 442.6 428.0 446.8C421.3 451.0 433.4 438.8 424.0 450.5C414.6 462.2 390.7 493.6 371.4 517.0C352.2 540.4 331.9 564.6 308.4 591.0C285.0 617.4 255.1 650.2 231.0 675.5C206.9 700.7 176.2 730.1 164.0 742.5C151.8 754.9 159.0 748.3 158.0 749.9C157.0 751.4 156.7 750.9 157.9 752.0C159.1 753.1 161.0 754.9 165.0 756.2C169.0 757.4 171.8 758.7 182.0 759.4C192.2 760.1 204.3 761.2 226.0 760.5C247.7 759.8 273.2 758.4 312.0 755.4C350.8 752.4 421.8 745.6 459.0 742.6C496.2 739.6 514.2 738.7 535.0 737.5C555.8 736.3 567.5 735.8 584.0 735.5C600.5 735.2 619.2 735.2 634.0 735.5C648.8 735.8 661.0 736.6 673.0 737.6C685.0 738.6 697.0 740.2 706.0 741.6C715.0 743.0 720.0 744.1 727.0 745.8C734.0 747.5 741.2 749.3 748.0 751.8C754.8 754.3 762.7 757.9 768.0 760.7C773.3 763.5 776.0 765.2 780.0 768.6C784.0 771.9 788.6 776.1 792.0 780.7C795.4 785.3 798.8 793.0 800.2 796.0C801.5 799.0 800.5 798.0 800.2 799.0C799.8 800.0 799.0 801.6 798.0 802.1ZM480.1 377.0C483.5 373.8 492.9 365.0 499.0 358.5C505.1 352.0 508.4 349.1 516.4 338.0C524.5 326.9 539.9 303.8 547.2 292.0C554.5 280.2 556.3 275.3 560.3 267.0C564.3 258.7 567.9 250.3 571.2 242.0C574.5 233.7 578.2 223.0 580.2 217.0C582.2 211.0 582.9 208.4 583.3 206.0C583.8 203.6 586.7 196.1 583.0 202.6C579.3 209.1 568.3 231.8 561.2 245.0C554.1 258.2 548.0 268.8 540.2 282.0C532.4 295.2 524.4 308.3 514.2 324.0C504.0 339.7 485.0 367.1 479.1 376.0C473.2 384.9 478.8 377.2 479.0 377.4C479.2 377.6 476.8 380.2 480.1 377.0ZM742.0 679.2C735.7 680.6 731.2 679.7 728.0 679.5C724.8 679.3 725.2 679.2 723.0 678.2C720.8 677.2 717.0 675.1 715.0 673.4C713.0 671.7 712.0 670.9 710.8 668.0C709.6 665.1 707.2 661.8 707.5 656.0C707.8 650.2 711.9 637.1 712.7 633.0C713.4 628.9 715.6 629.5 712.0 631.3C708.4 633.2 698.2 640.2 691.0 644.2C683.8 648.2 676.2 652.1 669.0 655.3C661.8 658.4 654.8 661.1 648.0 663.2C641.2 665.2 634.0 666.8 628.0 667.5C622.0 668.2 616.2 667.8 612.0 667.4C607.8 667.0 606.8 667.0 602.6 665.0C598.4 663.0 591.6 659.4 587.0 655.4C582.4 651.4 578.0 646.2 574.8 641.0C571.6 635.8 569.0 630.5 567.6 624.0C566.2 617.5 566.0 608.2 566.6 602.0C567.1 595.8 568.8 592.2 570.8 587.0C572.8 581.8 574.8 577.2 578.8 571.0C582.8 564.8 589.3 556.2 594.6 550.0C599.8 543.8 605.3 538.8 610.5 534.0C615.7 529.2 619.5 525.7 625.7 521.0C632.0 516.3 642.0 509.5 648.0 505.8C654.0 502.1 658.0 500.5 662.0 498.8C666.0 497.1 669.3 496.1 672.0 495.6C674.7 495.0 675.5 494.9 678.0 495.6C680.5 496.3 684.4 498.1 687.0 499.8C689.6 501.5 691.5 503.5 693.4 506.0C695.4 508.5 697.6 512.5 698.7 515.0C699.9 517.5 700.1 518.8 700.4 521.0C700.7 523.2 701.0 525.0 700.4 528.0C699.9 531.0 699.3 534.5 697.2 539.0C695.1 543.5 692.2 549.7 688.0 555.3C683.8 560.9 676.0 568.6 672.0 572.4C668.0 576.3 667.7 576.1 664.0 578.2C660.3 580.3 657.2 582.4 650.0 585.3C642.8 588.1 630.5 592.6 621.0 595.2C611.5 597.8 598.7 597.4 593.0 600.9C587.3 604.4 588.1 612.2 586.8 616.0C585.6 619.8 585.5 621.3 585.5 624.0C585.5 626.7 585.7 629.4 586.8 632.0C587.9 634.6 589.8 637.6 592.0 639.4C594.2 641.3 597.3 642.3 600.0 643.2C602.7 644.0 604.5 644.4 608.0 644.5C611.5 644.5 616.3 644.1 621.0 643.4C625.7 642.7 630.8 641.6 636.0 640.2C641.2 638.8 645.3 637.7 652.0 635.2C658.7 632.7 667.0 629.6 676.0 625.3C685.0 620.9 697.0 614.9 706.0 609.2C715.0 603.5 718.7 607.5 730.0 591.3C741.3 575.1 767.2 527.0 774.1 512.0C781.0 497.0 773.3 504.5 771.2 501.0C769.1 497.5 764.9 493.7 761.3 491.0C757.7 488.3 753.3 486.7 749.4 485.0C745.5 483.3 743.7 482.4 738.0 480.8C732.3 479.2 726.0 477.3 715.0 475.6C704.0 473.9 689.7 471.6 672.0 470.5C654.3 469.4 620.3 469.9 609.0 469.2C597.7 468.5 605.8 467.9 604.0 466.4C602.2 465.0 599.5 462.4 598.0 460.3C596.5 458.2 595.3 455.7 594.8 454.0C594.3 452.3 594.2 451.1 594.9 450.0C595.6 448.9 562.5 448.0 599.0 447.5C635.5 447.0 766.9 464.0 814.0 447.1C861.1 430.2 863.8 372.4 881.8 346.0C899.8 319.6 914.5 298.9 921.8 289.0C929.2 279.1 924.5 286.8 926.0 286.7C927.5 286.6 928.8 286.8 931.0 288.3C933.2 289.8 937.1 293.1 939.0 295.7C940.9 298.3 942.3 301.6 942.5 304.0C942.7 306.4 942.5 306.2 940.2 310.0C937.9 313.8 929.2 322.2 928.4 327.0C927.6 331.8 933.5 335.2 935.2 339.0C936.9 342.8 937.9 345.8 938.4 350.0C939.0 354.2 939.3 359.2 938.4 364.0C937.5 368.8 935.0 375.2 933.2 379.0C931.4 382.8 929.2 385.4 927.5 387.0C925.8 388.6 925.1 388.8 923.0 388.4C920.9 388.0 917.4 386.5 915.0 384.4C912.6 382.4 910.0 378.6 908.7 376.0C907.5 373.4 906.5 372.3 907.6 369.0C908.7 365.7 913.6 359.5 915.2 356.0C916.8 352.5 917.3 349.9 917.4 348.0C917.5 346.1 925.1 332.7 916.0 344.8C906.9 357.0 874.3 404.3 862.8 421.0C851.3 437.7 849.5 440.7 846.8 445.0C844.2 449.3 819.7 446.6 846.9 447.0C874.1 447.4 981.9 447.1 1010.0 447.6C1038.1 448.1 1013.3 448.5 1015.3 450.0C1017.3 451.5 1020.3 454.5 1022.0 456.7C1023.7 458.9 1024.7 461.1 1025.2 463.0C1025.7 464.9 1025.8 466.9 1025.1 468.0C1024.4 469.1 1053.4 469.2 1021.0 469.5C988.6 469.8 868.7 460.4 830.9 470.0C793.0 479.6 807.5 504.8 793.8 527.0C780.1 549.2 757.6 587.7 748.8 603.0C740.0 618.3 743.1 613.7 740.8 619.0C738.5 624.3 736.0 631.0 734.8 635.0C733.6 639.0 733.6 640.8 733.6 643.0C733.6 645.2 734.0 646.6 734.9 648.0C735.8 649.4 737.0 650.9 739.0 651.4C741.0 651.9 744.0 651.8 747.0 651.2C750.0 650.6 751.3 650.4 757.0 647.7C762.7 645.1 771.1 641.2 781.0 635.2C790.9 629.2 800.0 623.7 816.3 612.0C832.6 600.3 868.0 573.1 879.0 565.3C890.0 557.4 880.7 564.5 882.0 564.8C883.3 565.2 885.6 566.4 887.0 567.6C888.4 568.8 889.6 570.6 890.1 572.0C890.6 573.4 895.8 569.9 890.1 576.0C884.4 582.1 869.7 596.7 856.0 608.4C842.3 620.1 820.7 636.9 808.0 646.2C795.3 655.5 787.0 660.0 780.0 664.2C773.0 668.4 772.3 668.8 766.0 671.3C759.7 673.8 748.3 677.8 742.0 679.2ZM2476.0 866.2C2471.1 867.4 2465.8 866.5 2460.0 865.4C2454.2 864.3 2447.0 862.4 2441.0 859.7C2435.0 857.1 2429.2 853.6 2424.0 849.4C2418.8 845.3 2413.1 839.2 2409.6 835.0C2406.0 830.8 2404.8 828.7 2402.8 824.0C2400.8 819.3 2398.5 812.0 2397.6 807.0C2396.7 802.0 2397.2 797.7 2397.6 794.0C2398.0 790.3 2398.6 788.2 2399.8 785.0C2401.0 781.8 2402.5 778.7 2404.8 775.0C2407.1 771.3 2410.1 766.8 2413.6 763.0C2417.0 759.2 2420.6 755.9 2425.7 752.0C2430.8 748.1 2438.0 743.3 2444.0 739.8C2450.0 736.3 2452.5 734.6 2462.0 730.8C2471.5 727.0 2483.5 721.6 2501.0 716.8C2518.5 712.0 2552.8 710.0 2567.0 702.2C2581.2 694.4 2578.6 683.5 2586.2 670.0C2593.8 656.5 2613.9 625.5 2612.3 621.0C2610.8 616.5 2586.2 638.2 2577.0 643.3C2567.8 648.3 2562.5 649.5 2557.0 651.2C2551.5 652.9 2549.2 654.1 2544.0 653.4C2538.8 652.7 2530.4 649.8 2526.0 647.2C2521.6 644.6 2519.4 640.4 2517.8 638.0C2516.2 635.6 2516.7 635.8 2516.5 633.0C2516.3 630.2 2515.8 626.2 2516.6 621.0C2517.4 615.8 2524.4 605.1 2521.4 602.0C2518.5 598.9 2504.9 602.9 2499.0 602.5C2493.1 602.1 2488.5 599.8 2486.0 599.7C2483.5 599.7 2485.0 599.1 2483.8 602.0C2482.7 604.9 2481.6 611.2 2479.2 617.0C2476.8 622.8 2473.7 629.6 2469.2 637.0C2464.7 644.4 2456.7 655.8 2452.0 661.5C2447.3 667.1 2445.0 668.2 2441.3 671.0C2437.6 673.8 2433.5 676.5 2430.0 678.3C2426.5 680.0 2423.3 680.9 2420.0 681.4C2416.7 682.0 2413.2 681.9 2410.0 681.5C2406.8 681.0 2404.4 680.5 2401.0 678.7C2397.6 677.0 2393.3 674.5 2389.7 671.0C2386.2 667.5 2382.1 662.5 2379.7 658.0C2377.4 653.5 2376.3 649.7 2375.6 644.0C2374.9 638.3 2375.2 629.5 2375.5 624.0C2375.8 618.5 2377.5 613.3 2377.6 611.0C2377.7 608.7 2382.7 605.0 2376.0 610.0C2369.3 615.0 2350.0 631.8 2337.3 641.0C2324.6 650.2 2308.5 660.1 2300.0 665.3C2291.5 670.5 2291.2 670.0 2286.0 672.2C2280.8 674.3 2273.3 677.0 2269.0 678.2C2264.7 679.4 2264.0 679.5 2260.0 679.5C2256.0 679.5 2249.0 679.4 2245.0 678.2C2241.0 677.0 2238.4 674.8 2236.0 672.5C2233.6 670.1 2231.9 666.9 2230.8 664.0C2229.8 661.1 2229.3 659.2 2229.6 655.0C2229.9 650.8 2230.8 645.8 2232.8 639.0C2234.9 632.2 2238.5 622.2 2241.8 614.0C2245.1 605.8 2243.7 607.0 2252.7 590.0C2261.8 573.0 2289.4 526.8 2296.1 512.0C2302.8 497.2 2295.3 504.5 2293.2 501.0C2291.1 497.5 2286.9 493.7 2283.3 491.0C2279.7 488.3 2275.3 486.7 2271.4 485.0C2267.5 483.3 2265.7 482.4 2260.0 480.8C2254.3 479.2 2248.0 477.3 2237.0 475.6C2226.0 473.9 2211.7 471.6 2194.0 470.5C2176.3 469.4 2142.3 469.9 2131.0 469.2C2119.7 468.5 2127.7 467.8 2126.0 466.4C2124.3 465.1 2122.1 463.4 2120.6 461.0C2119.0 458.6 2117.0 454.0 2116.5 452.0C2116.0 450.0 2116.8 449.7 2117.6 449.0C2118.3 448.3 2084.6 447.8 2121.0 447.5C2157.4 447.2 2287.4 466.2 2336.0 447.1C2384.6 428.0 2394.8 359.4 2412.8 333.0C2430.8 306.6 2438.0 296.7 2443.8 289.0C2449.7 281.3 2446.3 286.7 2448.0 286.7C2449.7 286.6 2451.8 287.3 2454.0 288.8C2456.2 290.3 2459.3 293.4 2461.0 295.7C2462.7 298.1 2464.0 301.0 2464.4 303.0C2464.8 305.0 2476.5 288.3 2463.3 308.0C2450.0 327.7 2400.5 398.2 2384.8 421.0C2369.1 443.8 2371.5 440.7 2368.8 445.0C2366.2 449.3 2341.7 446.6 2368.9 447.0C2396.1 447.4 2503.9 447.1 2532.0 447.6C2560.1 448.1 2535.3 448.5 2537.3 450.0C2539.3 451.5 2542.3 454.5 2544.0 456.7C2545.7 458.9 2546.7 461.1 2547.2 463.0C2547.7 464.9 2547.8 466.9 2547.1 468.0C2546.4 469.1 2575.3 469.2 2543.0 469.5C2510.7 469.8 2390.9 460.3 2353.0 469.9C2315.1 479.5 2329.6 504.6 2315.8 527.0C2302.0 549.4 2279.8 586.5 2270.0 604.5C2260.2 622.5 2259.2 628.6 2256.8 635.0C2254.4 641.4 2255.3 640.5 2255.6 643.0C2255.9 645.5 2257.6 648.6 2258.5 650.0C2259.4 651.4 2259.4 651.2 2261.0 651.4C2262.6 651.6 2265.2 651.9 2268.0 651.4C2270.8 650.9 2270.8 651.7 2278.0 648.2C2285.2 644.7 2297.5 638.7 2311.0 630.2C2324.5 621.7 2345.5 607.0 2359.3 597.0C2373.1 587.0 2386.2 577.4 2394.0 570.4C2401.8 563.5 2401.8 560.0 2406.0 555.5C2410.2 551.1 2416.3 545.9 2419.0 543.8C2421.7 541.7 2420.7 542.5 2422.0 542.7C2423.3 542.8 2424.7 543.1 2427.0 544.7C2429.3 546.4 2435.2 554.5 2436.0 552.5C2436.8 550.5 2432.1 539.1 2431.6 533.0C2431.1 526.9 2431.6 520.2 2432.8 516.0C2434.1 511.8 2437.1 509.5 2439.0 507.8C2440.9 506.1 2442.0 506.0 2444.0 505.6C2446.0 505.2 2448.5 505.1 2451.0 505.6C2453.5 506.0 2456.5 507.1 2459.0 508.3C2461.5 509.4 2462.8 509.4 2466.0 512.6C2469.2 515.7 2475.5 523.3 2478.2 527.0C2480.9 530.7 2480.8 531.3 2482.2 535.0C2483.6 538.7 2485.4 543.7 2486.4 549.0C2487.4 554.3 2488.1 561.8 2488.3 567.0C2488.5 572.2 2486.7 577.4 2487.7 580.0C2488.6 582.6 2489.9 581.8 2494.0 582.4C2498.1 583.0 2505.2 584.1 2512.0 583.4C2518.8 582.7 2526.3 582.8 2535.0 578.2C2543.7 573.6 2557.5 560.4 2564.0 555.8C2570.5 551.2 2570.2 552.3 2574.0 550.8C2577.8 549.3 2582.3 547.5 2587.0 546.6C2591.7 545.7 2597.3 545.2 2602.0 545.6C2606.7 546.0 2611.5 547.6 2615.0 548.8C2618.5 550.0 2619.3 550.3 2623.0 552.8C2626.7 555.3 2630.7 567.0 2637.0 564.0C2643.3 561.0 2655.8 539.6 2661.0 534.9C2666.2 530.2 2665.4 534.4 2668.0 535.7C2670.6 537.1 2674.4 540.5 2676.4 543.0C2678.5 545.5 2679.7 549.0 2680.2 551.0C2680.6 553.0 2691.9 531.5 2679.3 555.0C2666.6 578.5 2617.1 668.3 2604.3 692.0C2591.4 715.7 2602.3 696.0 2602.1 697.0C2601.8 698.0 2591.0 698.9 2603.0 698.3C2615.0 697.7 2647.0 694.3 2674.0 693.5C2701.0 692.7 2737.0 692.8 2765.0 693.5C2793.0 694.2 2822.2 696.1 2842.0 697.5C2861.8 698.9 2875.6 700.1 2884.0 701.8C2892.4 703.6 2890.4 706.0 2892.4 708.0C2894.4 710.0 2895.2 711.8 2896.0 713.6C2896.8 715.4 2897.4 717.6 2897.5 719.0C2897.5 720.4 2897.1 721.3 2896.2 722.0C2895.3 722.7 2909.4 724.3 2892.0 723.4C2874.6 722.5 2824.0 717.8 2792.0 716.5C2760.0 715.2 2725.7 715.2 2700.0 715.5C2674.3 715.9 2657.0 717.1 2638.0 718.6C2619.0 720.1 2600.6 714.2 2586.0 724.6C2571.4 735.0 2561.4 764.2 2550.2 781.0C2539.0 797.8 2526.3 815.3 2519.0 825.3C2511.7 835.3 2511.4 835.5 2506.4 841.0C2501.5 846.5 2494.6 853.8 2489.5 858.0C2484.4 862.2 2480.9 864.9 2476.0 866.2ZM2859.0 679.2C2853.8 680.1 2848.2 679.7 2845.0 679.5C2841.8 679.3 2842.2 679.2 2840.0 678.2C2837.8 677.2 2834.0 675.1 2832.0 673.4C2830.0 671.7 2829.0 670.9 2827.8 668.0C2826.6 665.1 2824.2 661.8 2824.5 656.0C2824.8 650.2 2828.9 637.1 2829.7 633.0C2830.4 628.9 2832.6 629.5 2829.0 631.3C2825.4 633.2 2815.2 640.2 2808.0 644.2C2800.8 648.2 2793.2 652.1 2786.0 655.3C2778.8 658.4 2771.8 661.1 2765.0 663.2C2758.2 665.2 2751.0 666.8 2745.0 667.5C2739.0 668.2 2733.2 667.8 2729.0 667.4C2724.8 667.0 2723.8 667.0 2719.6 665.0C2715.4 663.0 2708.6 659.4 2704.0 655.4C2699.4 651.4 2695.0 646.2 2691.8 641.0C2688.6 635.8 2686.0 630.5 2684.6 624.0C2683.2 617.5 2683.0 608.2 2683.6 602.0C2684.1 595.8 2685.8 592.2 2687.8 587.0C2689.8 581.8 2691.8 577.2 2695.8 571.0C2699.8 564.8 2706.3 556.2 2711.6 550.0C2716.8 543.8 2722.3 538.8 2727.5 534.0C2732.7 529.2 2736.5 525.7 2742.7 521.0C2749.0 516.3 2759.0 509.5 2765.0 505.8C2771.0 502.1 2775.0 500.5 2779.0 498.8C2783.0 497.1 2786.3 496.1 2789.0 495.6C2791.7 495.0 2792.5 494.9 2795.0 495.6C2797.5 496.3 2801.4 498.1 2804.0 499.8C2806.6 501.5 2808.5 503.5 2810.4 506.0C2812.4 508.5 2814.6 512.5 2815.7 515.0C2816.9 517.5 2817.1 518.8 2817.4 521.0C2817.7 523.2 2818.0 525.0 2817.4 528.0C2816.9 531.0 2816.3 534.5 2814.2 539.0C2812.1 543.5 2809.2 549.7 2805.0 555.3C2800.8 560.9 2793.0 568.6 2789.0 572.4C2785.0 576.3 2784.7 576.1 2781.0 578.2C2777.3 580.3 2774.2 582.4 2767.0 585.3C2759.8 588.1 2747.5 592.6 2738.0 595.2C2728.5 597.8 2715.7 597.4 2710.0 600.9C2704.3 604.4 2705.1 612.2 2703.8 616.0C2702.6 619.8 2702.5 621.3 2702.5 624.0C2702.5 626.7 2702.7 629.4 2703.8 632.0C2704.9 634.6 2706.8 637.6 2709.0 639.4C2711.2 641.3 2714.3 642.3 2717.0 643.2C2719.7 644.0 2721.5 644.4 2725.0 644.5C2728.5 644.5 2733.3 644.1 2738.0 643.4C2742.7 642.7 2747.8 641.6 2753.0 640.2C2758.2 638.8 2762.3 637.7 2769.0 635.2C2775.7 632.7 2784.0 629.6 2793.0 625.3C2802.0 620.9 2814.0 614.9 2823.0 609.2C2832.0 603.5 2835.7 607.5 2847.0 591.3C2858.3 575.1 2884.2 527.0 2891.1 512.0C2898.0 497.0 2890.3 504.5 2888.2 501.0C2886.1 497.5 2881.9 493.7 2878.3 491.0C2874.7 488.3 2870.3 486.7 2866.4 485.0C2862.5 483.3 2860.7 482.4 2855.0 480.8C2849.3 479.2 2843.0 477.3 2832.0 475.6C2821.0 473.9 2806.7 471.6 2789.0 470.5C2771.3 469.4 2737.3 469.9 2726.0 469.2C2714.7 468.5 2722.8 467.9 2721.0 466.4C2719.2 465.0 2716.5 462.4 2715.0 460.3C2713.5 458.2 2712.3 455.7 2711.8 454.0C2711.3 452.3 2711.2 451.1 2711.9 450.0C2712.6 448.9 2679.5 448.0 2716.0 447.5C2752.5 447.0 2882.4 466.2 2931.0 447.1C2979.6 428.0 2989.8 359.4 3007.8 333.0C3025.8 306.6 3033.0 296.7 3038.8 289.0C3044.7 281.3 3041.3 286.7 3043.0 286.7C3044.7 286.6 3046.8 287.3 3049.0 288.8C3051.2 290.3 3054.3 293.4 3056.0 295.7C3057.7 298.1 3059.0 301.0 3059.4 303.0C3059.8 305.0 3071.5 288.3 3058.3 308.0C3045.0 327.7 2995.5 398.2 2979.8 421.0C2964.1 443.8 2966.5 440.7 2963.8 445.0C2961.2 449.3 2947.1 446.7 2964.0 447.1C2980.9 447.4 3036.7 465.5 3065.0 447.1C3093.3 428.7 3121.7 355.4 3134.0 336.8C3146.3 318.2 3137.3 335.4 3139.0 335.6C3140.7 335.8 3142.3 336.5 3144.3 338.0C3146.3 339.5 3149.3 342.4 3151.0 344.7C3152.7 347.0 3154.0 350.0 3154.4 352.0C3154.8 354.0 3162.5 341.3 3153.2 357.0C3143.9 372.7 3107.4 430.9 3098.6 446.0C3089.7 461.1 3095.4 447.2 3100.0 447.4C3104.6 447.7 3121.0 447.3 3126.0 447.5C3131.0 447.7 3127.5 446.7 3130.0 448.7C3132.5 450.8 3139.0 456.6 3141.0 459.8C3143.0 463.0 3142.4 466.4 3142.1 468.0C3141.7 469.6 3148.7 469.2 3139.0 469.5C3129.3 469.8 3104.3 451.7 3083.9 470.0C3063.5 488.3 3027.5 560.8 3016.6 579.0C3005.8 597.2 3014.6 581.7 3019.0 579.1C3023.4 576.6 3036.5 567.3 3043.0 563.7C3049.5 560.2 3053.3 559.0 3058.0 557.8C3062.7 556.6 3067.3 556.1 3071.0 556.6C3074.7 557.1 3077.6 558.9 3080.0 560.8C3082.4 562.7 3083.8 564.8 3085.2 568.0C3086.6 571.2 3087.7 570.2 3088.4 580.0C3089.1 589.8 3089.1 618.7 3089.5 627.0C3089.9 635.3 3089.6 629.7 3091.0 630.1C3092.4 630.4 3094.8 630.3 3098.0 629.2C3101.2 628.0 3101.8 628.9 3110.0 623.2C3118.2 617.5 3140.8 600.2 3147.5 595.0C3154.2 589.8 3148.1 596.0 3150.1 592.0C3152.2 588.0 3156.4 577.0 3159.8 571.0C3163.2 565.0 3165.4 562.1 3170.6 556.0C3175.8 549.9 3185.1 540.2 3191.0 534.5C3196.9 528.8 3199.7 526.3 3206.0 521.6C3212.3 516.8 3222.8 509.6 3229.0 505.8C3235.2 502.0 3239.0 500.5 3243.0 498.8C3247.0 497.1 3250.2 496.1 3253.0 495.6C3255.8 495.1 3257.5 495.1 3260.0 495.8C3262.5 496.6 3265.8 498.2 3268.3 500.0C3270.8 501.8 3273.0 504.0 3275.0 506.7C3277.0 509.4 3279.1 512.5 3280.2 516.0C3281.2 519.5 3282.4 522.8 3281.4 528.0C3280.4 533.2 3277.8 540.7 3274.3 547.0C3270.7 553.3 3264.9 560.8 3260.0 566.0C3255.1 571.2 3250.2 574.8 3245.0 578.2C3239.8 581.6 3235.0 583.7 3229.0 586.2C3223.0 588.7 3218.3 590.6 3209.0 593.2C3199.7 595.8 3179.9 598.1 3173.0 601.9C3166.1 605.7 3168.9 611.8 3167.8 616.0C3166.7 620.2 3166.2 623.6 3166.6 627.0C3167.0 630.4 3168.1 633.7 3170.0 636.3C3171.9 638.8 3175.0 640.8 3178.0 642.2C3181.0 643.5 3185.2 644.0 3188.0 644.4C3190.8 644.8 3191.5 644.8 3195.0 644.4C3198.5 644.0 3202.7 643.7 3209.0 642.2C3215.3 640.6 3222.7 639.2 3233.0 635.2C3243.3 631.2 3260.0 624.0 3271.0 618.3C3282.0 612.6 3292.8 605.4 3299.3 601.0C3305.8 596.6 3300.0 607.2 3310.2 592.0C3320.5 576.8 3351.7 524.4 3360.8 510.0C3369.9 495.6 3363.5 506.2 3365.0 505.6C3366.5 505.0 3367.9 505.2 3370.0 506.3C3372.1 507.3 3375.6 510.2 3377.5 512.0C3379.4 513.8 3380.3 515.0 3381.3 517.0C3382.2 519.0 3386.3 517.5 3383.4 524.0C3380.5 530.5 3367.5 549.7 3363.8 556.0C3360.1 562.3 3356.7 562.7 3361.4 562.0C3366.1 561.3 3384.1 553.7 3392.0 551.8C3399.9 549.9 3404.7 550.3 3409.0 550.6C3413.3 550.8 3415.4 552.0 3418.0 553.3C3420.6 554.5 3422.9 556.5 3424.4 558.0C3426.0 559.5 3425.9 559.0 3427.1 562.0C3428.3 565.0 3430.3 573.0 3431.7 576.0C3433.2 579.0 3431.6 579.6 3436.0 580.2C3440.4 580.7 3448.8 580.9 3458.0 579.4C3467.2 578.0 3484.8 572.5 3491.0 571.5C3497.2 570.5 3493.8 572.3 3495.0 573.5C3496.2 574.8 3498.0 577.4 3498.2 579.0C3498.3 580.6 3500.2 581.4 3496.0 583.1C3491.8 584.9 3481.5 587.5 3473.0 589.4C3464.5 591.3 3452.3 593.6 3445.0 594.4C3437.7 595.3 3433.3 594.9 3429.0 594.5C3424.7 594.1 3422.0 593.2 3419.0 592.2C3416.0 591.1 3415.3 591.8 3411.0 588.2C3406.7 584.6 3396.8 573.7 3393.0 570.8C3389.2 567.9 3390.2 570.3 3388.0 570.8C3385.8 571.3 3385.0 571.0 3380.0 573.9C3375.0 576.7 3366.3 581.6 3357.7 588.0C3349.1 594.4 3339.6 597.7 3328.6 612.0C3317.5 626.3 3297.9 663.4 3291.2 674.0C3284.4 684.6 3289.4 675.5 3288.0 675.5C3286.6 675.5 3284.6 674.9 3283.0 674.1C3281.4 673.4 3280.2 672.7 3278.5 671.0C3276.8 669.3 3274.1 666.0 3272.8 664.0C3271.5 662.0 3271.1 660.4 3270.8 659.0C3270.5 657.6 3269.6 658.6 3271.0 655.6C3272.4 652.6 3282.8 640.8 3279.0 640.9C3275.2 641.0 3256.3 652.5 3248.0 656.2C3239.7 659.9 3235.5 661.3 3229.0 663.2C3222.5 665.1 3215.0 666.8 3209.0 667.5C3203.0 668.2 3197.2 667.8 3193.0 667.4C3188.8 667.0 3187.4 666.6 3184.0 665.2C3180.6 663.8 3176.5 661.7 3172.7 659.0C3169.0 656.3 3164.6 652.3 3161.6 649.0C3158.6 645.7 3156.5 642.0 3154.7 639.0C3152.9 636.0 3152.0 634.3 3150.8 631.0C3149.6 627.7 3148.3 621.2 3147.4 619.0C3146.6 616.8 3150.7 614.9 3146.0 617.9C3141.3 620.9 3126.0 632.7 3119.0 637.2C3112.0 641.7 3108.3 643.3 3104.0 645.2C3099.7 647.1 3097.0 648.1 3093.0 648.4C3089.0 648.7 3083.5 648.6 3080.0 647.2C3076.5 645.8 3074.2 643.4 3071.8 640.0C3069.4 636.6 3067.4 633.3 3065.8 627.0C3064.3 620.7 3063.1 610.7 3062.5 602.0C3061.9 593.3 3062.7 579.8 3062.4 575.0C3062.1 570.2 3061.6 573.3 3061.0 572.9C3060.4 572.6 3061.8 571.1 3059.0 572.8C3056.2 574.6 3048.8 579.6 3044.0 583.6C3039.2 587.5 3044.5 581.4 3030.0 596.5C3015.5 611.6 2969.8 661.2 2957.0 674.1C2944.2 687.1 2954.5 674.6 2953.0 674.2C2951.5 673.7 2950.0 673.1 2948.0 671.4C2946.0 669.8 2942.6 666.5 2941.0 664.3C2939.4 662.0 2938.7 660.0 2938.5 658.0C2938.3 656.0 2937.0 657.2 2939.7 652.0C2942.5 646.8 2952.5 631.8 2955.2 627.0C2957.9 622.2 2961.0 620.3 2956.0 623.5C2951.0 626.7 2934.8 639.4 2925.0 646.2C2915.2 653.0 2905.2 659.5 2897.0 664.2C2888.8 668.9 2882.3 671.7 2876.0 674.2C2869.7 676.7 2864.2 678.3 2859.0 679.2ZM1801.0 694.1C1793.2 703.0 1797.4 694.5 1795.0 693.1C1792.6 691.8 1788.6 688.4 1786.6 686.0C1784.5 683.6 1783.4 681.0 1782.8 679.0C1782.2 677.0 1774.3 688.3 1782.9 674.0C1791.5 659.7 1826.1 606.7 1834.4 593.0C1842.8 579.3 1836.2 591.4 1833.0 591.7C1829.8 591.9 1821.5 594.3 1815.0 594.5C1808.5 594.7 1799.4 594.3 1794.0 593.2C1788.6 592.1 1787.1 591.4 1782.7 588.0C1778.4 584.6 1771.1 575.5 1768.0 572.6C1764.9 569.7 1766.7 570.4 1764.0 570.6C1761.3 570.8 1756.0 572.2 1752.0 573.9C1748.0 575.6 1745.2 577.4 1740.0 580.8C1734.8 584.2 1727.4 589.5 1721.0 594.6C1714.6 599.6 1711.1 597.8 1701.5 611.0C1691.9 624.2 1669.9 663.3 1663.2 674.0C1656.4 684.7 1662.4 675.4 1661.0 675.4C1659.6 675.4 1657.0 675.1 1655.0 674.1C1653.0 673.1 1650.8 671.4 1649.0 669.5C1647.2 667.6 1645.3 665.1 1644.3 663.0C1643.2 660.9 1637.4 667.0 1642.6 657.0C1647.8 647.0 1670.0 612.4 1675.4 603.0C1680.8 593.6 1676.9 600.8 1675.0 600.8C1673.1 600.7 1668.2 602.2 1664.0 602.5C1659.8 602.8 1654.7 602.9 1650.0 602.5C1645.3 602.1 1640.0 596.3 1636.0 600.2C1632.0 604.1 1629.3 619.0 1626.2 626.0C1623.1 633.0 1621.0 636.2 1617.2 642.0C1613.4 647.8 1607.5 656.3 1603.4 661.0C1599.4 665.7 1596.4 667.7 1593.0 670.4C1589.6 673.1 1586.8 675.4 1583.0 677.2C1579.2 679.0 1573.8 680.8 1570.0 681.5C1566.2 682.2 1563.2 682.0 1560.0 681.4C1556.8 680.9 1554.3 680.0 1551.0 678.2C1547.7 676.4 1543.0 673.1 1540.0 670.4C1537.0 667.7 1535.0 666.4 1532.8 662.0C1530.6 657.6 1527.6 652.0 1526.6 644.0C1525.6 636.0 1529.8 618.1 1527.0 614.2C1524.2 610.3 1514.8 619.4 1510.0 620.4C1505.2 621.4 1502.7 621.4 1498.0 620.4C1493.3 619.4 1486.8 617.0 1482.0 614.2C1477.2 611.4 1475.1 600.1 1469.0 603.4C1462.9 606.7 1452.0 626.1 1445.4 634.0C1438.9 641.9 1434.2 646.6 1429.5 651.0C1424.7 655.4 1421.7 657.6 1417.0 660.2C1412.3 662.8 1405.0 665.4 1401.0 666.4C1397.0 667.4 1395.7 666.8 1393.0 666.4C1390.3 666.0 1388.3 665.9 1385.0 664.2C1381.7 662.5 1376.0 659.1 1373.0 656.4C1370.0 653.7 1369.0 651.9 1366.8 648.0C1364.6 644.1 1365.0 631.5 1360.0 632.9C1355.0 634.3 1342.7 651.2 1337.0 656.4C1331.3 661.7 1330.3 661.9 1326.0 664.2C1321.7 666.5 1315.0 669.2 1311.0 670.2C1307.0 671.2 1305.3 671.1 1302.0 670.2C1298.7 669.2 1294.0 667.0 1291.0 664.4C1288.0 661.9 1285.5 658.1 1283.7 655.0C1282.0 651.9 1281.1 650.3 1280.6 646.0C1280.1 641.7 1279.5 635.7 1280.6 629.0C1281.6 622.3 1283.9 613.8 1286.8 606.0C1289.7 598.2 1296.5 587.8 1298.2 582.0C1299.8 576.2 1292.3 578.8 1296.9 571.0C1301.5 563.2 1318.4 543.2 1325.6 535.0C1332.7 526.8 1336.8 523.7 1340.0 521.6C1343.2 519.5 1343.2 521.4 1345.0 522.3C1346.8 523.1 1349.0 524.5 1351.0 526.8C1353.0 529.1 1356.2 533.5 1357.2 536.0C1358.2 538.5 1362.8 533.5 1357.1 542.0C1351.4 550.5 1332.4 573.5 1323.0 586.7C1313.6 599.9 1305.5 613.3 1300.8 621.0C1296.1 628.7 1296.3 629.2 1294.8 633.0C1293.3 636.8 1291.9 641.5 1291.6 644.0C1291.3 646.5 1292.1 647.2 1293.0 648.2C1293.9 649.3 1295.5 650.0 1297.0 650.4C1298.5 650.8 1300.2 650.8 1302.0 650.4C1303.8 650.0 1303.9 651.1 1308.0 648.2C1312.1 645.3 1320.3 639.3 1326.4 633.0C1332.6 626.7 1336.1 623.0 1345.0 610.3C1353.9 597.6 1373.5 566.3 1379.8 557.0C1386.1 547.7 1381.6 554.8 1383.0 554.6C1384.4 554.4 1386.2 554.9 1388.0 555.7C1389.8 556.6 1392.2 558.1 1394.0 559.8C1395.8 561.5 1397.7 563.8 1398.7 566.0C1399.8 568.2 1403.4 564.7 1400.4 573.0C1397.4 581.3 1384.8 606.3 1380.8 616.0C1376.8 625.7 1377.3 627.2 1376.6 631.0C1375.9 634.8 1376.2 637.0 1376.6 639.0C1377.0 641.0 1377.6 642.1 1379.0 643.2C1380.4 644.2 1382.8 645.2 1385.0 645.4C1387.2 645.6 1389.8 644.9 1392.0 644.2C1394.2 643.5 1395.3 643.1 1398.0 641.2C1400.7 639.3 1402.8 638.7 1408.5 633.0C1414.2 627.3 1423.2 618.5 1432.0 607.3C1440.8 596.1 1451.6 580.5 1461.2 566.0C1470.8 551.5 1484.3 528.2 1489.8 520.0C1495.3 511.8 1492.3 517.0 1494.0 516.6C1495.7 516.2 1497.8 516.6 1500.0 517.9C1502.2 519.1 1505.6 522.0 1507.4 524.0C1509.3 526.0 1510.5 527.8 1511.2 530.0C1511.8 532.2 1516.6 527.5 1511.4 537.0C1506.2 546.5 1485.2 577.5 1479.8 587.0C1474.5 596.5 1478.3 592.3 1479.3 594.0C1480.3 595.7 1483.4 596.8 1486.0 597.4C1488.6 598.0 1492.0 597.8 1495.0 597.4C1498.0 597.0 1500.5 596.3 1504.0 595.2C1507.5 594.1 1511.3 592.9 1516.0 590.7C1520.7 588.6 1527.4 585.0 1532.0 582.2C1536.6 579.4 1539.4 578.4 1543.5 574.0C1547.6 569.6 1552.0 561.1 1556.6 556.0C1561.1 550.9 1568.1 545.5 1571.0 543.3C1573.9 541.1 1572.5 542.4 1574.0 542.8C1575.5 543.3 1577.8 544.2 1580.0 545.8C1582.2 547.4 1586.6 554.6 1587.0 552.5C1587.4 550.4 1583.3 538.3 1582.6 533.0C1581.9 527.7 1581.9 524.7 1582.6 521.0C1583.2 517.3 1585.3 513.2 1586.6 511.0C1587.8 508.8 1588.4 508.7 1590.0 507.8C1591.6 506.9 1593.8 505.8 1596.0 505.5C1598.2 505.2 1600.2 505.1 1603.0 505.8C1605.8 506.5 1609.5 507.5 1613.0 509.8C1616.5 512.1 1621.3 516.7 1624.0 519.5C1626.7 522.4 1627.7 524.4 1629.2 527.0C1630.7 529.6 1631.8 531.3 1633.2 535.0C1634.6 538.7 1636.4 543.7 1637.4 549.0C1638.4 554.3 1639.1 562.0 1639.3 567.0C1639.5 572.0 1638.4 576.6 1638.5 579.0C1638.6 581.4 1635.9 580.6 1640.0 581.3C1644.1 582.1 1656.3 583.6 1663.0 583.4C1669.7 583.2 1675.1 581.6 1680.0 580.2C1684.9 578.8 1683.4 586.7 1692.2 575.0C1701.0 563.3 1725.5 521.5 1732.8 510.0C1740.1 498.5 1735.0 506.7 1735.9 506.0C1736.7 505.3 1736.8 505.4 1738.0 505.5C1739.2 505.6 1740.8 505.5 1743.0 506.8C1745.2 508.1 1748.9 510.7 1751.0 513.5C1753.1 516.4 1757.9 516.9 1755.4 524.0C1752.9 531.1 1739.5 549.7 1735.8 556.0C1732.1 562.3 1728.7 562.7 1733.4 562.0C1738.1 561.3 1756.1 553.7 1764.0 551.8C1771.9 549.9 1776.7 550.3 1781.0 550.6C1785.3 550.8 1787.4 552.0 1790.0 553.3C1792.6 554.5 1794.9 556.5 1796.4 558.0C1798.0 559.5 1797.9 559.0 1799.1 562.0C1800.3 565.0 1802.3 573.0 1803.7 576.0C1805.2 579.0 1805.0 579.4 1808.0 580.2C1811.0 580.9 1815.8 581.1 1822.0 580.4C1828.2 579.7 1815.9 616.2 1845.0 576.1C1874.1 536.1 1970.0 381.5 1996.8 340.0C2023.6 298.5 2003.4 329.5 2005.6 327.0C2007.8 324.5 2008.4 325.0 2010.0 324.9C2011.6 324.9 2013.0 325.5 2015.0 326.8C2017.0 328.1 2020.1 330.2 2022.0 332.7C2023.9 335.2 2025.6 339.8 2026.2 342.0C2026.7 344.2 2045.2 314.3 2025.3 346.0C2005.4 377.7 1918.2 506.9 1906.8 532.0C1895.4 557.1 1942.5 505.7 1957.0 496.8C1971.5 487.9 1987.2 481.9 1994.0 478.8C2000.8 475.7 1996.2 477.5 1998.0 477.9C1999.8 478.4 2002.6 479.5 2005.0 481.5C2007.4 483.5 2010.7 487.8 2012.3 490.0C2013.8 492.2 2013.9 493.7 2014.1 495.0C2014.3 496.3 2014.0 497.1 2013.4 498.0C2012.9 498.9 2015.9 497.8 2011.0 500.3C2006.1 502.7 1992.8 508.0 1984.0 512.8C1975.2 517.6 1966.3 523.2 1958.0 528.8C1949.7 534.4 1942.2 540.0 1934.0 546.6C1925.8 553.1 1913.6 562.9 1909.0 567.9C1904.4 572.8 1907.7 570.1 1906.6 576.0C1905.5 581.9 1903.3 595.0 1902.6 603.0C1901.9 611.0 1902.3 619.3 1902.5 624.0C1902.7 628.7 1902.9 628.2 1903.8 631.0C1904.7 633.8 1905.9 638.3 1907.8 641.0C1909.7 643.7 1911.3 645.9 1915.0 647.2C1918.7 648.4 1925.7 648.7 1930.0 648.5C1934.3 648.3 1934.3 648.7 1941.0 646.2C1947.7 643.6 1961.0 637.9 1970.0 633.3C1979.0 628.6 1985.0 624.9 1995.0 618.2C2005.0 611.5 2019.5 601.2 2030.3 593.0C2041.1 584.8 2054.2 573.3 2060.0 569.3C2065.8 565.2 2063.6 568.3 2065.0 568.6C2066.4 568.9 2067.4 569.8 2068.4 571.0C2069.5 572.2 2071.1 574.2 2071.4 576.0C2071.7 577.8 2074.4 577.3 2070.2 582.0C2066.0 586.7 2056.7 595.4 2046.0 604.4C2035.3 613.5 2018.8 627.1 2006.0 636.2C1993.2 645.3 1977.5 654.3 1969.0 659.1C1960.5 664.0 1959.8 663.5 1955.0 665.2C1950.2 666.9 1944.8 668.7 1940.0 669.4C1935.2 670.1 1929.5 669.8 1926.0 669.4C1922.5 669.0 1922.0 668.7 1919.0 667.2C1916.0 665.7 1911.4 663.1 1908.0 660.4C1904.6 657.7 1901.2 654.2 1898.6 651.0C1895.9 647.8 1894.1 644.5 1892.3 641.0C1890.5 637.5 1889.1 634.0 1887.8 630.0C1886.5 626.0 1885.3 622.0 1884.6 617.0C1883.9 612.0 1884.0 603.5 1883.4 600.0C1882.8 596.5 1883.0 595.1 1881.0 595.9C1879.0 596.7 1878.1 597.7 1871.6 605.0C1865.0 612.3 1853.3 625.1 1841.6 640.0C1829.8 654.9 1808.8 685.3 1801.0 694.1ZM782.1 499.0C785.3 494.5 796.3 476.8 799.2 472.0C802.0 467.2 811.5 470.8 799.0 469.9C786.5 469.1 730.9 464.7 724.2 467.0C717.6 469.3 751.0 479.6 759.0 483.8C767.0 488.0 768.8 489.5 772.3 492.0C775.8 494.5 778.4 497.9 780.0 499.1C781.6 500.2 778.9 503.5 782.1 499.0ZM2304.1 499.0C2307.3 494.5 2318.3 476.8 2321.2 472.0C2324.0 467.2 2333.5 470.8 2321.0 469.9C2308.5 469.1 2252.9 464.7 2246.2 467.0C2239.6 469.3 2273.0 479.6 2281.0 483.8C2289.0 488.0 2290.8 489.5 2294.3 492.0C2297.8 494.5 2300.4 497.9 2302.0 499.1C2303.6 500.2 2300.9 503.5 2304.1 499.0ZM2899.1 499.0C2902.3 494.5 2913.3 476.8 2916.2 472.0C2919.0 467.2 2928.5 470.8 2916.0 469.9C2903.5 469.1 2847.9 464.7 2841.2 467.0C2834.6 469.3 2868.0 479.6 2876.0 483.8C2884.0 488.0 2885.8 489.5 2889.3 492.0C2892.8 494.5 2895.4 497.9 2897.0 499.1C2898.6 500.2 2895.9 503.5 2899.1 499.0ZM2864.5 651.0C2870.1 649.2 2882.1 643.7 2889.0 640.3C2895.9 636.8 2895.1 637.4 2906.0 630.2C2916.9 623.0 2940.3 607.1 2954.3 597.0C2968.3 586.9 2974.8 588.8 2990.0 569.5C3005.2 550.2 3035.1 497.6 3045.2 481.0C3055.3 464.4 3066.1 471.9 3050.4 470.0C3034.7 468.1 2968.2 469.4 2951.0 469.5C2933.8 469.6 2957.9 454.4 2947.0 470.8C2936.1 487.2 2900.6 543.4 2885.8 568.0C2871.0 592.6 2863.7 607.4 2858.0 618.6C2852.3 629.8 2853.0 630.9 2851.8 635.0C2850.6 639.1 2850.6 640.8 2850.6 643.0C2850.6 645.2 2851.2 646.6 2851.9 648.0C2852.6 649.4 2852.9 650.6 2855.0 651.1C2857.1 651.6 2858.8 652.8 2864.5 651.0ZM995.0 679.2C992.2 679.6 990.2 679.9 987.0 679.4C983.8 678.9 979.1 677.5 975.6 676.0C972.1 674.5 968.9 672.7 966.0 670.4C963.1 668.2 960.0 665.0 958.0 662.3C956.0 659.5 954.9 657.0 953.8 654.0C952.7 651.0 951.4 648.7 951.6 644.0C951.8 639.3 953.8 630.0 954.8 626.0C955.8 622.0 956.4 621.2 957.6 620.0C958.8 618.8 959.8 618.0 962.0 618.6C964.2 619.2 968.8 621.8 971.0 623.6C973.2 625.3 974.1 627.3 975.2 629.0C976.3 630.7 977.0 632.3 977.4 634.0C977.8 635.7 978.5 635.8 977.4 639.0C976.3 642.2 971.7 650.1 970.8 653.0C969.9 655.9 969.3 656.0 972.0 656.3C974.7 656.7 983.5 655.9 987.0 655.2C990.5 654.5 990.9 653.7 993.3 652.0C995.7 650.3 999.5 647.2 1001.4 645.0C1003.4 642.8 1003.9 642.2 1005.2 639.0C1006.5 635.8 1008.7 631.0 1009.4 626.0C1010.1 621.0 1009.8 614.8 1009.5 609.0C1009.2 603.2 1006.8 597.1 1007.6 591.0C1008.3 584.9 1017.1 571.3 1014.0 572.5C1010.9 573.7 994.0 593.6 989.0 598.3C984.0 602.9 985.7 600.2 984.0 600.4C982.3 600.6 980.3 599.8 979.0 599.3C977.7 598.7 976.4 598.2 975.9 597.0C975.4 595.8 975.2 593.8 975.8 592.0C976.4 590.2 977.6 588.3 979.6 586.0C981.5 583.7 977.9 589.4 987.4 578.0C997.0 566.6 1026.6 529.6 1037.0 517.5C1047.4 505.5 1047.3 507.9 1050.0 505.8C1052.7 503.7 1052.0 504.7 1053.0 504.7C1054.0 504.6 1054.6 504.8 1056.0 505.5C1057.4 506.2 1059.6 507.3 1061.5 509.0C1063.3 510.7 1065.7 513.2 1067.0 515.7C1068.3 518.2 1072.9 518.3 1069.4 524.0C1065.9 529.7 1051.7 542.2 1045.8 550.0C1039.9 557.8 1036.4 565.7 1033.7 571.0C1031.1 576.3 1030.8 578.5 1029.8 582.0C1028.8 585.5 1028.0 588.2 1027.6 592.0C1027.2 595.8 1027.0 600.2 1027.5 605.0C1028.0 609.8 1029.9 615.0 1030.4 621.0C1030.9 627.0 1031.0 635.5 1030.5 641.0C1029.9 646.5 1029.6 649.3 1027.2 654.0C1024.8 658.7 1019.9 665.7 1016.0 669.4C1012.1 673.2 1007.5 675.1 1004.0 676.7C1000.5 678.4 997.8 678.7 995.0 679.2ZM619.5 569.0C623.0 567.7 631.6 564.9 637.0 562.3C642.4 559.7 646.7 557.9 652.0 553.4C657.3 548.9 665.2 539.9 669.0 535.3C672.8 530.7 673.7 528.2 674.7 526.0C675.8 523.8 677.9 521.2 675.3 522.0C672.7 522.8 666.6 525.5 659.0 530.8C651.4 536.1 637.2 547.4 630.0 553.6C622.8 559.8 618.0 565.3 615.7 568.0C613.3 570.7 615.4 569.8 616.0 569.9C616.6 570.1 616.0 570.3 619.5 569.0ZM2736.5 569.0C2740.0 567.7 2748.6 564.9 2754.0 562.3C2759.4 559.7 2763.7 557.9 2769.0 553.4C2774.3 548.9 2782.2 539.9 2786.0 535.3C2789.8 530.7 2790.7 528.2 2791.7 526.0C2792.8 523.8 2794.9 521.2 2792.3 522.0C2789.7 522.8 2783.6 525.5 2776.0 530.8C2768.4 536.1 2754.2 547.4 2747.0 553.6C2739.8 559.8 2735.0 565.3 2732.7 568.0C2730.3 570.7 2732.4 569.8 2733.0 569.9C2733.6 570.1 2733.0 570.3 2736.5 569.0ZM3200.5 569.0C3204.0 567.7 3212.6 564.9 3218.0 562.3C3223.4 559.7 3227.7 557.9 3233.0 553.4C3238.3 548.9 3246.2 539.9 3250.0 535.3C3253.8 530.7 3254.7 528.2 3255.7 526.0C3256.8 523.8 3258.9 521.2 3256.3 522.0C3253.7 522.8 3247.6 525.5 3240.0 530.8C3232.4 536.1 3218.2 547.4 3211.0 553.6C3203.8 559.8 3199.0 565.3 3196.7 568.0C3194.3 570.7 3196.4 569.8 3197.0 569.9C3197.6 570.1 3197.0 570.3 3200.5 569.0ZM1617.1 569.0C1617.6 565.0 1617.7 550.2 1617.4 544.0C1617.1 537.8 1615.8 534.5 1615.2 532.0C1614.6 529.5 1614.5 529.6 1614.0 528.9C1613.5 528.1 1613.0 527.7 1612.0 527.7C1611.0 527.7 1609.2 528.2 1608.0 528.9C1606.8 529.6 1605.6 529.3 1604.9 532.0C1604.2 534.7 1602.9 540.2 1603.6 545.0C1604.3 549.8 1607.1 557.1 1608.9 561.0C1610.6 564.9 1612.6 566.9 1614.0 568.2C1615.4 569.6 1616.5 573.0 1617.1 569.0ZM2466.1 569.0C2466.6 565.0 2466.7 550.2 2466.4 544.0C2466.1 537.8 2464.8 534.5 2464.2 532.0C2463.6 529.5 2463.5 529.6 2463.0 528.9C2462.5 528.1 2462.0 527.7 2461.0 527.7C2460.0 527.7 2458.2 528.2 2457.0 528.9C2455.8 529.6 2454.6 529.3 2453.9 532.0C2453.2 534.7 2451.9 540.2 2452.6 545.0C2453.3 549.8 2456.1 557.1 2457.9 561.0C2459.6 564.9 2461.6 566.9 2463.0 568.2C2464.4 569.6 2465.5 573.0 2466.1 569.0ZM1557.5 659.0C1560.8 658.2 1564.5 657.2 1569.0 654.2C1573.5 651.2 1579.1 647.2 1584.4 641.0C1589.8 634.8 1596.7 624.7 1601.2 617.0C1605.7 609.3 1609.2 600.2 1611.2 595.0C1613.2 589.8 1614.9 589.7 1613.1 586.0C1611.3 582.3 1604.2 577.5 1600.6 573.0C1596.9 568.5 1592.8 561.2 1591.0 558.8C1589.2 556.3 1590.4 557.6 1590.0 558.5C1589.6 559.4 1590.7 561.2 1588.4 564.0C1586.1 566.8 1579.3 572.0 1576.0 575.5C1572.7 579.0 1571.8 580.1 1568.8 585.0C1565.8 589.9 1560.6 599.2 1557.7 605.0C1554.9 610.8 1553.7 614.0 1551.8 620.0C1549.9 626.0 1547.6 635.7 1546.6 641.0C1545.6 646.3 1545.5 649.3 1545.6 652.0C1545.6 654.7 1546.3 655.8 1546.9 657.0C1547.5 658.2 1547.2 658.8 1549.0 659.1C1550.8 659.4 1554.1 659.8 1557.5 659.0ZM2406.5 659.0C2409.8 658.2 2413.5 657.2 2418.0 654.2C2422.5 651.2 2428.1 647.2 2433.4 641.0C2438.8 634.8 2445.7 624.7 2450.2 617.0C2454.7 609.3 2458.2 600.2 2460.2 595.0C2462.2 589.8 2463.9 589.7 2462.1 586.0C2460.3 582.3 2453.2 577.5 2449.6 573.0C2445.9 568.5 2441.8 561.2 2440.0 558.8C2438.2 556.3 2439.4 557.6 2439.0 558.5C2438.6 559.4 2439.7 561.2 2437.4 564.0C2435.1 566.8 2428.3 572.0 2425.0 575.5C2421.7 579.0 2420.8 580.1 2417.8 585.0C2414.8 589.9 2409.6 599.2 2406.7 605.0C2403.9 610.8 2402.7 614.0 2400.8 620.0C2398.9 626.0 2396.6 635.7 2395.6 641.0C2394.6 646.3 2394.5 649.3 2394.6 652.0C2394.6 654.7 2395.3 655.8 2395.9 657.0C2396.5 658.2 2396.2 658.8 2398.0 659.1C2399.8 659.4 2403.1 659.8 2406.5 659.0ZM2550.5 639.0C2552.8 638.7 2554.6 638.5 2558.0 637.2C2561.4 635.9 2564.2 635.5 2571.0 631.2C2577.8 626.9 2591.2 618.1 2599.0 611.4C2606.8 604.8 2613.5 596.9 2618.0 591.3C2622.5 585.7 2624.9 580.8 2626.2 578.0C2627.6 575.2 2627.4 576.1 2626.0 574.6C2624.6 573.1 2621.3 570.0 2618.0 568.8C2614.7 567.7 2610.8 566.8 2606.0 567.6C2601.2 568.4 2594.5 570.9 2589.0 573.7C2583.5 576.6 2578.9 579.5 2573.0 584.6C2567.1 589.6 2558.8 597.8 2553.6 604.0C2548.4 610.2 2544.1 618.0 2541.8 622.0C2539.5 626.0 2539.9 625.7 2539.6 628.0C2539.3 630.3 2539.2 634.1 2539.9 636.0C2540.6 637.9 2542.2 638.7 2544.0 639.2C2545.8 639.7 2548.2 639.3 2550.5 639.0ZM3543.0 654.1C3541.2 654.1 3539.0 654.0 3537.0 653.2C3535.0 652.3 3532.5 650.5 3531.0 649.0C3529.5 647.5 3528.7 646.1 3528.0 644.4C3527.3 642.7 3526.3 641.4 3526.6 639.0C3526.9 636.6 3528.3 632.2 3529.6 630.0C3530.8 627.8 3532.3 626.9 3534.0 625.8C3535.7 624.7 3538.0 623.9 3540.0 623.6C3542.0 623.3 3544.0 623.3 3546.0 623.8C3548.0 624.3 3550.2 625.2 3552.0 626.6C3553.8 627.9 3555.7 629.9 3556.7 632.0C3557.8 634.1 3558.3 636.8 3558.3 639.0C3558.3 641.2 3557.6 643.2 3556.7 645.0C3555.9 646.8 3554.7 648.6 3553.2 650.0C3551.8 651.4 3549.7 652.5 3548.0 653.2C3546.3 653.9 3544.8 654.1 3543.0 654.1ZM2460.5 844.0C2463.2 843.8 2463.9 843.3 2466.0 842.2C2468.1 841.1 2467.9 842.5 2473.0 837.4C2478.1 832.4 2486.2 825.2 2496.4 812.0C2506.6 798.8 2525.7 770.5 2534.2 758.0C2542.7 745.5 2544.7 741.5 2547.2 737.0C2549.7 732.5 2555.5 730.4 2549.3 731.0C2543.1 731.6 2521.9 737.2 2510.0 740.8C2498.1 744.4 2486.0 749.4 2478.0 752.7C2470.0 756.1 2467.0 757.9 2462.0 760.8C2457.0 763.7 2451.8 767.1 2447.7 770.0C2443.6 772.9 2440.7 775.0 2437.5 778.0C2434.3 781.0 2431.2 784.5 2428.6 788.0C2425.9 791.5 2423.4 795.5 2421.7 799.0C2420.1 802.5 2419.1 805.5 2418.6 809.0C2418.1 812.5 2418.1 816.7 2418.6 820.0C2419.1 823.3 2420.4 826.6 2421.8 829.0C2423.2 831.4 2424.3 832.3 2427.0 834.2C2429.7 836.1 2434.2 838.7 2438.0 840.2C2441.8 841.7 2446.3 842.8 2450.0 843.4C2453.7 844.0 2457.8 844.2 2460.5 844.0Z" fill-rule="evenodd" mask="url(#sig-mask-contact)"/></svg></h2>
+        <p class="contact-copy">For product design, UX architecture, design systems, AI-assisted prototyping, or consulting work, get in touch.</p>
+        <ul class="contact-links">
+          <li><span class="cl-key">Email</span><a href="mailto:13270716983@163.com">13270716983@163.com</a></li>
+          <li><span class="cl-key">Twitter / X</span><a href="https://x.com/wuyuan55" target="_blank" rel="noopener">@wuyuan55</a></li>
+          <li><span class="cl-key">Telegram</span><a href="https://t.me/wuyuan55" target="_blank" rel="noopener">@wuyuan55</a></li>
+        </ul>
+      </div>
+      <figure class="contact-photo">
+        <img src="assets/jinxu-li-portrait.png" alt="Carson Li" width="1811" height="2316" loading="lazy" decoding="async" />
+      </figure>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- progressive blur at the bottom edge of the viewport (stacked blur layers) -->
+  <div class="scroll-blur" aria-hidden="true">
+    <div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="portrait-scan.js"></script>
+  <script src="approach-iso.js"></script>
+  <script src="roll-buttons.js"></script>
+
+</body>
+</html>

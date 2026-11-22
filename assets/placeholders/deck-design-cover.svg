@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250">
+  <rect width="1000" height="1250" fill="#0d0d11"/>
+  <rect x="90" y="120" width="760" height="430" rx="22" fill="#25222f" stroke="#706d7a" stroke-width="3"/>
+  <rect x="150" y="220" width="760" height="430" rx="22" fill="#17171d" stroke="#a39fb0" stroke-width="3"/>
+  <rect x="210" y="320" width="700" height="390" rx="22" fill="#ece9ff"/>
+  <rect x="270" y="390" width="300" height="30" rx="15" fill="#15151a"/><rect x="270" y="450" width="500" height="12" rx="6" fill="#777485"/><rect x="270" y="482" width="420" height="12" rx="6" fill="#777485"/>
+  <text x="92" y="1030" fill="#f1efe9" font-family="Arial, sans-serif" font-size="72" font-weight="700">DECK DESIGN</text>
+  <text x="96" y="1090" fill="#8d8d8d" font-family="Arial, sans-serif" font-size="28" letter-spacing="8">PLACEHOLDER COVER</text>
+</svg>

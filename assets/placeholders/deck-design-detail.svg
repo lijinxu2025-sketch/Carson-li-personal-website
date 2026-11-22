@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#0d0d11"/><rect x="270" y="120" width="900" height="510" rx="28" fill="#25222f" stroke="#706d7a" stroke-width="3"/><rect x="430" y="220" width="900" height="510" rx="28" fill="#ece9ff"/>
+  <rect x="530" y="330" width="360" height="34" rx="17" fill="#15151a"/><rect x="530" y="405" width="620" height="14" rx="7" fill="#777485"/><rect x="530" y="445" width="510" height="14" rx="7" fill="#777485"/>
+  <text x="80" y="785" fill="#f1efe9" font-family="Arial, sans-serif" font-size="70" font-weight="700">DECK DESIGN</text><text x="84" y="835" fill="#8d8d8d" font-family="Arial, sans-serif" font-size="24" letter-spacing="8">PLACEHOLDER IMAGE · ASSET COMING SOON</text>
+</svg>

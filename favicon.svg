@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 736" role="img" aria-labelledby="title">
+  <title id="title">JINXU LI logo</title>
+  <rect width="736" height="736" rx="96" fill="#050505" />
+  <g fill="#e5e5e5">
+    <path d="M229 180 347 111c8-5 15-1 15 9v304c0 8-4 14-11 18l-116 66c-10 6-17 1-17-10V198c0-8 4-14 11-18Z" />
+    <path d="m278 522 219-125c7-4 13-4 20 0l86 51c11 7 11 14 0 21L380 598c-7 4-14 4-21 0l-82-50c-12-7-12-18 1-26Z" />
+  </g>
+</svg>
