@@ -570,23 +570,9 @@ body.bt-page {
 .bt-partner-grid article small { color: #999; font-size: .72rem; }
 .bt-partner-grid article:hover strong { color: #fff; }
 
-.bt-overview-page { padding-inline: 0; padding-bottom: 0; }
-.bt-overview-page .bt-showcase-intro { padding-inline: clamp(24px, 4.1vw, 52px); }
-.bt-overview-collage { position: relative; min-height: 1780px; overflow: hidden; }
-.bt-overview-dots { position: absolute; width: 100%; height: auto; opacity: .24; pointer-events: none; }
-.bt-overview-dots--top { top: 0; }
-.bt-overview-dots--bottom { bottom: 0; }
-.bt-overview-device, .bt-overview-phone { position: absolute; z-index: 2; padding: 7px; overflow: hidden; border: 1px solid #343434; background: #080808; box-shadow: 0 30px 80px rgba(0,0,0,.75); }
-.bt-overview-device { border-radius: 16px; }
-.bt-overview-device img, .bt-overview-phone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 10px; }
-.bt-overview-device--one { top: 3%; left: -4%; width: 60%; aspect-ratio: 16/9; transform: rotate(-4deg); }
-.bt-overview-device--two { top: 30%; right: -7%; width: 60%; aspect-ratio: 16/10; transform: rotate(4deg); }
-.bt-overview-device--three { top: 57%; left: 4%; width: 66%; aspect-ratio: 16/9; transform: rotate(-3deg); }
-.bt-overview-phone { z-index: 3; top: 15%; right: 9%; width: 20%; aspect-ratio: 416/901; border-radius: 24px; transform: rotate(7deg); }
-.bt-thank-you { display: grid; min-height: 610px; place-content: center; padding: 80px 24px; border-top: 1px solid #222; background: radial-gradient(circle at 50% 35%,#151515,#020202 58%); text-align: center; }
-.bt-thank-you span { color: #959595; font-size: .7rem; letter-spacing: .18em; }
-.bt-thank-you h3 { margin: 34px 0 28px; color: #f2f2f2; font-size: clamp(3.8rem, 9vw, 7.5rem); font-weight: 400; letter-spacing: -.07em; line-height: .85; }
-.bt-thank-you p { margin: 0; color: #a0a0a0; font-size: .75rem; letter-spacing: .13em; text-transform: uppercase; }
+.bt-overview-page { margin: 0; padding: 0; background: #010101; }
+.bt-overview-page picture { display: block; }
+.bt-overview-art { display: block; width: 100%; height: auto; }
 
 .bt-next { max-width: 1280px; margin-inline: auto; }
 
@@ -612,7 +598,6 @@ body.bt-page {
   .bt-feature-copy { width: 82%; }
   .bt-security-flow { grid-template-columns: 1fr 38px 1fr 38px 1fr; }
   .bt-security-step { padding: 24px; }
-  .bt-overview-collage { min-height: 1400px; }
 }
 
 @media (max-width: 700px) {
@@ -702,15 +687,6 @@ body.bt-page {
   .bt-ecosystem-device { width: 100%; margin-bottom: -12px; border-radius: 12px; }
   .bt-partner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bt-partner-grid article { min-height: 142px; padding: 18px; }
-  .bt-overview-page { padding-inline: 0; }
-  .bt-overview-page .bt-showcase-intro { padding-inline: 20px; }
-  .bt-overview-collage { min-height: 980px; }
-  .bt-overview-device--one { top: 2%; width: 78%; }
-  .bt-overview-phone { top: 18%; right: 3%; width: 29%; }
-  .bt-overview-device--two { top: 36%; width: 78%; }
-  .bt-overview-device--three { top: 67%; width: 82%; }
-  .bt-thank-you { min-height: 480px; }
-  .bt-thank-you h3 { font-size: clamp(3.5rem, 18vw, 5.4rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
