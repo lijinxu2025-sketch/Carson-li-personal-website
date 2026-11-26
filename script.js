@@ -93,7 +93,7 @@ if (heroSticky) {
   document.querySelectorAll('.flag').forEach((flag) => {
     const cover = flag.querySelector('.flag-cover');
     const cta = flag.querySelector('.cta');
-    if (!cover || !cta) return;
+    if (!cover || !cta || cover.matches('a[href]')) return;
     cover.addEventListener('click', () => {
       window.location.href = cta.getAttribute('href');
     });

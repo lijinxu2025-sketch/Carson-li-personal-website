@@ -447,6 +447,7 @@ html, body {
 }
 /* project cover: video + dark mask + centred logo. */
 .flag-cover {
+  display: block;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -493,6 +494,8 @@ html, body {
   line-height: 1;
   color: var(--ink);
 }
+.flag-name a { color: inherit; text-decoration: none; }
+.flag-name a:hover { text-decoration: underline; text-underline-offset: 0.14em; }
 .flag-no {
   font-weight: 500;
   letter-spacing: -0.02em;

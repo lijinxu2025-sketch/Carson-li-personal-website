@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/case-study.css" />
+  <link rel="stylesheet" href="/swarms-marketplace/swarms-marketplace.css" />
   <link rel="stylesheet" href="/space-grotesk.css" data-site-font="space-grotesk" />
 </head>
 <body class="cs cs-swarms">
@@ -29,159 +30,234 @@
     <button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
-  <main>
-    <section class="cs-hero cs-placeholder-hero" style="--cs-glow: #ff2147; --cs-accent: #ff395d;">
-      <div class="cs-placeholder-hero-art" aria-hidden="true">
-        <span>PROJECT HERO · PLACEHOLDER</span>
+  <main class="sw-case">
+    <header class="sw-cover">
+      <div class="sw-masthead">
+        <a href="/#work">&larr; All work</a>
+        <span>Web3 AI</span>
+        <span>2025–2026</span>
       </div>
-      <div class="cs-hero-scrim" aria-hidden="true"></div>
-      <a class="cs-back" href="/#work">&larr; All work</a>
-      <div class="cs-hero-content">
-        <h1 class="cs-title">Swarms Marketplace</h1>
-        <p class="cs-hero-label">AI Agent Marketplace &middot; Product Platform &middot; Creator Economy</p>
+      <div class="sw-cover-rule" aria-hidden="true"></div>
+      <h1>Swarms Marketplace</h1>
+      <img class="sw-cover-art" src="/assets/projects/swarms-marketplace/cover-1600.webp"
+        srcset="/assets/projects/swarms-marketplace/cover-800.webp 800w, /assets/projects/swarms-marketplace/cover-1600.webp 1600w"
+        sizes="(max-width: 720px) 120vw, (max-width: 1280px) 120vw, 1536px"
+        width="1600" height="1200" alt="Swarms Marketplace on a black laptop" fetchpriority="high" decoding="async" />
+    </header>
+
+    <section class="sw-intro" aria-labelledby="sw-intro-title">
+      <img class="sw-intro-art" src="/assets/projects/swarms-marketplace/introduction-1500.webp"
+        srcset="/assets/projects/swarms-marketplace/introduction-750.webp 750w, /assets/projects/swarms-marketplace/introduction-1500.webp 1500w"
+        sizes="(max-width: 620px) 100vw, (max-width: 1280px) 115vw, 1464px"
+        width="1500" height="844" alt="" loading="lazy" decoding="async" />
+      <div class="sw-panel sw-intro-copy">
+        <h2 id="sw-intro-title" class="sw-label">Project introduction</h2>
+        <p class="sw-intro-display">Swarms<br />Marketplace <img src="/assets/projects/swarms-marketplace/intro-mark.webp" alt="" width="50" height="50" loading="lazy" decoding="async" /></p>
+        <p class="sw-pill">0–1 product</p>
+        <p>AI agents are growing rapidly, yet the market still lacks a platform that brings discovery, trust, trial, purchase, and creator incentives into one cohesive experience.</p>
+        <p>Swarms Marketplace was built as an integrated product ecosystem that supports discovery, trust, trial, purchase, and creator incentives—turning agents into digital assets that can be evaluated, traded, and continuously grow in value. This was a 0-to-1 product initiative.</p>
+      </div>
+      <img class="sw-intro-fade" src="/assets/projects/swarms-marketplace/intro-fade.png" alt="" width="640" height="33" loading="lazy" decoding="async" />
+    </section>
+
+    <section class="sw-section" aria-labelledby="sw-challenges-title">
+      <div class="sw-section-head"><h2 id="sw-challenges-title">Problems &amp; Challenges</h2></div>
+      <div class="sw-challenges">
+        <figure class="sw-challenge-art">
+          <img src="/assets/projects/swarms-marketplace/challenge-laptop.webp" width="800" height="600" alt="Marketplace interface mockup on a silver laptop" loading="lazy" decoding="async" />
+        </figure>
+        <ol class="sw-challenge-list">
+          <li class="sw-panel">
+            <div class="sw-numbered"><span aria-hidden="true">1</span><h3>Build Product Understanding and Improve Discovery</h3></div>
+            <p>Agent, Prompt, Tool, and Tokenized products were presented through inconsistent categories and naming conventions. Users had to understand the platform’s terminology before they could find the right product.</p>
+            <p><strong>User Risk</strong><br />Users may not understand what the marketplace offers or know where to begin.</p>
+          </li>
+          <li class="sw-panel">
+            <div class="sw-numbered"><span aria-hidden="true">2</span><h3>Friction in the Publishing Journey</h3></div>
+            <p>The initial publishing experience relied on a dense, single-page form. Critical decisions and standard input fields lacked visual distinction, while categories, tags, and content guidelines were scattered throughout the flow. Users also lacked a persistent preview and clear interaction feedback.</p>
+            <p><strong>User Risk</strong><br />Users could select the wrong product type, miss required information, or feel uncertain about the final result—increasing rework and abandonment before publication.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="cs-intro">
-      <div class="shell">
-        <div class="cs-hero-row">
-          <div class="cs-hero-lead">
-            <p class="cs-tagline">Designing an agent marketplace that makes it simple to discover, evaluate, buy, sell, and launch AI products.</p>
-            <div class="cs-hero-links">
-              <a href="https://www.swarms.ai/marketplace" target="_blank" rel="noopener">Visit Marketplace <span>&#8599;&#xfe0e;</span></a>
+    <section class="sw-section" aria-labelledby="sw-goals-title">
+      <div class="sw-section-head"><h2 id="sw-goals-title">Design Goals</h2></div>
+      <ol class="sw-two-up sw-goals">
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">1</span><h3>Build Product Understanding and Improve Discovery</h3></div>
+          <p>Help users quickly understand the differences between Agents, Prompts, and Tools, while enabling them to find relevant products through multiple discovery paths.</p>
+        </li>
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">2</span><h3>Strengthen Decision Support and Build Confidence</h3></div>
+          <p>Use ratings, usage data, earnings, Creator Reputation, and token metrics to communicate real product value and reduce decision uncertainty.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="sw-section" aria-labelledby="sw-research-title">
+      <div class="sw-section-head"><h2 id="sw-research-title">Competitive Analysis</h2><p class="sw-label">Desk research</p></div>
+      <div class="sw-competitors">
+        <figure><figcaption>01 Virtuals Protocol</figcaption><img src="/assets/projects/swarms-marketplace/virtuals.webp" width="560" height="331" alt="Virtuals Protocol marketplace" loading="lazy" decoding="async" /></figure>
+        <figure><figcaption>02 Coze</figcaption><img src="/assets/projects/swarms-marketplace/coze.webp" width="560" height="331" alt="Coze interface" loading="lazy" decoding="async" /></figure>
+        <figure><figcaption>03 Dify</figcaption><img src="/assets/projects/swarms-marketplace/dify.webp" width="560" height="331" alt="Dify interface" loading="lazy" decoding="async" /></figure>
+        <figure><figcaption>04 LobeHub</figcaption><img src="/assets/projects/swarms-marketplace/lobehub.webp" width="560" height="331" alt="LobeHub marketplace" loading="lazy" decoding="async" /></figure>
+        <figure><figcaption>05 Qoder</figcaption><img src="/assets/projects/swarms-marketplace/qoder.webp" width="560" height="331" alt="Qoder interface" loading="lazy" decoding="async" /></figure>
+        <figure><figcaption>06 Sigrix</figcaption><img src="/assets/projects/swarms-marketplace/sigrix.webp" width="560" height="331" alt="Sigrix interface" loading="lazy" decoding="async" /></figure>
+      </div>
+      <div class="sw-panel sw-summary">
+        <h3>Competitive Analysis Summary</h3>
+        <p>An effective marketplace does more than display every available product. It uses clear categorization, intuitive discovery paths, and scannable product summaries to guide users from understanding and discovery to evaluation and decision-making.</p>
+        <ul>
+          <li>First help users understand what is available, then help them determine which option is best.</li>
+          <li>A consistent product model and card structure significantly reduce the effort required to understand and compare products.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sw-section" aria-labelledby="sw-understanding-title">
+      <div class="sw-section-head sw-section-head--narrow">
+        <h2 id="sw-understanding-title">Build Product Understanding and Improve Discovery</h2>
+        <p class="sw-label">Directions based on design trends</p>
+      </div>
+      <ol class="sw-two-up sw-patterns">
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">01</span><h3>Editorial / Featured</h3></div>
+          <div class="sw-wireframe sw-wireframe--featured" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="sw-strength">Strength: Creates a strong first impression</p>
+          <p class="sw-limitation">Limitation: Limited by curated content</p>
+        </li>
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">02</span><h3>Catalogue / Navigation</h3></div>
+          <div class="sw-wireframe sw-wireframe--catalogue" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="sw-strength">Strength: Clearly shows the product structure</p>
+          <p class="sw-limitation">Limitation: Requires category knowledge</p>
+        </li>
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">03</span><h3>Ranking / Performance</h3></div>
+          <div class="sw-wireframe sw-wireframe--ranking" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p class="sw-strength">Strength: Makes products easier to compare</p>
+          <p class="sw-limitation">Limitation: Lacks product and use-case context</p>
+        </li>
+        <li class="sw-panel">
+          <div class="sw-numbered"><span aria-hidden="true">04</span><h3>Card Feed / Discovery</h3></div>
+          <div class="sw-wireframe sw-wireframe--feed" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p class="sw-strength">Strength: Supports continuous discovery</p>
+          <p class="sw-limitation">Limitation: Lacks hierarchy and value context</p>
+        </li>
+      </ol>
+      <div class="sw-panel sw-summary">
+        <h3>Conclusion</h3>
+        <p>In mature marketplaces, users typically already understand the available product types. Agents, Prompts, and Tokenized Products, however, represent emerging offerings without an established mental model. If the homepage leads directly into search, listings, or transactions, users may see the products but still struggle to answer a more fundamental question: What exactly is available here?</p>
+      </div>
+    </section>
+
+    <section class="sw-section sw-cognitive" aria-labelledby="sw-cognitive-title">
+      <div class="sw-section-head sw-section-head--narrow"><h2 id="sw-cognitive-title">Three Cognitive Tasks for First-Time Users</h2></div>
+      <ol class="sw-cognitive-list">
+        <li class="sw-panel"><h3>1 — What Is This?</h3><p>Use real product examples to help users understand what the marketplace offers.</p></li>
+        <li class="sw-panel"><h3>2 — Why Does It Matter?</h3><p>Use earnings, popularity, and ratings to help users assess product value.</p></li>
+        <li class="sw-panel"><h3>3 — What Else Is Available?</h3><p>Expand into broader categories and commercial possibilities to establish a complete understanding of the marketplace.</p></li>
+      </ol>
+      <figure class="sw-marketplace-art">
+        <img src="/assets/projects/swarms-marketplace/marketplace-ui-600.webp"
+          srcset="/assets/projects/swarms-marketplace/marketplace-ui-600.webp 600w, /assets/projects/swarms-marketplace/marketplace-ui-1100.webp 1100w"
+          sizes="(max-width: 720px) 90vw, 680px" width="600" height="815"
+          alt="The redesigned marketplace homepage showing featured products, performance signals and categories" loading="lazy" decoding="async" />
+      </figure>
+    </section>
+
+    <section class="sw-section" aria-labelledby="sw-discovery-title">
+      <div class="sw-section-head sw-section-head--narrow"><h2 id="sw-discovery-title">Discovery Path Redesign</h2></div>
+      <p class="sw-discovery-note">Transform visually appealing content cards into product cards that support evaluation and comparison—helping users understand what the Marketplace offers and find the right products faster.</p>
+      <div class="sw-anatomy">
+        <div class="sw-anatomy-example">
+          <article class="sw-product" aria-label="Yuki featured product card example">
+            <div class="sw-product-art">
+              <img src="/assets/projects/swarms-marketplace/yuki.webp" width="800" height="450" alt="" loading="lazy" decoding="async" />
+              <span class="sw-product-badge">#3 Earner</span><span class="sw-product-price"><b>Prompt</b> $0.07 /run</span>
             </div>
-          </div>
-          <div class="cs-hero-aside">
-            <dl class="cs-hero-meta">
-              <div><dt>Role</dt><dd>Product Designer, UI/UX &amp; Brand Visual</dd></div>
-              <div><dt>Timeline</dt><dd>2025 – Ongoing</dd></div>
-              <div><dt>Scope</dt><dd>Product Strategy, UX, Design System &amp; Brand</dd></div>
-            </dl>
-          </div>
+            <div class="sw-product-body">
+              <p class="sw-product-by"><span aria-hidden="true">YK</span> by Yuki <img src="/assets/projects/swarms-marketplace/verify-featured.svg" alt="Verified" /></p>
+              <h3>Yuki</h3>
+              <p>A romantic anime-style prompt collection for narrative stylists. Curated palettes, character framing presets, and scene scaffolding ready to ship.</p>
+              <div class="sw-product-value"><span>30D Earnings</span><strong>$12,860</strong><span>↑ 14%</span></div>
+              <div class="sw-product-footer"><span>★★★★☆ 4.7 (287)</span><span>34.8K runs</span></div>
+            </div>
+          </article>
         </div>
-        <dl class="cs-hero-stats">
-          <div><dt>6,000+</dt><dd>Products listed</dd></div>
-          <div><dt>90%</dt><dd>Seller payout</dd></div>
-          <div><dt>4</dt><dd>Core marketplace flows</dd></div>
-          <div><dt>End-to-end</dt><dd>Discover to publish</dd></div>
-        </dl>
-        <div class="cs-placeholder cs-placeholder--cover" role="img" aria-label="Swarms Marketplace overview placeholder">
-          <span>MARKETPLACE OVERVIEW · PLACEHOLDER</span>
+        <div>
+          <h3 class="sw-label sw-anatomy-title">Card anatomy / <span lang="zh-CN">信息分层</span></h3>
+          <ol class="sw-anatomy-list">
+            <li><h4>Surface Product Identity First</h4><p>Place status, product type, and per-use pricing directly in the cover area to answer the first question at a glance: “What is this?”</p></li>
+            <li><h4>Maintain Visible Ownership and Trust Signals</h4><p>Position the creator’s avatar, name, and verification status close to the title to establish clear ownership and trust.</p></li>
+            <li><h4>Highlight Differentiating Value</h4><p>Adapt earnings, capability tags, and token performance to each product model, making the reason to purchase immediately visible.</p></li>
+            <li><h4>Create a Consistent Comparison Baseline</h4><p>Keep ratings, review counts, and runs in a consistent footer position to create a shared basis for cross-product comparison.</p></li>
+          </ol>
         </div>
       </div>
-    </section>
 
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">A · Overview</p>
-          <h2 class="cs-heading">A marketplace for the agent economy</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>Swarms Marketplace brings agents, prompts, tools, MCP servers, and skills into one product ecosystem. The design challenge is to make a fast-moving technical space feel understandable to buyers while giving creators a clear path to publish and monetize their work.</p>
-          <p>I shape the experience from product logic and discovery patterns to listing details, purchase flows, creator tools, and the visual system that holds everything together.</p>
-          <dl class="cs-overview-meta">
-            <div><dt>Audience</dt><dd>AI builders, teams, operators, and product creators</dd></div>
-            <div><dt>Experience</dt><dd>Discovery, evaluation, purchase, publishing, and monetization</dd></div>
-            <div><dt>Design goal</dt><dd>Turn a complex agent ecosystem into a clear, trusted marketplace</dd></div>
-          </dl>
+      <div class="sw-framework">
+        <div class="sw-section-head sw-section-head--narrow">
+          <h3>One Consistent Framework, Built for Different Product Values</h3>
+          <p class="sw-framework-note" lang="zh-CN">统一信息顺序降低学习成本<br />差异化价值模块保留商品个性</p>
+        </div>
+        <div class="sw-product-grid">
+          <article class="sw-product">
+            <div class="sw-product-art">
+              <img src="/assets/projects/swarms-marketplace/yuki.webp" width="800" height="450" alt="" loading="lazy" decoding="async" />
+              <span class="sw-product-badge">#3 Earner</span><span class="sw-product-price"><b>Prompt</b> $0.07 /run</span>
+            </div>
+            <div class="sw-product-body">
+              <p class="sw-product-by"><span aria-hidden="true">YK</span> by Yuki <img src="/assets/projects/swarms-marketplace/verify-yuki.svg" alt="Verified" /></p>
+              <h4>Yuki</h4>
+              <p>A romantic anime-style prompt collection for narrative stylists. Curated palettes, character framing presets, and scene scaffolding ready to ship.</p>
+              <div class="sw-product-value"><span>30D Earnings</span><strong>$12,860</strong><span>↑ 14%</span></div>
+              <div class="sw-product-footer"><span>★★★★☆ 4.7 (287)</span><span>34.8K runs</span></div>
+            </div>
+          </article>
+          <article class="sw-product">
+            <div class="sw-product-art">
+              <img src="/assets/projects/swarms-marketplace/rok.webp" width="640" height="360" alt="" loading="lazy" decoding="async" />
+              <span class="sw-product-badge">$ Token</span><span class="sw-product-price"><b>Prompt</b> $0.10 /run</span>
+            </div>
+            <div class="sw-product-body">
+              <p class="sw-product-by"><span aria-hidden="true">DK</span> by Duke21 <img src="/assets/projects/swarms-marketplace/verify-rok.svg" alt="Verified" /></p>
+              <h4>ROK</h4>
+              <p>Decentralized swarm coordination prompt suite. Token holders earn 30% of all execution fees, plus quarterly buyback distributions.</p>
+              <div class="sw-product-value"><span>$ROK</span><strong>$0.842</strong><span>+12.4%</span></div>
+              <div class="sw-product-footer"><span>★★★★★ 4.8 (642)</span><span>41.5K runs</span></div>
+            </div>
+          </article>
+          <article class="sw-product">
+            <div class="sw-product-art">
+              <img src="/assets/projects/swarms-marketplace/clawpay.webp" width="640" height="797" alt="" loading="lazy" decoding="async" />
+              <span class="sw-product-price"><b>Prompt</b> $0.03 /run</span>
+            </div>
+            <div class="sw-product-body">
+              <p class="sw-product-by"><span aria-hidden="true">RW</span> by rapid.writer <img src="/assets/projects/swarms-marketplace/verify-clawpay.svg" alt="Verified" /></p>
+              <h4>ClawPay</h4>
+              <p>Parallel content engine themed around the ClawPay universe. Generates 8 long-form posts simultaneously with shared brand tone.</p>
+              <ul class="sw-product-tags"><li>Long-form</li><li>Style transfer</li><li>12 langs</li></ul>
+              <div class="sw-product-footer"><span>★★★★☆ 4.6 (847)</span><span>72.1K runs</span></div>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
 
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">B · System &amp; Problem</p>
-          <h2 class="cs-heading">Many product types, one understandable system</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>The marketplace serves several product categories with different levels of technical complexity. Buyers need enough information to compare products confidently; creators need a publishing model that remains flexible without becoming overwhelming.</p>
-          <div class="cs-placeholder" role="img" aria-label="Marketplace system map placeholder"><span>SYSTEM MAP · PLACEHOLDER</span></div>
-          <div class="cs-placeholder-grid cs-placeholder-grid--two">
-            <div class="cs-placeholder cs-placeholder--small"><span>PRODUCT TAXONOMY</span></div>
-            <div class="cs-placeholder cs-placeholder--small"><span>TRUST SIGNALS</span></div>
-            <div class="cs-placeholder cs-placeholder--small"><span>CREATOR ONBOARDING</span></div>
-            <div class="cs-placeholder cs-placeholder--small"><span>OWNERSHIP &amp; ACCESS</span></div>
-          </div>
+      <section class="sw-outcome" aria-labelledby="sw-outcome-title">
+        <h3 id="sw-outcome-title">Move Users from Attention to Confident Decisions</h3>
+        <ol>
+          <li><h4>Visual Attraction</h4><p>Create immediate visual distinction.</p></li>
+          <li><h4>Product Identification</h4><p>Clarify the product type and identity.</p></li>
+          <li><h4>Value Evaluation</h4><p>Surface a clear reason to buy.</p></li>
+          <li><h4>Social Proof</h4><p>Reduce perceived decision risk.</p></li>
+        </ol>
+        <p><strong>Experience Outcome:</strong> Users can quickly understand what a product is, whether it is valuable, and how popular it is—without opening the detail page—shortening the discovery and evaluation journey.</p>
+        <div class="cs-hero-links">
+          <a href="https://www.swarms.ai/marketplace" target="_blank" rel="noopener">Visit Marketplace <span aria-hidden="true">&#8599;&#xfe0e;</span></a>
         </div>
-      </div>
-    </section>
-
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">C · Discovery</p>
-          <h2 class="cs-heading">Help buyers find the right tool fast</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>Discovery begins with a clear hierarchy: category, use case, capability, pricing, and proof. Search, filters, cards, and recommendation patterns are designed to reduce scanning time without hiding the technical depth users need.</p>
-          <div class="cs-placeholder cs-placeholder--wide" role="img" aria-label="Marketplace discovery interface placeholder"><span>SEARCH &amp; DISCOVERY UI · PLACEHOLDER</span></div>
-          <div class="cs-decision">
-            <p class="cs-decision-label">Design decision</p>
-            <h3>Show value before complexity.</h3>
-            <p>Each product card leads with outcome and category, then reveals supporting metadata for deeper evaluation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">D · Product Flow</p>
-          <h2 class="cs-heading">From listing to purchase without losing context</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>Product detail pages connect the story, capability, documentation, creator credibility, price, and access model. The purchase journey keeps those decisions visible so users understand what they are getting at every step.</p>
-          <div class="cs-placeholder cs-placeholder--wide" role="img" aria-label="Product detail page placeholder"><span>PRODUCT DETAIL · PLACEHOLDER</span></div>
-          <div class="cs-placeholder cs-placeholder--wide" role="img" aria-label="Checkout and access flow placeholder"><span>CHECKOUT &amp; ACCESS FLOW · PLACEHOLDER</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">E · Creator Experience</p>
-          <h2 class="cs-heading">Publishing should feel like launching a product</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>The creator flow turns a technical submission process into a guided launch. Progressive disclosure, clear requirements, previews, and status feedback help creators move from setup to a marketplace-ready listing.</p>
-          <div class="cs-placeholder cs-placeholder--wide" role="img" aria-label="Creator publishing flow placeholder"><span>CREATOR PUBLISHING FLOW · PLACEHOLDER</span></div>
-          <div class="cs-placeholder-grid cs-placeholder-grid--three">
-            <div class="cs-placeholder cs-placeholder--portrait"><span>SETUP</span></div>
-            <div class="cs-placeholder cs-placeholder--portrait"><span>PREVIEW</span></div>
-            <div class="cs-placeholder cs-placeholder--portrait"><span>PUBLISH</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">F · Product Translation</p>
-          <h2 class="cs-heading">A system that scales across categories</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>A reusable component and content system gives each product type enough flexibility while preserving consistent scanning, comparison, and action patterns across the marketplace.</p>
-          <div class="cs-placeholder cs-placeholder--wide" role="img" aria-label="Marketplace design system placeholder"><span>MARKETPLACE DESIGN SYSTEM · PLACEHOLDER</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cs-block">
-      <div class="shell cs-layout">
-        <aside class="cs-marker">
-          <p class="eyebrow">G · Visual &amp; Brand System</p>
-          <h2 class="cs-heading">Bold enough to feel new, clear enough to feel trusted</h2>
-        </aside>
-        <div class="cs-prose">
-          <p>The visual language balances the energy of the agent economy with the discipline of a product platform. Strong type, dark surfaces, precise grids, and focused accent color create a system that can stretch from dense tools to launch moments.</p>
-          <div class="cs-placeholder cs-placeholder--brand" role="img" aria-label="Swarms visual and brand system placeholder"><span>VISUAL &amp; BRAND SYSTEM · PLACEHOLDER</span></div>
-        </div>
-      </div>
+      </section>
     </section>
   </main>
 
